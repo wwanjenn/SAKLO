@@ -1,0 +1,215 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.codegrace.Saklo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
+10
+11    <permission
+11-->[androidx.core:core:1.10.1] C:\Users\Wanjin\.gradle\caches\transforms-3\36763f83d68b6cf843c01c521f8f369f\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+12        android:name="com.codegrace.Saklo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.10.1] C:\Users\Wanjin\.gradle\caches\transforms-3\36763f83d68b6cf843c01c521f8f369f\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.10.1] C:\Users\Wanjin\.gradle\caches\transforms-3\36763f83d68b6cf843c01c521f8f369f\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.codegrace.Saklo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.10.1] C:\Users\Wanjin\.gradle\caches\transforms-3\36763f83d68b6cf843c01c521f8f369f\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.10.1] C:\Users\Wanjin\.gradle\caches\transforms-3\36763f83d68b6cf843c01c521f8f369f\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:5:5-54:19
+18        android:allowBackup="true"
+18-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.10.1] C:\Users\Wanjin\.gradle\caches\transforms-3\36763f83d68b6cf843c01c521f8f369f\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+20        android:dataExtractionRules="@xml/data_extraction_rules"
+20-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:7:9-65
+21        android:debuggable="true"
+22        android:fullBackupContent="@xml/backup_rules"
+22-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:8:9-54
+23        android:icon="@mipmap/ic_launcher"
+23-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:9:9-43
+24        android:label="@string/app_name"
+24-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:10:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:11:9-54
+26        android:supportsRtl="true"
+26-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:12:9-35
+27        android:testOnly="true"
+28        android:theme="@style/Theme.AppCompat.Light" >
+28-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:13:9-53
+29        <activity
+29-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:15:9-23:20
+30            android:name="com.codegrace.Saklo.SplashActivity"
+30-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:15:19-49
+31            android:exported="true"
+31-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:16:13-36
+32            android:theme="@style/SplashTheme" >
+32-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:17:13-47
+33            <intent-filter>
+33-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:18:13-22:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:19:17-69
+34-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:19:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:21:17-77
+36-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:21:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:24:9-33:20
+40            android:name="com.codegrace.Saklo.MainActivity"
+40-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:25:13-41
+41            android:exported="true"
+41-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:26:13-36
+42            android:theme="@style/Theme.AppCompat.Light" >
+42-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:27:13-57
+43            <intent-filter>
+43-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:18:13-22:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:19:17-69
+44-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:19:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:21:17-77
+46-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:21:27-74
+47            </intent-filter>
+48        </activity>
+49        <activity
+49-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:34:9-43:20
+50            android:name="com.codegrace.Saklo.AppointmentActivity"
+50-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:35:13-48
+51            android:exported="true"
+51-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:36:13-36
+52            android:theme="@style/Theme.AppCompat.Light" >
+52-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:37:13-57
+53            <intent-filter>
+53-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:18:13-22:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:19:17-69
+54-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:19:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:21:17-77
+56-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:21:27-74
+57            </intent-filter>
+58        </activity>
+59        <activity
+59-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:44:9-53:20
+60            android:name="com.codegrace.Saklo.RemediesActivity"
+60-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:45:13-45
+61            android:exported="true"
+61-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:46:13-36
+62            android:theme="@style/Theme.AppCompat.Light" >
+62-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:47:13-57
+63            <intent-filter>
+63-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:18:13-22:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:19:17-69
+64-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:19:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:21:17-77
+66-->C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:21:27-74
+67            </intent-filter>
+68        </activity>
+69        <activity
+69-->[androidx.compose.ui:ui-tooling:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\e6ad1f08d8d900970a06472b31d948e1\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:23:9-25:39
+70            android:name="androidx.compose.ui.tooling.PreviewActivity"
+70-->[androidx.compose.ui:ui-tooling:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\e6ad1f08d8d900970a06472b31d948e1\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:24:13-71
+71            android:exported="true" />
+71-->[androidx.compose.ui:ui-tooling:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\e6ad1f08d8d900970a06472b31d948e1\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:25:13-36
+72        <activity
+72-->[androidx.compose.ui:ui-test-manifest:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\11db4fc6ece4f5b46baa441dace9e084\transformed\jetified-ui-test-manifest-1.3.0\AndroidManifest.xml:23:9-25:39
+73            android:name="androidx.activity.ComponentActivity"
+73-->[androidx.compose.ui:ui-test-manifest:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\11db4fc6ece4f5b46baa441dace9e084\transformed\jetified-ui-test-manifest-1.3.0\AndroidManifest.xml:24:13-63
+74            android:exported="true" />
+74-->[androidx.compose.ui:ui-test-manifest:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\11db4fc6ece4f5b46baa441dace9e084\transformed\jetified-ui-test-manifest-1.3.0\AndroidManifest.xml:25:13-36
+75
+76        <provider
+76-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Wanjin\.gradle\caches\transforms-3\af1f11859a97dc117ebf2c547e83e020\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+77            android:name="androidx.startup.InitializationProvider"
+77-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Wanjin\.gradle\caches\transforms-3\af1f11859a97dc117ebf2c547e83e020\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+78            android:authorities="com.codegrace.Saklo.androidx-startup"
+78-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Wanjin\.gradle\caches\transforms-3\af1f11859a97dc117ebf2c547e83e020\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+79            android:exported="false" >
+79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Wanjin\.gradle\caches\transforms-3\af1f11859a97dc117ebf2c547e83e020\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+80            <meta-data
+80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Wanjin\.gradle\caches\transforms-3\af1f11859a97dc117ebf2c547e83e020\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+81                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Wanjin\.gradle\caches\transforms-3\af1f11859a97dc117ebf2c547e83e020\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+82                android:value="androidx.startup" />
+82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Wanjin\.gradle\caches\transforms-3\af1f11859a97dc117ebf2c547e83e020\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+83            <meta-data
+83-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Wanjin\.gradle\caches\transforms-3\707c2ebdd33f7c287e92b410693aaa87\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+84                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+84-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Wanjin\.gradle\caches\transforms-3\707c2ebdd33f7c287e92b410693aaa87\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+85                android:value="androidx.startup" />
+85-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Wanjin\.gradle\caches\transforms-3\707c2ebdd33f7c287e92b410693aaa87\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+86            <meta-data
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+87                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+88                android:value="androidx.startup" />
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+89        </provider>
+90
+91        <uses-library
+91-->[androidx.window:window:1.0.0] C:\Users\Wanjin\.gradle\caches\transforms-3\2cd6a4f2966cc55f45f7b369df9ad38a\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+92            android:name="androidx.window.extensions"
+92-->[androidx.window:window:1.0.0] C:\Users\Wanjin\.gradle\caches\transforms-3\2cd6a4f2966cc55f45f7b369df9ad38a\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+93            android:required="false" />
+93-->[androidx.window:window:1.0.0] C:\Users\Wanjin\.gradle\caches\transforms-3\2cd6a4f2966cc55f45f7b369df9ad38a\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+94        <uses-library
+94-->[androidx.window:window:1.0.0] C:\Users\Wanjin\.gradle\caches\transforms-3\2cd6a4f2966cc55f45f7b369df9ad38a\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+95            android:name="androidx.window.sidecar"
+95-->[androidx.window:window:1.0.0] C:\Users\Wanjin\.gradle\caches\transforms-3\2cd6a4f2966cc55f45f7b369df9ad38a\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+96            android:required="false" />
+96-->[androidx.window:window:1.0.0] C:\Users\Wanjin\.gradle\caches\transforms-3\2cd6a4f2966cc55f45f7b369df9ad38a\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+97
+98        <receiver
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+99            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+100            android:directBootAware="false"
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+101            android:enabled="true"
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+102            android:exported="true"
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+103            android:permission="android.permission.DUMP" >
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+104            <intent-filter>
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+105                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+106            </intent-filter>
+107            <intent-filter>
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+108                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+109            </intent-filter>
+110            <intent-filter>
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+111                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+112            </intent-filter>
+113            <intent-filter>
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+114                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d118852605eeaaf36b525d8df4026b29\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+115            </intent-filter>
+116        </receiver>
+117    </application>
+118
+119</manifest>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_login_nav"
+    app:startDestination="@id/introductionFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.saklo.fragment.loginRegister.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:popUpTo="@id/accountOptFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_main_shoppingActivity"
+            app:destination="@id/main_shoppingActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.saklo.fragment.loginRegister.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/accountOptFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_main_shoppingActivity"
+            app:destination="@id/main_shoppingActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountOptFragment"
+        android:name="com.example.saklo.fragment.loginRegister.AccountOptFragment"
+        android:label="AccountOptFragment"
+        tools:layout="@layout/fragment_accountoptions">
+        <action
+            android:id="@+id/action_accountOptFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_accountOptFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/introductionFragment"
+        android:name="com.example.saklo.fragment.loginRegister.IntroductionFragment"
+        android:label="IntroductionFragment"
+        tools:layout="@layout/fragment_introduction">
+        <action
+            android:id="@+id/action_introductionFragment_to_accountOptFragment"
+            app:destination="@id/accountOptFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/main_shoppingActivity"
+        android:name="com.example.saklo.activities.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>
