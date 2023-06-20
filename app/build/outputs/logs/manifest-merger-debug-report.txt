@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:2:1-56:12
+ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:2:1-61:12
 MERGED from [androidx.databinding:viewbinding:8.0.1] C:\Users\Wanjin\.gradle\caches\transforms-3\07e5dc92c8d5d3966ca04134815ed227\transformed\jetified-viewbinding-8.0.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-tooling:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\e6ad1f08d8d900970a06472b31d948e1\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.compose.material3:material3:1.0.0] C:\Users\Wanjin\.gradle\caches\transforms-3\17c41b9be69fb4ad829ad6d2e0f01302\transformed\jetified-material3-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -85,27 +85,27 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Wanjin\.gradle\c
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Wanjin\.gradle\caches\transforms-3\d251205787555e0c87dbe07a9a4774d6\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Wanjin\.gradle\caches\transforms-3\323ca49934ab5083d14fc682cb508921\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\2298a836499a76fdcb0fe574caee2a2c\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:2:1-61:12
 	package
-		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:2:1-56:12
-		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:2:1-61:12
+		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:2:1-56:12
-		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:2:1-61:12
+		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:2:1-56:12
-		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:2:1-61:12
+		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:5:5-54:19
+ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:5:5-59:19
 MERGED from [androidx.compose.ui:ui-tooling:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\e6ad1f08d8d900970a06472b31d948e1\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\e6ad1f08d8d900970a06472b31d948e1\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\Wanjin\.gradle\caches\transforms-3\6acd0769ab27a53f22fbbc9e05aea3e1\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
@@ -131,69 +131,83 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Wanjin\.gradle\cac
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.10.1] C:\Users\Wanjin\.gradle\caches\transforms-3\36763f83d68b6cf843c01c521f8f369f\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:11:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:8:9-54
 	android:roundIcon
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:10:9-43
 	tools:targetApi
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:14:9-29
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:14:9-29
 	android:icon
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:9:9-38
 	android:allowBackup
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:13:9-53
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:13:9-43
 	android:dataExtractionRules
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.codegrace.Saklo.SplashActivity
-ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:15:9-23:20
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:7:9-65
+activity#com.codegrace.Saklo.activities.SplashActivity
+ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:16:9-23:20
 	android:exported
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:16:13-36
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:17:13-36
 	android:theme
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:17:13-47
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:18:13-47
 	android:name
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:15:19-49
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:16:19-60
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:18:13-22:29
+ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:19:13-22:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:19:17-69
+ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:19:25-66
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:21:27-74
-activity#com.codegrace.Saklo.MainActivity
-ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:24:9-33:20
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:21:27-74
+activity#com.codegrace.Saklo.activities.RegisterLoginActivity
+ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:24:9-31:20
 	android:exported
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:26:13-36
-	android:theme
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:27:13-57
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:26:13-36
 	android:name
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:25:13-41
-activity#com.codegrace.Saklo.AppointmentActivity
-ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:34:9-43:20
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:25:13-61
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:27:13-30:29
+action#android.intent.action.VIEW
+ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:28:25-66
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:29:17-76
+	android:name
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:29:27-73
+activity#com.codegrace.Saklo.activities.MainActivity
+ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:32:9-39:20
 	android:exported
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:36:13-36
-	android:theme
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:37:13-57
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:34:13-36
 	android:name
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:35:13-48
-activity#com.codegrace.Saklo.RemediesActivity
-ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:44:9-53:20
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:33:13-52
+activity#com.codegrace.Saklo.activities.AppointmentActivity
+ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:41:9-49:20
 	android:exported
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:46:13-36
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:43:13-36
 	android:theme
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:47:13-57
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:44:13-57
 	android:name
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml:45:13-45
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:42:13-59
+activity#com.codegrace.Saklo.activities.RemediesActivity
+ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:50:9-58:20
+	android:exported
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:52:13-36
+	android:theme
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:53:13-57
+	android:name
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml:51:13-56
 uses-sdk
-INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:8.0.1] C:\Users\Wanjin\.gradle\caches\transforms-3\07e5dc92c8d5d3966ca04134815ed227\transformed\jetified-viewbinding-8.0.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.0.1] C:\Users\Wanjin\.gradle\caches\transforms-3\07e5dc92c8d5d3966ca04134815ed227\transformed\jetified-viewbinding-8.0.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-tooling:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\e6ad1f08d8d900970a06472b31d948e1\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:20:5-44
@@ -356,16 +370,16 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Wanjin\.gradle\caches\transfor
 MERGED from [androidx.print:print:1.0.0] C:\Users\Wanjin\.gradle\caches\transforms-3\323ca49934ab5083d14fc682cb508921\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\2298a836499a76fdcb0fe574caee2a2c\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\2298a836499a76fdcb0fe574caee2a2c\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\AndroidManifest.xml
 activity#androidx.compose.ui.tooling.PreviewActivity
 ADDED from [androidx.compose.ui:ui-tooling:1.3.0] C:\Users\Wanjin\.gradle\caches\transforms-3\e6ad1f08d8d900970a06472b31d948e1\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:23:9-25:39
 	android:exported

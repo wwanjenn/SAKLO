@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
-    <style name="Theme.AnimatedSplashScreen" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.AnimatedSplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/dark_blu</item>
         <item name="colorPrimaryVariant">@color/light_blu</item>

@@ -112,7 +112,7 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_loginFragment_to_main_shoppingActivity">
+                            <entry key="action_loginFragment_to_mainActivity">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -127,13 +127,13 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="main_shoppingActivity">
+                  <entry key="mainActivity">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="988" />
-                            <option name="y" value="20" />
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -155,7 +155,7 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_registerFragment_to_main_shoppingActivity">
+                            <entry key="action_registerFragment_to_mainActivity">
                               <value>
                                 <LayoutPositions />
                               </value>

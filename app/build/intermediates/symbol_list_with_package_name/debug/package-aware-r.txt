@@ -1441,12 +1441,16 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color drk_prm_green
+color drk_scd_navyblue
 color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color lgt_neut_gray
+color lgt_prm_green
 color light_blu
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
@@ -2972,6 +2976,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable edit_text_border
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3072,6 +3077,8 @@ drawable saklogo_cropped
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable vector_login_1
+drawable vector_login_2
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3120,9 +3127,12 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id accountOptFragment
 id actionDown
 id actionDownUp
 id actionUp
+id action_accountOptFragment_to_loginFragment
+id action_accountOptFragment_to_registerFragment
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -3134,11 +3144,16 @@ id action_container
 id action_context_bar
 id action_divider
 id action_image
+id action_introductionFragment_to_accountOptFragment
+id action_loginFragment_to_mainActivity
+id action_loginFragment_to_registerFragment
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_registerFragment_to_loginFragment
+id action_registerFragment_to_mainActivity
 id action_text
 id actions
 id activity_chooser_view_content
@@ -3176,6 +3191,11 @@ id bounceStart
 id btnAppoint
 id btnDrugs
 id btnHerbal
+id btn_intro
+id btn_login
+id btn_register
+id btn_tologin
+id btn_toregister
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3250,6 +3270,12 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id ed_login_email
+id ed_login_password
+id ed_register_email
+id ed_register_fname
+id ed_register_lastname
+id ed_register_password
 id edge
 id edit_query
 id elastic
@@ -3275,6 +3301,7 @@ id fixed
 id flip
 id floating
 id forever
+id fragmentContainerView
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3286,6 +3313,14 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id guideline2
+id guideline3
+id guideline4
+id guideline5
+id guideline_accopt1
+id guideline_accopt2
+id guideline_intro1
+id guideline_intro2
 id header_title
 id hide_in_inspector_tag
 id hideable
@@ -3299,11 +3334,19 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
+id imageView2
+id imageView3
+id imageView4
+id imageView5
+id imageView6
+id imageView7
 id immediateStop
 id included
 id indeterminate
 id info
 id inspection_slot_table_set
+id introductionFragment
 id invisible
 id inward
 id is_pooling_container_tag
@@ -3322,9 +3365,11 @@ id linear
 id listMode
 id list_item
 id locale
+id loginFragment
 id logo
 id ltr
 id m3_side_sheet
+id mainActivity
 id marquee
 id masked
 id match_constraint
@@ -3432,6 +3477,8 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id registerFragment
+id register_login_nav
 id report_drawn
 id reverseSawtooth
 id right
@@ -3567,6 +3614,15 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_Register
+id tv_Register2
+id tv_accopt1
+id tv_accopt2
+id tv_intro
+id tv_login
+id tv_tologin
+id tv_toregister
+id tv_toregister2
 id unchecked
 id uniform
 id unlabeled
@@ -3707,6 +3763,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_appointment
 layout activity_main
+layout activity_register_login
 layout activity_remedies
 layout activity_splash
 layout custom_dialog
@@ -3725,6 +3782,10 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_accountoptions
+layout fragment_introduction
+layout fragment_login
+layout fragment_register
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3788,6 +3849,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
+navigation register_login_nav
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -4091,6 +4153,7 @@ style Base_Theme_MaterialComponents_Light_Dialog_Bridge
 style Base_Theme_MaterialComponents_Light_Dialog_FixedSize
 style Base_Theme_MaterialComponents_Light_Dialog_MinWidth
 style Base_Theme_MaterialComponents_Light_DialogWhenLarge
+style Base_Theme_Saklo
 style Base_ThemeOverlay_AppCompat
 style Base_ThemeOverlay_AppCompat_ActionBar
 style Base_ThemeOverlay_AppCompat_Dark
@@ -4598,6 +4661,7 @@ style Theme_MaterialComponents_Light_NoActionBar
 style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
+style Theme_Saklo
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark
@@ -5084,6 +5148,9 @@ style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
 style login_Theme
+style primaryBtn
+style secondaryBtn
+style tertiaryBtn
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

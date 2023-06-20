@@ -1,7 +1,23 @@
 [
     {
+        "merged": "com.codegrace.Saklo.app-mergeDebugResources-68:/layout/fragment_register.xml",
+        "source": "com.codegrace.Saklo.app-main-71:/layout/fragment_register.xml"
+    },
+    {
+        "merged": "com.codegrace.Saklo.app-mergeDebugResources-68:/layout/fragment_login.xml",
+        "source": "com.codegrace.Saklo.app-main-71:/layout/fragment_login.xml"
+    },
+    {
         "merged": "com.codegrace.Saklo.app-mergeDebugResources-68:/layout/activity_appointment.xml",
         "source": "com.codegrace.Saklo.app-main-71:/layout/activity_appointment.xml"
+    },
+    {
+        "merged": "com.codegrace.Saklo.app-mergeDebugResources-68:/layout/activity_register_login.xml",
+        "source": "com.codegrace.Saklo.app-main-71:/layout/activity_register_login.xml"
+    },
+    {
+        "merged": "com.codegrace.Saklo.app-mergeDebugResources-68:/layout/fragment_introduction.xml",
+        "source": "com.codegrace.Saklo.app-main-71:/layout/fragment_introduction.xml"
     },
     {
         "merged": "com.codegrace.Saklo.app-mergeDebugResources-68:/layout/activity_splash.xml",
@@ -10,6 +26,10 @@
     {
         "merged": "com.codegrace.Saklo.app-mergeDebugResources-68:/layout/activity_remedies.xml",
         "source": "com.codegrace.Saklo.app-main-71:/layout/activity_remedies.xml"
+    },
+    {
+        "merged": "com.codegrace.Saklo.app-mergeDebugResources-68:/layout/fragment_accountoptions.xml",
+        "source": "com.codegrace.Saklo.app-main-71:/layout/fragment_accountoptions.xml"
     },
     {
         "merged": "com.codegrace.Saklo.app-mergeDebugResources-68:/layout/activity_main.xml",

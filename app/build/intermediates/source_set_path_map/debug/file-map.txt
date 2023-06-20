@@ -63,9 +63,9 @@ com.codegrace.Saklo.app-jetified-foundation-layout-1.3.0-61 C:\Users\Wanjin\.gra
 com.codegrace.Saklo.app-navigation-ui-2.7.0-beta01-62 C:\Users\Wanjin\.gradle\caches\transforms-3\f8f8f0d20d39e69e107f7a1c36f564fe\transformed\navigation-ui-2.7.0-beta01\res
 com.codegrace.Saklo.app-jetified-ui-1.3.0-63 C:\Users\Wanjin\.gradle\caches\transforms-3\fabbdc36fa2789b496e84a1089f88f5a\transformed\jetified-ui-1.3.0\res
 com.codegrace.Saklo.app-navigation-common-ktx-2.7.0-beta01-64 C:\Users\Wanjin\.gradle\caches\transforms-3\fc20b0cae7e116e79622d2369f04fa34\transformed\navigation-common-ktx-2.7.0-beta01\res
-com.codegrace.Saklo.app-resValues-65 C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\build\generated\res\resValues\debug
-com.codegrace.Saklo.app-packageDebugResources-66 C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.codegrace.Saklo.app-packageDebugResources-67 C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.codegrace.Saklo.app-merged_res-68 C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\build\intermediates\merged_res\debug
-com.codegrace.Saklo.app-debug-69 C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\debug\res
-com.codegrace.Saklo.app-main-70 C:\Users\Wanjin\OneDrive\Documents\Projects\codedegrace\app\src\main\res
+com.codegrace.Saklo.app-resValues-65 C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\build\generated\res\resValues\debug
+com.codegrace.Saklo.app-packageDebugResources-66 C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.codegrace.Saklo.app-packageDebugResources-67 C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.codegrace.Saklo.app-merged_res-68 C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\build\intermediates\merged_res\debug
+com.codegrace.Saklo.app-debug-69 C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\debug\res
+com.codegrace.Saklo.app-main-70 C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\res
