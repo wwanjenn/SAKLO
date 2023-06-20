@@ -56,8 +56,7 @@
         </activity>
         <activity
             android:name="com.codegrace.Saklo.activities.AppointmentActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light" >
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -66,8 +65,7 @@
         </activity>
         <activity
             android:name="com.codegrace.Saklo.activities.RemediesActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light" >
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 

@@ -6,12 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.codegrace.Saklo.R;
@@ -21,68 +18,41 @@ import java.lang.String;
 
 public final class FragmentRegisterBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final Button btnRegister;
 
   @NonNull
-  public final EditText edRegisterEmail;
+  public final Button btnTologin;
 
   @NonNull
-  public final EditText edRegisterFname;
+  public final EditText regEmail;
 
   @NonNull
-  public final EditText edRegisterLastname;
+  public final EditText regFirstname;
 
   @NonNull
-  public final EditText edRegisterPassword;
+  public final EditText regLastname;
 
   @NonNull
-  public final Guideline guideline4;
+  public final EditText regPassword;
 
-  @NonNull
-  public final Guideline guideline5;
-
-  @NonNull
-  public final ImageView imageView6;
-
-  @NonNull
-  public final ImageView imageView7;
-
-  @NonNull
-  public final TextView tvRegister;
-
-  @NonNull
-  public final TextView tvRegister2;
-
-  @NonNull
-  public final TextView tvTologin;
-
-  private FragmentRegisterBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnRegister,
-      @NonNull EditText edRegisterEmail, @NonNull EditText edRegisterFname,
-      @NonNull EditText edRegisterLastname, @NonNull EditText edRegisterPassword,
-      @NonNull Guideline guideline4, @NonNull Guideline guideline5, @NonNull ImageView imageView6,
-      @NonNull ImageView imageView7, @NonNull TextView tvRegister, @NonNull TextView tvRegister2,
-      @NonNull TextView tvTologin) {
+  private FragmentRegisterBinding(@NonNull LinearLayout rootView, @NonNull Button btnRegister,
+      @NonNull Button btnTologin, @NonNull EditText regEmail, @NonNull EditText regFirstname,
+      @NonNull EditText regLastname, @NonNull EditText regPassword) {
     this.rootView = rootView;
     this.btnRegister = btnRegister;
-    this.edRegisterEmail = edRegisterEmail;
-    this.edRegisterFname = edRegisterFname;
-    this.edRegisterLastname = edRegisterLastname;
-    this.edRegisterPassword = edRegisterPassword;
-    this.guideline4 = guideline4;
-    this.guideline5 = guideline5;
-    this.imageView6 = imageView6;
-    this.imageView7 = imageView7;
-    this.tvRegister = tvRegister;
-    this.tvRegister2 = tvRegister2;
-    this.tvTologin = tvTologin;
+    this.btnTologin = btnTologin;
+    this.regEmail = regEmail;
+    this.regFirstname = regFirstname;
+    this.regLastname = regLastname;
+    this.regPassword = regPassword;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -113,75 +83,38 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.ed_register_email;
-      EditText edRegisterEmail = ViewBindings.findChildViewById(rootView, id);
-      if (edRegisterEmail == null) {
+      id = R.id.btn_tologin;
+      Button btnTologin = ViewBindings.findChildViewById(rootView, id);
+      if (btnTologin == null) {
         break missingId;
       }
 
-      id = R.id.ed_register_fname;
-      EditText edRegisterFname = ViewBindings.findChildViewById(rootView, id);
-      if (edRegisterFname == null) {
+      id = R.id.reg_email;
+      EditText regEmail = ViewBindings.findChildViewById(rootView, id);
+      if (regEmail == null) {
         break missingId;
       }
 
-      id = R.id.ed_register_lastname;
-      EditText edRegisterLastname = ViewBindings.findChildViewById(rootView, id);
-      if (edRegisterLastname == null) {
+      id = R.id.reg_firstname;
+      EditText regFirstname = ViewBindings.findChildViewById(rootView, id);
+      if (regFirstname == null) {
         break missingId;
       }
 
-      id = R.id.ed_register_password;
-      EditText edRegisterPassword = ViewBindings.findChildViewById(rootView, id);
-      if (edRegisterPassword == null) {
+      id = R.id.reg_lastname;
+      EditText regLastname = ViewBindings.findChildViewById(rootView, id);
+      if (regLastname == null) {
         break missingId;
       }
 
-      id = R.id.guideline4;
-      Guideline guideline4 = ViewBindings.findChildViewById(rootView, id);
-      if (guideline4 == null) {
+      id = R.id.reg_password;
+      EditText regPassword = ViewBindings.findChildViewById(rootView, id);
+      if (regPassword == null) {
         break missingId;
       }
 
-      id = R.id.guideline5;
-      Guideline guideline5 = ViewBindings.findChildViewById(rootView, id);
-      if (guideline5 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView6;
-      ImageView imageView6 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView6 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView7;
-      ImageView imageView7 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView7 == null) {
-        break missingId;
-      }
-
-      id = R.id.tv_Register;
-      TextView tvRegister = ViewBindings.findChildViewById(rootView, id);
-      if (tvRegister == null) {
-        break missingId;
-      }
-
-      id = R.id.tv_Register2;
-      TextView tvRegister2 = ViewBindings.findChildViewById(rootView, id);
-      if (tvRegister2 == null) {
-        break missingId;
-      }
-
-      id = R.id.tv_tologin;
-      TextView tvTologin = ViewBindings.findChildViewById(rootView, id);
-      if (tvTologin == null) {
-        break missingId;
-      }
-
-      return new FragmentRegisterBinding((ConstraintLayout) rootView, btnRegister, edRegisterEmail,
-          edRegisterFname, edRegisterLastname, edRegisterPassword, guideline4, guideline5,
-          imageView6, imageView7, tvRegister, tvRegister2, tvTologin);
+      return new FragmentRegisterBinding((LinearLayout) rootView, btnRegister, btnTologin, regEmail,
+          regFirstname, regLastname, regPassword);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

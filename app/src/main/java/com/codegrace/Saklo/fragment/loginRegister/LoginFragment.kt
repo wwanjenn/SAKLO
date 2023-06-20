@@ -28,7 +28,7 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
             findNavController().navigate(R.id.action_loginFragment_to_mainActivity)
         }
 
-        binding.tvToregister.setOnClickListener {
+        binding.btnToregister.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
         }
     }
