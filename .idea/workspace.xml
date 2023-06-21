@@ -9,9 +9,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61b7448f-9f86-46c2-a9e4-48dfa5db224e" name="Changes" comment="Corrected navigation of AccountOptions">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="61b7448f-9f86-46c2-a9e4-48dfa5db224e" name="Changes" comment="Added user input validation for registration text fields">
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/fragment/loginRegister/RegisterFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/fragment/loginRegister/RegisterFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_register.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687347042810</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added user input validation for registration text fields">
+      <created>1687350475490</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687350475490</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,6 +274,7 @@
     <MESSAGE value="Added try-catch block for user input validation" />
     <MESSAGE value="Minor changes to files for excluding hprof files" />
     <MESSAGE value="Corrected navigation of AccountOptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected navigation of AccountOptions" />
+    <MESSAGE value="Added user input validation for registration text fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added user input validation for registration text fields" />
   </component>
 </project>

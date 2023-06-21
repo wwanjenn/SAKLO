@@ -60,12 +60,14 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
         }
 
         if (!isValidEmail(email)) {
-            Toast.makeText(requireActivity(), "Invalid Email Address", Toast.LENGTH_SHORT).show()
+            binding.regEmail.error = "Invalid email format"
+            binding.regEmail.requestFocus()
             return false
         }
 
         if (password.length < 6) {
-            Toast.makeText(requireActivity(), "Password should be at least 6 characters", Toast.LENGTH_SHORT).show()
+            binding.regPassword.error = "Password should be at least 6 characters"
+            binding.regPassword.requestFocus()
             return false
         }
 
