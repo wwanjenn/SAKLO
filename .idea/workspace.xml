@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61b7448f-9f86-46c2-a9e4-48dfa5db224e" name="Changes" comment="Added try-catch block for user input validation">
+    <list default="true" id="61b7448f-9f86-46c2-a9e4-48dfa5db224e" name="Changes" comment="Minor changes to files for excluding hprof files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -219,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687344124544</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Minor changes to files for excluding hprof files">
+      <created>1687345289160</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687345289160</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,6 +257,7 @@
     <MESSAGE value="Initial implementation of firebase to app" />
     <MESSAGE value="Added initial login &amp; signup implementation" />
     <MESSAGE value="Added try-catch block for user input validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added try-catch block for user input validation" />
+    <MESSAGE value="Minor changes to files for excluding hprof files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes to files for excluding hprof files" />
   </component>
 </project>
