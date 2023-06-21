@@ -10,6 +10,9 @@ import androidx.navigation.fragment.findNavController
 import com.codegrace.Saklo.R
 import com.codegrace.Saklo.databinding.FragmentLoginBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
+import com.google.firebase.auth.FirebaseAuthInvalidUserException
+import com.google.firebase.auth.FirebaseUser
 
 class LoginFragment: Fragment(R.layout.fragment_login) {
     private lateinit var binding: FragmentLoginBinding
@@ -26,26 +29,59 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        firebaseAuth = FirebaseAuth.getInstance()
+
         binding.btnLogin.setOnClickListener {
             val email = binding.loginUsername.text.toString()
             val password = binding.loginPassword.text.toString()
 
             if(email.isNotEmpty() && password.isNotEmpty()){
-                firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener {
-                    if(it.isSuccessful){
-                        Toast.makeText(requireActivity(), "Successfully Logged In!", Toast.LENGTH_SHORT).show()
-                        findNavController().navigate(R.id.action_registerFragment_to_mainActivity)
-                    }else{
-                        Toast.makeText(requireActivity(), it.exception.toString(), Toast.LENGTH_LONG).show()
+                if(isValidEmail(email)) {
+                    firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener {
+                        if (it.isSuccessful) {
+                            Toast.makeText(
+                                requireActivity(),
+                                "Successfully Logged In!",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                            findNavController().navigate(R.id.action_loginFragment_to_mainActivity)
+                        } else {
+                            try {
+                                throw it.exception!!
+                            } catch (e: FirebaseAuthInvalidUserException) {
+                                // Handle invalid user exception
+                                binding.loginUsername.error = "Invalid email address. Account does not exist or is no longer valid"
+                                binding.loginUsername.requestFocus()
+                            } catch (e: FirebaseAuthInvalidCredentialsException) {
+                                // Handle invalid credentials exception
+                                binding.loginPassword.error = "Incorrect password"
+                                binding.loginPassword.requestFocus()
+                            } catch (e: Exception) {
+                                // Handle other exceptions
+                                Toast.makeText(
+                                    requireActivity(),
+                                    "Authentication failed: " + e.message,
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
+                        }
                     }
+                }else{
+                    binding.loginUsername.error = "Invalid email format"
+                    binding.loginUsername.requestFocus()
                 }
             }else{
-                Toast.makeText(requireActivity(), "Empty Fields are not allowed", Toast.LENGTH_LONG).show()
+                Toast.makeText(requireActivity(), "Empty fields are not allowed", Toast.LENGTH_LONG).show()
             }
         }
 
         binding.btnToregister.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
         }
+    }
+
+    private fun isValidEmail(email: String): Boolean {
+        val emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"
+        return email.matches(emailPattern.toRegex())
     }
 }
