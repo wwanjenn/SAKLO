@@ -10,9 +10,6 @@ import androidx.navigation.fragment.findNavController
 import com.codegrace.Saklo.R
 import com.codegrace.Saklo.databinding.FragmentRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
-import com.google.firebase.auth.FirebaseAuthInvalidUserException
-import com.google.firebase.database.DatabaseReference
 
 class RegisterFragment: Fragment(R.layout.fragment_register) {
     private lateinit var binding: FragmentRegisterBinding
