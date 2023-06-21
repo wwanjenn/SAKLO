@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.codegrace.Saklo.R
 import com.codegrace.Saklo.databinding.FragmentRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
 
 class RegisterFragment: Fragment(R.layout.fragment_register) {
     private lateinit var binding: FragmentRegisterBinding
@@ -42,6 +43,8 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
                         Toast.makeText(requireActivity(), it.exception.toString(), Toast.LENGTH_LONG).show()
                     }
                 }
+            }else{
+                Toast.makeText(requireActivity(), "Empty Fields are not allowed", Toast.LENGTH_LONG).show()
             }
         }
 
