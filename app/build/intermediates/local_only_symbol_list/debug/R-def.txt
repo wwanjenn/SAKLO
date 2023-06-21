@@ -65,10 +65,10 @@ id login_username
 id logo
 id mainActivity
 id motionLayout
+id reg_conpassword
 id reg_email
-id reg_firstname
-id reg_lastname
 id reg_password
+id reg_username
 id registerFragment
 id register_login_nav
 id saklogo

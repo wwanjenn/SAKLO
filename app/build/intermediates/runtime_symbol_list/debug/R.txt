@@ -3525,10 +3525,10 @@ int id progress_horizontal 0x7f08018a
 int id radio 0x7f08018b
 int id ratio 0x7f08018c
 int id rectangles 0x7f08018d
+int id reg_conpassword 0x7f080238
 int id reg_email 0x7f08018e
-int id reg_firstname 0x7f08018f
-int id reg_lastname 0x7f080190
 int id reg_password 0x7f080191
+int id reg_username 0x7f080239
 int id registerFragment 0x7f080192
 int id register_login_nav 0x7f080193
 int id report_drawn 0x7f080194

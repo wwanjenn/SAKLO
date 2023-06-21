@@ -24,7 +24,7 @@
             android:src="@drawable/saklogo_cropped" />
 
         <EditText
-            android:id="@+id/reg_firstname"
+            android:id="@+id/reg_username"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
@@ -33,22 +33,7 @@
             android:background="@drawable/rectangle"
             android:drawablePadding="8dp"
             android:drawableLeft="@drawable/baseline_person_24"
-            android:hint="FIRST NAME"
-            android:padding="8dp"
-            android:textColor="@color/dark_blu"
-            android:textColorHint="@color/dark_gr" />
-
-        <EditText
-            android:id="@+id/reg_lastname"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/rectangle"
-            android:drawablePadding="8dp"
-            android:drawableLeft="@drawable/baseline_person_24"
-            android:hint="LAST NAME"
+            android:hint="USERNAME"
             android:padding="8dp"
             android:textColor="@color/dark_blu"
             android:textColorHint="@color/dark_gr" />
@@ -65,6 +50,7 @@
             android:drawableLeft="@drawable/baseline_person_24"
             android:hint="EMAIL"
             android:padding="8dp"
+            android:inputType="textEmailAddress"
             android:textColor="@color/dark_blu"
             android:textColorHint="@color/dark_gr" />
 
@@ -79,6 +65,22 @@
             android:drawablePadding="8dp"
             android:drawableLeft="@drawable/baseline_lock_24"
             android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColor="@color/dark_blu"
+            android:textColorHint="@color/dark_gr" />
+
+        <EditText
+            android:id="@+id/reg_conpassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:hint="CONFIRM PASSWORD"
             android:inputType="textPassword"
             android:padding="8dp"
             android:textColor="@color/dark_blu"

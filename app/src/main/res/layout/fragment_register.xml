@@ -63,7 +63,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/rectangle"
             android:drawablePadding="8dp"
-            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawableLeft="@drawable/baseline_lock_24"
             android:hint="PASSWORD"
             android:inputType="textPassword"
             android:padding="8dp"

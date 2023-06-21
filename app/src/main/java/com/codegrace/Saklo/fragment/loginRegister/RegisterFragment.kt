@@ -35,15 +35,30 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
         binding.btnRegister.setOnClickListener {
             val email = binding.regEmail.text.toString()
             val password = binding.regPassword.text.toString()
+            var conPassword = binding.regConpassword.text.toString()
 
             if(isRegistrationInputValid(email, password)){
-                firebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener {
-                    if(it.isSuccessful){
-                        Toast.makeText(requireActivity(), "Successfully Registered!", Toast.LENGTH_SHORT).show()
-                        findNavController().navigate(R.id.action_registerFragment_to_mainActivity)
-                    }else {
-                        Toast.makeText(requireActivity(), "Registration Failed", Toast.LENGTH_SHORT).show()
-                    }
+                if(password == conPassword) {
+                    firebaseAuth.createUserWithEmailAndPassword(email, password)
+                        .addOnCompleteListener {
+                            if (it.isSuccessful) {
+                                Toast.makeText(
+                                    requireActivity(),
+                                    "Successfully Registered!",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                                findNavController().navigate(R.id.action_registerFragment_to_mainActivity)
+                            } else {
+                                Toast.makeText(
+                                    requireActivity(),
+                                    "Registration Failed",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
+                        }
+                } else {
+                    binding.regConpassword.error = "Passwords are not identical. Please try again"
+                    binding.regConpassword.requestFocus()
                 }
             }
         }

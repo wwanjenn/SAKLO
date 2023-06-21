@@ -27,27 +27,27 @@ public final class FragmentRegisterBinding implements ViewBinding {
   public final Button btnTologin;
 
   @NonNull
+  public final EditText regConpassword;
+
+  @NonNull
   public final EditText regEmail;
-
-  @NonNull
-  public final EditText regFirstname;
-
-  @NonNull
-  public final EditText regLastname;
 
   @NonNull
   public final EditText regPassword;
 
+  @NonNull
+  public final EditText regUsername;
+
   private FragmentRegisterBinding(@NonNull LinearLayout rootView, @NonNull Button btnRegister,
-      @NonNull Button btnTologin, @NonNull EditText regEmail, @NonNull EditText regFirstname,
-      @NonNull EditText regLastname, @NonNull EditText regPassword) {
+      @NonNull Button btnTologin, @NonNull EditText regConpassword, @NonNull EditText regEmail,
+      @NonNull EditText regPassword, @NonNull EditText regUsername) {
     this.rootView = rootView;
     this.btnRegister = btnRegister;
     this.btnTologin = btnTologin;
+    this.regConpassword = regConpassword;
     this.regEmail = regEmail;
-    this.regFirstname = regFirstname;
-    this.regLastname = regLastname;
     this.regPassword = regPassword;
+    this.regUsername = regUsername;
   }
 
   @Override
@@ -89,21 +89,15 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.reg_conpassword;
+      EditText regConpassword = ViewBindings.findChildViewById(rootView, id);
+      if (regConpassword == null) {
+        break missingId;
+      }
+
       id = R.id.reg_email;
       EditText regEmail = ViewBindings.findChildViewById(rootView, id);
       if (regEmail == null) {
-        break missingId;
-      }
-
-      id = R.id.reg_firstname;
-      EditText regFirstname = ViewBindings.findChildViewById(rootView, id);
-      if (regFirstname == null) {
-        break missingId;
-      }
-
-      id = R.id.reg_lastname;
-      EditText regLastname = ViewBindings.findChildViewById(rootView, id);
-      if (regLastname == null) {
         break missingId;
       }
 
@@ -113,8 +107,14 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentRegisterBinding((LinearLayout) rootView, btnRegister, btnTologin, regEmail,
-          regFirstname, regLastname, regPassword);
+      id = R.id.reg_username;
+      EditText regUsername = ViewBindings.findChildViewById(rootView, id);
+      if (regUsername == null) {
+        break missingId;
+      }
+
+      return new FragmentRegisterBinding((LinearLayout) rootView, btnRegister, btnTologin,
+          regConpassword, regEmail, regPassword, regUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

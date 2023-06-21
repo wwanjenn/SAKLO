@@ -3526,10 +3526,10 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id reg_conpassword
 id reg_email
-id reg_firstname
-id reg_lastname
 id reg_password
+id reg_username
 id registerFragment
 id register_login_nav
 id report_drawn
