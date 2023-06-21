@@ -30,14 +30,19 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button btnHerbal;
 
   @NonNull
+  public final Button btnSignout;
+
+  @NonNull
   public final TextView textView;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnAppoint,
-      @NonNull Button btnDrugs, @NonNull Button btnHerbal, @NonNull TextView textView) {
+      @NonNull Button btnDrugs, @NonNull Button btnHerbal, @NonNull Button btnSignout,
+      @NonNull TextView textView) {
     this.rootView = rootView;
     this.btnAppoint = btnAppoint;
     this.btnDrugs = btnDrugs;
     this.btnHerbal = btnHerbal;
+    this.btnSignout = btnSignout;
     this.textView = textView;
   }
 
@@ -86,6 +91,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnSignout;
+      Button btnSignout = ViewBindings.findChildViewById(rootView, id);
+      if (btnSignout == null) {
+        break missingId;
+      }
+
       id = R.id.textView;
       TextView textView = ViewBindings.findChildViewById(rootView, id);
       if (textView == null) {
@@ -93,7 +104,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, btnAppoint, btnDrugs, btnHerbal,
-          textView);
+          btnSignout, textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

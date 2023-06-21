@@ -3246,6 +3246,7 @@ int id browser_actions_menu_view 0x7f080073
 int id btnAppoint 0x7f080074
 int id btnDrugs 0x7f080075
 int id btnHerbal 0x7f080076
+int id btnSignout 0x7f08023a
 int id btn_intro 0x7f080077
 int id btn_login 0x7f080078
 int id btn_register 0x7f080079

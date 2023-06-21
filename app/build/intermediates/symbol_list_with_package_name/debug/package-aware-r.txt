@@ -3247,6 +3247,7 @@ id browser_actions_menu_view
 id btnAppoint
 id btnDrugs
 id btnHerbal
+id btnSignout
 id btn_intro
 id btn_login
 id btn_register

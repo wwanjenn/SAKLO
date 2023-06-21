@@ -5,11 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.codegrace.Saklo.R
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var firebaseAuth:FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        firebaseAuth = FirebaseAuth.getInstance()
 
         val btnAppoint = findViewById<Button>(R.id.btnAppoint)
         btnAppoint.setOnClickListener {
@@ -25,6 +29,13 @@ class MainActivity : AppCompatActivity() {
         btnHerbal.setOnClickListener {
             val intentHerbal = Intent(this, RemediesActivity::class.java)
             startActivity(intentHerbal)
+        }
+
+        val btnLogout = findViewById<Button>(R.id.btnSignout)
+        btnLogout.setOnClickListener {
+            firebaseAuth.signOut();
+            val intentLogout = Intent(this, RegisterLoginActivity::class.java)
+            startActivity(intentLogout)
         }
     }
 }

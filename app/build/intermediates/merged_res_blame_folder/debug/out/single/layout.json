@@ -12,10 +12,6 @@
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\fragment_introduction.xml"
     },
     {
-        "merged": "com.codegrace.Saklo.app-mergeDebugResources-73:/layout/fragment_register.xml",
-        "source": "com.codegrace.Saklo.app-main-76:/layout/fragment_register.xml"
-    },
-    {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-73:\\layout\\activity_main.xml",
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\activity_main.xml"
     },
@@ -34,6 +30,10 @@
     {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-73:\\layout\\fragment_accountoptions.xml",
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\fragment_accountoptions.xml"
+    },
+    {
+        "merged": "com.codegrace.Saklo.app-mergeDebugResources-73:/layout/activity_main.xml",
+        "source": "com.codegrace.Saklo.app-main-76:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-73:\\layout\\activity_appointment.xml",

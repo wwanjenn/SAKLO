@@ -100,6 +100,10 @@
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\vector_login_1.jpg"
     },
     {
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/layout_activity_main.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/layout/activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_rectangle_button.xml.flat",
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\rectangle_button.xml"
     },
@@ -154,10 +158,6 @@
     {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\layout_fragment_register.xml.flat",
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\fragment_register.xml"
-    },
-    {
-        "merged": "com.codegrace.Saklo.app-merged_res-74:/layout_fragment_register.xml.flat",
-        "source": "com.codegrace.Saklo.app-main-76:/layout/fragment_register.xml"
     },
     {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable-v24_ic_launcher_foreground.xml.flat",
