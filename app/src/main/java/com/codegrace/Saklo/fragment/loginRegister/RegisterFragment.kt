@@ -10,6 +10,8 @@ import androidx.navigation.fragment.findNavController
 import com.codegrace.Saklo.R
 import com.codegrace.Saklo.databinding.FragmentRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
+import com.google.firebase.auth.FirebaseAuthInvalidUserException
 import com.google.firebase.database.DatabaseReference
 
 class RegisterFragment: Fragment(R.layout.fragment_register) {
@@ -34,22 +36,44 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
             val email = binding.regEmail.text.toString()
             val password = binding.regPassword.text.toString()
 
-            if(email.isNotEmpty() && password.isNotEmpty()){
+            if(isRegistrationInputValid(email, password)){
                 firebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener {
                     if(it.isSuccessful){
                         Toast.makeText(requireActivity(), "Successfully Registered!", Toast.LENGTH_SHORT).show()
                         findNavController().navigate(R.id.action_registerFragment_to_mainActivity)
-                    }else{
-                        Toast.makeText(requireActivity(), it.exception.toString(), Toast.LENGTH_LONG).show()
+                    }else {
+                        Toast.makeText(requireActivity(), "Registration Failed", Toast.LENGTH_SHORT).show()
                     }
                 }
-            }else{
-                Toast.makeText(requireActivity(), "Empty Fields are not allowed", Toast.LENGTH_LONG).show()
             }
         }
 
         binding.btnTologin.setOnClickListener {
             findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
         }
+    }
+
+    private fun isRegistrationInputValid(email: String, password: String): Boolean {
+        if (email.isEmpty() || password.isEmpty()) {
+            Toast.makeText(requireActivity(), "Empty fields are not allowed", Toast.LENGTH_LONG).show()
+            return false
+        }
+
+        if (!isValidEmail(email)) {
+            Toast.makeText(requireActivity(), "Invalid Email Address", Toast.LENGTH_SHORT).show()
+            return false
+        }
+
+        if (password.length < 6) {
+            Toast.makeText(requireActivity(), "Password should be at least 6 characters", Toast.LENGTH_SHORT).show()
+            return false
+        }
+
+        return true
+    }
+
+    private fun isValidEmail(email: String): Boolean {
+        val emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"
+        return email.matches(emailPattern.toRegex())
     }
 }
