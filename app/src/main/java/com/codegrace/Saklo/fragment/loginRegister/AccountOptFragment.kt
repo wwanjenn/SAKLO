@@ -25,11 +25,11 @@ class AccountOptFragment: Fragment(R.layout.fragment_accountoptions) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnTologin.setOnClickListener {
-            findNavController().navigate(R.id.action_accountOptFragment_to_loginFragment)
+            findNavController().navigate(R.id.action_accountOptFragment_to_registerFragment)
         }
 
         binding.btnToregister.setOnClickListener {
-            findNavController().navigate(R.id.action_accountOptFragment_to_registerFragment)
+            findNavController().navigate(R.id.action_accountOptFragment_to_loginFragment)
         }
     }
 }

@@ -42,6 +42,7 @@ id backgroundLayout
 id btnAppoint
 id btnDrugs
 id btnHerbal
+id btnSignout
 id btn_intro
 id btn_login
 id btn_register
@@ -65,10 +66,10 @@ id login_username
 id logo
 id mainActivity
 id motionLayout
+id reg_conpassword
 id reg_email
-id reg_firstname
-id reg_lastname
 id reg_password
+id reg_username
 id registerFragment
 id register_login_nav
 id saklogo
@@ -92,6 +93,13 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation register_login_nav
 string app_name
+string default_web_client_id
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
+string project_id
 style Base.Theme.Saklo
 style SplashTheme
 style Theme.AnimatedSplashScreen
