@@ -1462,16 +1462,12 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
-color drk_prm_green
-color drk_scd_navyblue
 color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
-color lgt_neut_gray
-color lgt_prm_green
 color light_blu
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
@@ -3104,6 +3100,7 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable new_vector_login
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3530,7 +3527,6 @@ id rectangles
 id reg_conpassword
 id reg_email
 id reg_password
-id reg_username
 id registerFragment
 id register_login_nav
 id report_drawn
@@ -4410,6 +4406,7 @@ style CardView_Light
 style DialogWindowTheme
 style FloatingDialogTheme
 style FloatingDialogWindowTheme
+style GeneralTheme
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Animation
 style MaterialAlertDialog_Material3_Body_Text

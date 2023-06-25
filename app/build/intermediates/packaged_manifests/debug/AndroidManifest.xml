@@ -44,7 +44,8 @@
         </activity>
         <activity
             android:name="com.codegrace.Saklo.activities.RegisterLoginActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:theme="@style/login_Theme" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -71,12 +72,8 @@
         </activity>
         <activity
             android:name="com.codegrace.Saklo.activities.RemediesActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            android:exported="true"
+            android:theme="@style/GeneralTheme" >
         </activity>
         <activity
             android:name="androidx.compose.ui.tooling.PreviewActivity"

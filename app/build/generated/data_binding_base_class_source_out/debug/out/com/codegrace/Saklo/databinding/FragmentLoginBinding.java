@@ -4,11 +4,11 @@ package com.codegrace.Saklo.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.codegrace.Saklo.R;
@@ -18,13 +18,13 @@ import java.lang.String;
 
 public final class FragmentLoginBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnLogin;
+  public final AppCompatButton btnLogin;
 
   @NonNull
-  public final Button btnToregister;
+  public final AppCompatButton btnToregister;
 
   @NonNull
   public final EditText loginPassword;
@@ -32,9 +32,9 @@ public final class FragmentLoginBinding implements ViewBinding {
   @NonNull
   public final EditText loginUsername;
 
-  private FragmentLoginBinding(@NonNull LinearLayout rootView, @NonNull Button btnLogin,
-      @NonNull Button btnToregister, @NonNull EditText loginPassword,
-      @NonNull EditText loginUsername) {
+  private FragmentLoginBinding(@NonNull ConstraintLayout rootView,
+      @NonNull AppCompatButton btnLogin, @NonNull AppCompatButton btnToregister,
+      @NonNull EditText loginPassword, @NonNull EditText loginUsername) {
     this.rootView = rootView;
     this.btnLogin = btnLogin;
     this.btnToregister = btnToregister;
@@ -44,7 +44,7 @@ public final class FragmentLoginBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -70,13 +70,13 @@ public final class FragmentLoginBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.btn_login;
-      Button btnLogin = ViewBindings.findChildViewById(rootView, id);
+      AppCompatButton btnLogin = ViewBindings.findChildViewById(rootView, id);
       if (btnLogin == null) {
         break missingId;
       }
 
       id = R.id.btn_toregister;
-      Button btnToregister = ViewBindings.findChildViewById(rootView, id);
+      AppCompatButton btnToregister = ViewBindings.findChildViewById(rootView, id);
       if (btnToregister == null) {
         break missingId;
       }
@@ -93,7 +93,7 @@ public final class FragmentLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentLoginBinding((LinearLayout) rootView, btnLogin, btnToregister,
+      return new FragmentLoginBinding((ConstraintLayout) rootView, btnLogin, btnToregister,
           loginPassword, loginUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);

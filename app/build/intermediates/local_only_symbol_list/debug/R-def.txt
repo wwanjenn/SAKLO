@@ -4,10 +4,6 @@ color almost_wh
 color black
 color dark_blu
 color dark_gr
-color drk_prm_green
-color drk_scd_navyblue
-color lgt_neut_gray
-color lgt_prm_green
 color light_blu
 color teal_200
 color teal_700
@@ -21,6 +17,7 @@ drawable edit_text_border
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable logo
+drawable new_vector_login
 drawable rectangle
 drawable rectangle_button
 drawable rectangle_button1
@@ -69,7 +66,6 @@ id motionLayout
 id reg_conpassword
 id reg_email
 id reg_password
-id reg_username
 id registerFragment
 id register_login_nav
 id saklogo
@@ -101,6 +97,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string project_id
 style Base.Theme.Saklo
+style GeneralTheme
 style SplashTheme
 style Theme.AnimatedSplashScreen
 style Theme.Saklo

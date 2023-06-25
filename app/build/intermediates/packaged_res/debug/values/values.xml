@@ -4,10 +4,6 @@
     <color name="black">#FF000000</color>
     <color name="dark_blu">#5171FF</color>
     <color name="dark_gr">#8B8B8B</color>
-    <color name="drk_prm_green">#067C5A</color>
-    <color name="drk_scd_navyblue">#1D1D35</color>
-    <color name="lgt_neut_gray">#D9D9D9</color>
-    <color name="lgt_prm_green">#00A872</color>
     <color name="light_blu">#D4F5FF</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
@@ -22,9 +18,13 @@
     <string name="project_id" translatable="false">saklo-a4e3a</string>
     <style name="Base.Theme.Saklo" parent="Theme.Material3.DayNight.NoActionBar">
     </style>
+    <style name="GeneralTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/white</item>
+        <item name="android:windowBackground">@color/almost_wh</item>
+    </style>
     <style name="SplashTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="android:windowBackground">@color/dark_blu</item>
-        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/light_blu</item>
     </style>
     <style name="Theme.AnimatedSplashScreen" parent="Theme.AppCompat.DayNight.NoActionBar">
         
@@ -32,11 +32,11 @@
         <item name="colorPrimaryVariant">@color/light_blu</item>
         <item name="colorOnPrimary">@color/black</item>
         
-        <item name="colorSecondary">@color/dark_blu</item>
-        <item name="colorSecondaryVariant">@color/light_blu</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/dark_gr</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/almost_wh</item>
         
-        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimary</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/dark_blu</item>
         
     </style>
     <style name="Theme.Saklo" parent="Base.Theme.Saklo">
@@ -44,7 +44,7 @@
     </style>
     <style name="login_Theme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="android:windowBackground">@color/light_blu</item>
-        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/black</item>
     </style>
     <style name="primaryBtn" parent="Theme.Saklo">
         <item name="backgroundTint">@color/dark_blu</item>
@@ -55,6 +55,6 @@
         <item name="backgroundTint">#666666</item>
     </style>
     <style name="tertiaryBtn" parent="primaryBtn">
-        <item name="backgroundTint">@color/drk_prm_green</item>
+        <item name="backgroundTint">@color/dark_blu</item>
     </style>
 </resources>

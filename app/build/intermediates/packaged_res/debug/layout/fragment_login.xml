@@ -1,78 +1,83 @@
-
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:background="@color/light_blu"
-    tools:context=".fragment.loginRegister.LoginFragment">
-
+    android:layout_height="match_parent">
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_gravity="center_horizontal"
-        android:padding="24dp"
-        android:background="@color/light_blu">
+        android:gravity="center"
+        android:background="@color/light_blu"
+        tools:context=".fragment.loginRegister.LoginFragment">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="104dp"
-            android:src="@drawable/saklogo_cropped" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@color/light_blu">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:id="@+id/login_username"
-            android:background="@drawable/rectangle"
-            android:layout_marginTop="40dp"
-            android:padding="8dp"
-            android:hint="USERNAME"
-            android:drawableLeft="@drawable/baseline_person_24"
-            android:textColorHint="@color/dark_gr"
-            android:textColor="@color/dark_blu"
-            android:drawablePadding="8dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:id="@+id/login_password"
-            android:background="@drawable/rectangle"
-            android:layout_marginTop="20dp"
-            android:inputType="textPassword"
-            android:padding="8dp"
-            android:hint="PASSWORD"
-            android:textColorHint="@color/dark_gr"
-            android:drawableLeft="@drawable/baseline_lock_24"
-            android:textColor="@color/dark_blu"
-            android:drawablePadding="8dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Login"
-            android:textColor="@color/light_blu"
-            android:id="@+id/btn_login"
-            android:textSize="18sp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/rectangle_dark_blu"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="REGISTER NOW"
-            android:textColor="@color/light_blu"
-            android:id="@+id/btn_toregister"
-            android:textSize="18sp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/rectangle_dark_gr"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="104dp"
+                android:src="@drawable/saklogo_cropped" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/login_username"
+                android:background="@drawable/rectangle"
+                android:layout_marginTop="40dp"
+                android:padding="8dp"
+                android:hint="USERNAME"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:textColorHint="@color/dark_gr"
+                android:textColor="@color/dark_blu"
+                android:drawablePadding="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/login_password"
+                android:background="@drawable/rectangle"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:hint="PASSWORD"
+                android:textColorHint="@color/dark_gr"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:textColor="@color/dark_blu"
+                android:drawablePadding="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Login"
+                android:textColor="@color/light_blu"
+                android:id="@+id/btn_login"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rectangle_dark_blu"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="REGISTER NOW"
+                android:textColor="@color/light_blu"
+                android:id="@+id/btn_toregister"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_dark_gr"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

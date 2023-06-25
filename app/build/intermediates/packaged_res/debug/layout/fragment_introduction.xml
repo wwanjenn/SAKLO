@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/light_blu">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_intro1"
@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:text="Get Started"
         android:layout_marginTop="150dp"
+        android:background="@drawable/rectangle_dark_blu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline_intro2"
         app:layout_constraintStart_toStartOf="@+id/guideline_intro1"

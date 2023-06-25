@@ -6,10 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.codegrace.Saklo.R;
@@ -19,7 +19,7 @@ import java.lang.String;
 
 public final class ActivityRemediesBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final ImageView hamburger;
@@ -30,7 +30,7 @@ public final class ActivityRemediesBinding implements ViewBinding {
   @NonNull
   public final Toolbar toolbar;
 
-  private ActivityRemediesBinding(@NonNull LinearLayout rootView, @NonNull ImageView hamburger,
+  private ActivityRemediesBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView hamburger,
       @NonNull EditText hrSearchbar, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.hamburger = hamburger;
@@ -40,7 +40,7 @@ public final class ActivityRemediesBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -83,7 +83,8 @@ public final class ActivityRemediesBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityRemediesBinding((LinearLayout) rootView, hamburger, hrSearchbar, toolbar);
+      return new ActivityRemediesBinding((ConstraintLayout) rootView, hamburger, hrSearchbar,
+          toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

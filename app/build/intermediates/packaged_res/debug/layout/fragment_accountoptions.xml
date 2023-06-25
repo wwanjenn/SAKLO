@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/light_blu">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_accopt1"
@@ -20,25 +20,28 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.91" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_toregister"
         style="@style/primaryBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:text="Login"
+        android:text="LOGIN"
+        android:background="@drawable/rectangle_dark_blu"
         app:layout_constraintEnd_toStartOf="@+id/guideline_accopt2"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/guideline_accopt1"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_tologin"
         style="@style/secondaryBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="45dp"
-        android:text="Sign-up"
+        android:text="SIGN-UP"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_dark_gr"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline_accopt2"
         app:layout_constraintHorizontal_bias="0.495"
@@ -69,7 +72,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/vector_login_1" />
+        app:srcCompat="@drawable/new_vector_login" />
 
     <TextView
         android:id="@+id/tv_accopt2"

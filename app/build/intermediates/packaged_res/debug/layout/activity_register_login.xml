@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.RegisterLoginActivity"
-    android:background="@color/white">
+    tools:context=".activities.RegisterLoginActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
@@ -15,6 +14,7 @@
         app:defaultNavHost="true"
         app:navGraph="@navigation/register_login_nav"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"/>
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

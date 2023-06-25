@@ -24,21 +24,6 @@
             android:src="@drawable/saklogo_cropped" />
 
         <EditText
-            android:id="@+id/reg_username"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/rectangle"
-            android:drawablePadding="8dp"
-            android:drawableLeft="@drawable/baseline_person_24"
-            android:hint="USERNAME"
-            android:padding="8dp"
-            android:textColor="@color/dark_blu"
-            android:textColorHint="@color/dark_gr" />
-
-        <EditText
             android:id="@+id/reg_email"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -86,7 +71,7 @@
             android:textColor="@color/dark_blu"
             android:textColorHint="@color/dark_gr" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_register"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -98,7 +83,7 @@
             android:textColor="@color/light_blu"
             android:textSize="18sp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_tologin"
             android:layout_width="match_parent"
             android:layout_height="50dp"

@@ -4,11 +4,11 @@ package com.codegrace.Saklo.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
@@ -23,10 +23,10 @@ public final class FragmentAccountoptionsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnTologin;
+  public final AppCompatButton btnTologin;
 
   @NonNull
-  public final Button btnToregister;
+  public final AppCompatButton btnToregister;
 
   @NonNull
   public final Guideline guidelineAccopt1;
@@ -47,7 +47,7 @@ public final class FragmentAccountoptionsBinding implements ViewBinding {
   public final TextView tvAccopt2;
 
   private FragmentAccountoptionsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnTologin, @NonNull Button btnToregister,
+      @NonNull AppCompatButton btnTologin, @NonNull AppCompatButton btnToregister,
       @NonNull Guideline guidelineAccopt1, @NonNull Guideline guidelineAccopt2,
       @NonNull ImageView imageView2, @NonNull ImageView imageView3, @NonNull TextView tvAccopt1,
       @NonNull TextView tvAccopt2) {
@@ -90,13 +90,13 @@ public final class FragmentAccountoptionsBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.btn_tologin;
-      Button btnTologin = ViewBindings.findChildViewById(rootView, id);
+      AppCompatButton btnTologin = ViewBindings.findChildViewById(rootView, id);
       if (btnTologin == null) {
         break missingId;
       }
 
       id = R.id.btn_toregister;
-      Button btnToregister = ViewBindings.findChildViewById(rootView, id);
+      AppCompatButton btnToregister = ViewBindings.findChildViewById(rootView, id);
       if (btnToregister == null) {
         break missingId;
       }
