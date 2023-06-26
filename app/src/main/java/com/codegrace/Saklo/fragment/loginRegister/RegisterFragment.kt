@@ -1,7 +1,6 @@
 package com.codegrace.Saklo.fragment.loginRegister
 
 import android.os.Bundle
-import android.view.ContextThemeWrapper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,8 +20,7 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val themedInflater = inflater.cloneInContext(ContextThemeWrapper(requireContext(), R.style.login_Theme))
-        binding = FragmentRegisterBinding.inflate(themedInflater)
+        binding = FragmentRegisterBinding.inflate(inflater)
         return binding.root
     }
 

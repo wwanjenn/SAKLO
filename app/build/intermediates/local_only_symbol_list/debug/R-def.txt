@@ -70,7 +70,6 @@ id registerFragment
 id register_login_nav
 id saklogo
 id start
-id textView
 id titleTextView
 id toolbar
 id tv_accopt1

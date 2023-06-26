@@ -49,10 +49,10 @@
             android:layout_marginTop="20dp"
             android:padding="8dp"
             android:drawableLeft="@drawable/baseline_square_24"
-            android:hint="HANAPIN"
+            android:hint="SEARCH"
             android:textColorHint="@color/dark_gr"
             android:drawableRight="@drawable/baseline_search_24"
-            android:textColor="@color/dark_blu"
+            android:textColor="@color/dark_gr"
             android:drawablePadding="8dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"/>
@@ -60,7 +60,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="MGA REMEDYO SA BAHAY"
+            android:text="HOME REMEDIES"
             android:textColor="@color/dark_blu"
             android:textSize="20dp"
             android:textAlignment="center"

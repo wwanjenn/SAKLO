@@ -2,10 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:padding="24dp"
             android:background="@color/light_blu">
 
@@ -33,10 +33,10 @@
                 android:background="@drawable/rectangle"
                 android:layout_marginTop="40dp"
                 android:padding="8dp"
-                android:hint="USERNAME"
+                android:hint="EMAIL"
                 android:drawableLeft="@drawable/baseline_person_24"
                 android:textColorHint="@color/dark_gr"
-                android:textColor="@color/dark_blu"
+                android:textColor="@color/dark_gr"
                 android:drawablePadding="8dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"/>
@@ -51,7 +51,7 @@
                 android:hint="PASSWORD"
                 android:textColorHint="@color/dark_gr"
                 android:drawableLeft="@drawable/baseline_lock_24"
-                android:textColor="@color/dark_blu"
+                android:textColor="@color/dark_gr"
                 android:drawablePadding="8dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"/>

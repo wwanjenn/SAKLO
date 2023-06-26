@@ -4,11 +4,11 @@ package com.codegrace.Saklo.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
@@ -23,7 +23,7 @@ public final class FragmentIntroductionBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnIntro;
+  public final AppCompatButton btnIntro;
 
   @NonNull
   public final Guideline guidelineIntro1;
@@ -37,9 +37,9 @@ public final class FragmentIntroductionBinding implements ViewBinding {
   @NonNull
   public final TextView tvIntro;
 
-  private FragmentIntroductionBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnIntro,
-      @NonNull Guideline guidelineIntro1, @NonNull Guideline guidelineIntro2,
-      @NonNull ImageView imageView, @NonNull TextView tvIntro) {
+  private FragmentIntroductionBinding(@NonNull ConstraintLayout rootView,
+      @NonNull AppCompatButton btnIntro, @NonNull Guideline guidelineIntro1,
+      @NonNull Guideline guidelineIntro2, @NonNull ImageView imageView, @NonNull TextView tvIntro) {
     this.rootView = rootView;
     this.btnIntro = btnIntro;
     this.guidelineIntro1 = guidelineIntro1;
@@ -76,7 +76,7 @@ public final class FragmentIntroductionBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.btn_intro;
-      Button btnIntro = ViewBindings.findChildViewById(rootView, id);
+      AppCompatButton btnIntro = ViewBindings.findChildViewById(rootView, id);
       if (btnIntro == null) {
         break missingId;
       }
