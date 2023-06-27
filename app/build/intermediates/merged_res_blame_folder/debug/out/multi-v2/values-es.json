@@ -4,24 +4,7 @@
             "outputFile": "com.codegrace.Saklo.app-mergeDebugResources-72:/values-es/values-es.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jolyn\\.gradle\\caches\\transforms-3\\58a3236211dd9a75a05b7c10475043ec\\transformed\\core-1.10.1\\res\\values-es\\values-es.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,154,256,356,454,561,667,787",
-                        "endColumns": "98,101,99,97,106,105,119,100",
-                        "endOffsets": "149,251,351,449,556,662,782,883"
-                    },
-                    "to": {
-                        "startLines": "38,39,40,41,42,43,44,144",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3503,3602,3704,3804,3902,4009,4115,13385",
-                        "endColumns": "98,101,99,97,106,105,119,100",
-                        "endOffsets": "3597,3699,3799,3897,4004,4110,4230,13481"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\jolyn\\.gradle\\caches\\transforms-3\\68aaad20322574ecb89bd4ab9c775bca\\transformed\\jetified-play-services-base-18.1.0\\res\\values-es\\values.xml",
+                    "source": "C:\\Users\\Wanjin\\.gradle\\caches\\transforms-3\\68aaad20322574ecb89bd4ab9c775bca\\transformed\\jetified-play-services-base-18.1.0\\res\\values-es\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\jolyn\\.gradle\\caches\\transforms-3\\d7dc6b6eba9ed2a58ca63fdaba057aa6\\transformed\\jetified-ui-1.3.0\\res\\values-es\\values-es.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,201,283,381,484,573,652,745,837,924,997,1067,1153,1244,1321,1391",
-                        "endColumns": "95,81,97,102,88,78,92,91,86,72,69,85,90,76,69,120",
-                        "endOffsets": "196,278,376,479,568,647,740,832,919,992,1062,1148,1239,1316,1386,1507"
-                    },
-                    "to": {
-                        "startLines": "48,49,70,71,73,81,82,135,136,137,138,140,141,143,145,146",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "4542,4638,7242,7340,7526,8255,8334,12643,12735,12822,12895,13048,13134,13308,13486,13556",
-                        "endColumns": "95,81,97,102,88,78,92,91,86,72,69,85,90,76,69,120",
-                        "endOffsets": "4633,4715,7335,7438,7610,8329,8422,12730,12817,12890,12960,13129,13220,13380,13551,13672"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\jolyn\\.gradle\\caches\\transforms-3\\d61992d651528b913d6818c9bc039be8\\transformed\\navigation-ui-2.7.0-beta01\\res\\values-es\\values-es.xml",
+                    "source": "C:\\Users\\Wanjin\\.gradle\\caches\\transforms-3\\d61992d651528b913d6818c9bc039be8\\transformed\\navigation-ui-2.7.0-beta01\\res\\values-es\\values-es.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -72,7 +38,41 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\jolyn\\.gradle\\caches\\transforms-3\\968366fb43dca869224e484da981ffab\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-es\\values.xml",
+                    "source": "C:\\Users\\Wanjin\\.gradle\\caches\\transforms-3\\63bb8f9b029145b7ed371e6399e4f172\\transformed\\browser-1.4.0\\res\\values-es\\values-es.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,162,263,378",
+                        "endColumns": "106,100,114,104",
+                        "endOffsets": "157,258,373,478"
+                    },
+                    "to": {
+                        "startLines": "69,77,78,79",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "7135,7853,7954,8069",
+                        "endColumns": "106,100,114,104",
+                        "endOffsets": "7237,7949,8064,8169"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Wanjin\\.gradle\\caches\\transforms-3\\11f32e0af2ee364dc1216ae7154a5c00\\transformed\\jetified-material3-1.0.0\\res\\values-es\\values-es.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,133,216",
+                        "endColumns": "77,82,77",
+                        "endOffsets": "128,211,289"
+                    },
+                    "to": {
+                        "startLines": "50,72,75",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "4720,7443,7680",
+                        "endColumns": "77,82,77",
+                        "endOffsets": "4793,7521,7753"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Wanjin\\.gradle\\caches\\transforms-3\\968366fb43dca869224e484da981ffab\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-es\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -89,7 +89,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\jolyn\\.gradle\\caches\\transforms-3\\b2345dcf6bbba98e835132d0d833ae49\\transformed\\material-1.9.0\\res\\values-es\\values-es.xml",
+                    "source": "C:\\Users\\Wanjin\\.gradle\\caches\\transforms-3\\b2345dcf6bbba98e835132d0d833ae49\\transformed\\material-1.9.0\\res\\values-es\\values-es.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -108,24 +108,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\jolyn\\.gradle\\caches\\transforms-3\\11f32e0af2ee364dc1216ae7154a5c00\\transformed\\jetified-material3-1.0.0\\res\\values-es\\values-es.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,133,216",
-                        "endColumns": "77,82,77",
-                        "endOffsets": "128,211,289"
-                    },
-                    "to": {
-                        "startLines": "50,72,75",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "4720,7443,7680",
-                        "endColumns": "77,82,77",
-                        "endOffsets": "4793,7521,7753"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\jolyn\\.gradle\\caches\\transforms-3\\b14bbecb4e374e7fae985da6b376b60d\\transformed\\appcompat-1.6.1\\res\\values-es\\values-es.xml",
+                    "source": "C:\\Users\\Wanjin\\.gradle\\caches\\transforms-3\\b14bbecb4e374e7fae985da6b376b60d\\transformed\\appcompat-1.6.1\\res\\values-es\\values-es.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -142,20 +125,37 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\jolyn\\.gradle\\caches\\transforms-3\\63bb8f9b029145b7ed371e6399e4f172\\transformed\\browser-1.4.0\\res\\values-es\\values-es.xml",
+                    "source": "C:\\Users\\Wanjin\\.gradle\\caches\\transforms-3\\d7dc6b6eba9ed2a58ca63fdaba057aa6\\transformed\\jetified-ui-1.3.0\\res\\values-es\\values-es.xml",
                     "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,162,263,378",
-                        "endColumns": "106,100,114,104",
-                        "endOffsets": "157,258,373,478"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,201,283,381,484,573,652,745,837,924,997,1067,1153,1244,1321,1391",
+                        "endColumns": "95,81,97,102,88,78,92,91,86,72,69,85,90,76,69,120",
+                        "endOffsets": "196,278,376,479,568,647,740,832,919,992,1062,1148,1239,1316,1386,1507"
                     },
                     "to": {
-                        "startLines": "69,77,78,79",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "7135,7853,7954,8069",
-                        "endColumns": "106,100,114,104",
-                        "endOffsets": "7237,7949,8064,8169"
+                        "startLines": "48,49,70,71,73,81,82,135,136,137,138,140,141,143,145,146",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "4542,4638,7242,7340,7526,8255,8334,12643,12735,12822,12895,13048,13134,13308,13486,13556",
+                        "endColumns": "95,81,97,102,88,78,92,91,86,72,69,85,90,76,69,120",
+                        "endOffsets": "4633,4715,7335,7438,7610,8329,8422,12730,12817,12890,12960,13129,13220,13380,13551,13672"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Wanjin\\.gradle\\caches\\transforms-3\\58a3236211dd9a75a05b7c10475043ec\\transformed\\core-1.10.1\\res\\values-es\\values-es.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,154,256,356,454,561,667,787",
+                        "endColumns": "98,101,99,97,106,105,119,100",
+                        "endOffsets": "149,251,351,449,556,662,782,883"
+                    },
+                    "to": {
+                        "startLines": "38,39,40,41,42,43,44,144",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3503,3602,3704,3804,3902,4009,4115,13385",
+                        "endColumns": "98,101,99,97,106,105,119,100",
+                        "endOffsets": "3597,3699,3799,3897,4004,4110,4230,13481"
                     }
                 }
             ]

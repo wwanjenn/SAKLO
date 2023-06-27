@@ -13,7 +13,10 @@ color teal_200
 color teal_700
 color white
 drawable baseline_dehaze_24
+drawable baseline_healing_24
+drawable baseline_home_24
 drawable baseline_lock_24
+drawable baseline_medical_services_24
 drawable baseline_person_24
 drawable baseline_search_24
 drawable baseline_square_24
@@ -39,9 +42,10 @@ id action_loginFragment_to_registerFragment
 id action_registerFragment_to_loginFragment
 id action_registerFragment_to_mainActivity
 id backgroundLayout
+id bottomNav
 id btnAppoint
-id btnDrugs
-id btnHerbal
+id btnHome
+id btnRemedies
 id btnSignout
 id btn_intro
 id btn_login
@@ -74,7 +78,6 @@ id registerFragment
 id register_login_nav
 id saklogo
 id start
-id textView
 id titleTextView
 id toolbar
 id tv_accopt1
@@ -82,6 +85,7 @@ id tv_accopt2
 id tv_intro
 layout activity_appointment
 layout activity_main
+layout activity_nav_bar
 layout activity_register_login
 layout activity_remedies
 layout activity_splash
@@ -89,6 +93,7 @@ layout fragment_accountoptions
 layout fragment_introduction
 layout fragment_login
 layout fragment_register
+menu nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation register_login_nav

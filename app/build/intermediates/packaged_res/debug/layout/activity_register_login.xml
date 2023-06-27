@@ -13,8 +13,9 @@
         android:layout_width="409dp"
         android:layout_height="729dp"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/register_login_nav"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/register_login_nav" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
