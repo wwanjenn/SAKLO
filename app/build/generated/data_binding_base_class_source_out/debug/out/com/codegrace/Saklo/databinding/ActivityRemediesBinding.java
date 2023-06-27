@@ -5,9 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
@@ -22,19 +22,19 @@ public final class ActivityRemediesBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView hamburger;
+  public final EditText hrSearchbar;
 
   @NonNull
-  public final EditText hrSearchbar;
+  public final AppCompatButton profile;
 
   @NonNull
   public final Toolbar toolbar;
 
-  private ActivityRemediesBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView hamburger,
-      @NonNull EditText hrSearchbar, @NonNull Toolbar toolbar) {
+  private ActivityRemediesBinding(@NonNull ConstraintLayout rootView, @NonNull EditText hrSearchbar,
+      @NonNull AppCompatButton profile, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
-    this.hamburger = hamburger;
     this.hrSearchbar = hrSearchbar;
+    this.profile = profile;
     this.toolbar = toolbar;
   }
 
@@ -65,15 +65,15 @@ public final class ActivityRemediesBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.hamburger;
-      ImageView hamburger = ViewBindings.findChildViewById(rootView, id);
-      if (hamburger == null) {
-        break missingId;
-      }
-
       id = R.id.hr_searchbar;
       EditText hrSearchbar = ViewBindings.findChildViewById(rootView, id);
       if (hrSearchbar == null) {
+        break missingId;
+      }
+
+      id = R.id.profile;
+      AppCompatButton profile = ViewBindings.findChildViewById(rootView, id);
+      if (profile == null) {
         break missingId;
       }
 
@@ -83,7 +83,7 @@ public final class ActivityRemediesBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityRemediesBinding((ConstraintLayout) rootView, hamburger, hrSearchbar,
+      return new ActivityRemediesBinding((ConstraintLayout) rootView, hrSearchbar, profile,
           toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);

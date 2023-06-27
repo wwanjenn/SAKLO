@@ -2978,6 +2978,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable appointment_btn
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_dehaze_24
@@ -3012,14 +3013,20 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable contact
+drawable contact_btn
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable drugs
+drawable drugs_btn
 drawable edit_text_border
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable herbal
+drawable herbal_btn
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3041,6 +3048,8 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable logo
+drawable logout
+drawable logout_btn
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3118,6 +3127,7 @@ drawable rectangle_button
 drawable rectangle_button1
 drawable rectangle_dark_blu
 drawable rectangle_dark_gr
+drawable rectangle_light_blu
 drawable saklogo
 drawable saklogo_cropped
 drawable test_level_drawable
@@ -3366,7 +3376,6 @@ id guideline_accopt1
 id guideline_accopt2
 id guideline_intro1
 id guideline_intro2
-id hamburger
 id header_title
 id hide_in_inspector_tag
 id hideable
@@ -3519,6 +3528,7 @@ id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
+id profile
 id progress_circular
 id progress_horizontal
 id radio

@@ -4,9 +4,10 @@ package com.codegrace.Saklo.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -20,24 +21,34 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnAppoint;
+  public final AppCompatButton btnAppoint;
 
   @NonNull
-  public final Button btnDrugs;
+  public final AppCompatButton btnDrugs;
 
   @NonNull
-  public final Button btnHerbal;
+  public final AppCompatButton btnHerbal;
 
   @NonNull
-  public final Button btnSignout;
+  public final AppCompatButton btnSignout;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnAppoint,
-      @NonNull Button btnDrugs, @NonNull Button btnHerbal, @NonNull Button btnSignout) {
+  @NonNull
+  public final AppCompatButton profile;
+
+  @NonNull
+  public final Toolbar toolbar;
+
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
+      @NonNull AppCompatButton btnAppoint, @NonNull AppCompatButton btnDrugs,
+      @NonNull AppCompatButton btnHerbal, @NonNull AppCompatButton btnSignout,
+      @NonNull AppCompatButton profile, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.btnAppoint = btnAppoint;
     this.btnDrugs = btnDrugs;
     this.btnHerbal = btnHerbal;
     this.btnSignout = btnSignout;
+    this.profile = profile;
+    this.toolbar = toolbar;
   }
 
   @Override
@@ -68,31 +79,43 @@ public final class ActivityMainBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.btnAppoint;
-      Button btnAppoint = ViewBindings.findChildViewById(rootView, id);
+      AppCompatButton btnAppoint = ViewBindings.findChildViewById(rootView, id);
       if (btnAppoint == null) {
         break missingId;
       }
 
       id = R.id.btnDrugs;
-      Button btnDrugs = ViewBindings.findChildViewById(rootView, id);
+      AppCompatButton btnDrugs = ViewBindings.findChildViewById(rootView, id);
       if (btnDrugs == null) {
         break missingId;
       }
 
       id = R.id.btnHerbal;
-      Button btnHerbal = ViewBindings.findChildViewById(rootView, id);
+      AppCompatButton btnHerbal = ViewBindings.findChildViewById(rootView, id);
       if (btnHerbal == null) {
         break missingId;
       }
 
       id = R.id.btnSignout;
-      Button btnSignout = ViewBindings.findChildViewById(rootView, id);
+      AppCompatButton btnSignout = ViewBindings.findChildViewById(rootView, id);
       if (btnSignout == null) {
         break missingId;
       }
 
+      id = R.id.profile;
+      AppCompatButton profile = ViewBindings.findChildViewById(rootView, id);
+      if (profile == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
       return new ActivityMainBinding((ConstraintLayout) rootView, btnAppoint, btnDrugs, btnHerbal,
-          btnSignout);
+          btnSignout, profile, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

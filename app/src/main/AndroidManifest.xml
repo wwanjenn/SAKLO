@@ -32,11 +32,8 @@
         </activity>
         <activity
             android:name=".activities.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            android:exported="true"
+            android:theme="@style/GeneralTheme">
         </activity>
 
         <activity

@@ -24,15 +24,15 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center">
 
-                <ImageView
-                    android:id="@+id/hamburger"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/profile"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="center"
-                    app:srcCompat="@drawable/baseline_dehaze_24" />
+                    android:background="@drawable/baseline_person_24" />
 
                 <ImageView
-                    android:layout_width="320dp"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:src="@drawable/saklogo_cropped" />
@@ -48,10 +48,9 @@
             android:background="@drawable/rectangle"
             android:layout_marginTop="20dp"
             android:padding="8dp"
-            android:drawableLeft="@drawable/baseline_square_24"
             android:hint="SEARCH"
             android:textColorHint="@color/dark_gr"
-            android:drawableRight="@drawable/baseline_search_24"
+            android:drawableLeft="@drawable/baseline_search_24"
             android:textColor="@color/dark_gr"
             android:drawablePadding="8dp"
             android:layout_marginLeft="20dp"

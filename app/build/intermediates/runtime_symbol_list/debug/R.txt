@@ -2977,6 +2977,7 @@ int drawable abc_textfield_search_activated_mtrl_alpha 0x7f070074
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f070075
 int drawable abc_textfield_search_material 0x7f070076
 int drawable abc_vector_test 0x7f070077
+int drawable appointment_btn 0x7f07010b
 int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
 int drawable baseline_dehaze_24 0x7f07007a
@@ -3011,14 +3012,20 @@ int drawable common_google_signin_btn_text_light 0x7f070096
 int drawable common_google_signin_btn_text_light_focused 0x7f070097
 int drawable common_google_signin_btn_text_light_normal 0x7f070098
 int drawable common_google_signin_btn_text_light_normal_background 0x7f070099
+int drawable contact 0x7f07010c
+int drawable contact_btn 0x7f07010d
 int drawable design_fab_background 0x7f07009a
 int drawable design_ic_visibility 0x7f07009b
 int drawable design_ic_visibility_off 0x7f07009c
 int drawable design_password_eye 0x7f07009d
 int drawable design_snackbar_background 0x7f07009e
+int drawable drugs 0x7f07010e
+int drawable drugs_btn 0x7f07010f
 int drawable edit_text_border 0x7f07009f
 int drawable googleg_disabled_color_18 0x7f0700a0
 int drawable googleg_standard_color_18 0x7f0700a1
+int drawable herbal 0x7f070110
+int drawable herbal_btn 0x7f070111
 int drawable ic_arrow_back_black_24 0x7f0700a2
 int drawable ic_call_answer 0x7f0700a3
 int drawable ic_call_answer_low 0x7f0700a4
@@ -3040,6 +3047,8 @@ int drawable ic_mtrl_chip_checked_circle 0x7f0700b3
 int drawable ic_mtrl_chip_close_circle 0x7f0700b4
 int drawable ic_search_black_24 0x7f0700b5
 int drawable logo 0x7f0700b6
+int drawable logout 0x7f070112
+int drawable logout_btn 0x7f070113
 int drawable m3_appbar_background 0x7f0700b7
 int drawable m3_avd_hide_password 0x7f0700b8
 int drawable m3_avd_show_password 0x7f0700b9
@@ -3117,6 +3126,7 @@ int drawable rectangle_button 0x7f0700ff
 int drawable rectangle_button1 0x7f070100
 int drawable rectangle_dark_blu 0x7f070101
 int drawable rectangle_dark_gr 0x7f070102
+int drawable rectangle_light_blu 0x7f070114
 int drawable saklogo 0x7f070103
 int drawable saklogo_cropped 0x7f070104
 int drawable test_level_drawable 0x7f070105
@@ -3365,7 +3375,6 @@ int id guideline_accopt1 0x7f0800ed
 int id guideline_accopt2 0x7f0800ee
 int id guideline_intro1 0x7f0800ef
 int id guideline_intro2 0x7f0800f0
-int id hamburger 0x7f0800f1
 int id header_title 0x7f0800f2
 int id hide_in_inspector_tag 0x7f0800f3
 int id hideable 0x7f0800f4
@@ -3518,6 +3527,7 @@ int id pooling_container_listener_holder_tag 0x7f080186
 int id position 0x7f080187
 int id postLayout 0x7f080188
 int id pressed 0x7f080189
+int id profile 0x7f080239
 int id progress_circular 0x7f08018a
 int id progress_horizontal 0x7f08018b
 int id radio 0x7f08018c

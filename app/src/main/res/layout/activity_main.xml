@@ -25,15 +25,15 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center">
 
-                <ImageView
-                    android:id="@+id/hamburger"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/profile"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="center"
-                    app:srcCompat="@drawable/baseline_dehaze_24" />
+                    android:background="@drawable/baseline_person_24" />
 
                 <ImageView
-                    android:layout_width="320dp"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:src="@drawable/saklogo_cropped" />
@@ -52,53 +52,51 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="339dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
                     android:orientation="horizontal">
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btnHerbal"
-                        android:layout_width="170dp"
-                        android:layout_height="170dp"
-                        android:background="@drawable/herbal_btn"
-                        android:layout_margin="3dp" />
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/herbal_btn" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btnDrugs"
-                        android:layout_width="170dp"
-                        android:layout_height="170dp"
-                        android:background="@drawable/drugs_btn"
-                        android:layout_margin="3dp"/>
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/drugs_btn" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="339dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
                     android:orientation="horizontal">
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btnAppoint"
-                        android:layout_width="170dp"
-                        android:layout_height="170dp"
-                        android:background="@drawable/contact_btn"
-                        android:layout_margin="3dp"/>
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/contact_btn" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btnSignout"
-                        android:layout_width="170dp"
-                        android:layout_height="170dp"
-                        android:background="@drawable/logout_btn"
-                        android:layout_margin="3dp"/>
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/logout_btn" />
                 </LinearLayout>
 
             </LinearLayout>
