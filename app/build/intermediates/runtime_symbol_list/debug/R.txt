@@ -2984,7 +2984,10 @@ int drawable abc_vector_test 0x7f070077
 int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
 int drawable baseline_dehaze_24 0x7f07007a
+int drawable baseline_healing_24 0x7f07010a
+int drawable baseline_home_24 0x7f07010b
 int drawable baseline_lock_24 0x7f07007b
+int drawable baseline_medical_services_24 0x7f07010c
 int drawable baseline_person_24 0x7f07007c
 int drawable baseline_search_24 0x7f07007d
 int drawable baseline_square_24 0x7f07007e
@@ -3234,6 +3237,7 @@ int id beginning 0x7f080067
 int id bestChoice 0x7f080068
 int id blocking 0x7f080069
 int id bottom 0x7f08006a
+int id bottomNav 0x7f080239
 int id bounce 0x7f08006b
 int id bounceBoth 0x7f08006c
 int id bounceEnd 0x7f08006d
@@ -3244,8 +3248,8 @@ int id browser_actions_menu_item_text 0x7f080071
 int id browser_actions_menu_items 0x7f080072
 int id browser_actions_menu_view 0x7f080073
 int id btnAppoint 0x7f080074
-int id btnDrugs 0x7f080075
-int id btnHerbal 0x7f080076
+int id btnHome 0x7f08023a
+int id btnRemedies 0x7f08023b
 int id btnSignout 0x7f080077
 int id btn_intro 0x7f080078
 int id btn_login 0x7f080079
@@ -3640,7 +3644,6 @@ int id textSpacerNoButtons 0x7f0801fd
 int id textSpacerNoTitle 0x7f0801fe
 int id textStart 0x7f0801ff
 int id textTop 0x7f080200
-int id textView 0x7f080201
 int id text_input_end_icon 0x7f080202
 int id text_input_error_icon 0x7f080203
 int id text_input_start_icon 0x7f080204
@@ -3899,6 +3902,7 @@ int layout select_dialog_item_material 0x7f0b0070
 int layout select_dialog_multichoice_material 0x7f0b0071
 int layout select_dialog_singlechoice_material 0x7f0b0072
 int layout support_simple_spinner_dropdown_item 0x7f0b0073
+int menu nav_menu 0x7f150000
 int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_round 0x7f0d0001
 int navigation register_login_nav 0x7f0e0000

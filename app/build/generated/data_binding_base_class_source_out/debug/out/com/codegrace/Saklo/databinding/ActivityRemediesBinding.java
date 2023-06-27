@@ -13,6 +13,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.codegrace.Saklo.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -20,6 +21,9 @@ import java.lang.String;
 public final class ActivityRemediesBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
+
+  @NonNull
+  public final BottomNavigationView bottomNav;
 
   @NonNull
   public final ImageView hamburger;
@@ -30,9 +34,11 @@ public final class ActivityRemediesBinding implements ViewBinding {
   @NonNull
   public final Toolbar toolbar;
 
-  private ActivityRemediesBinding(@NonNull LinearLayout rootView, @NonNull ImageView hamburger,
+  private ActivityRemediesBinding(@NonNull LinearLayout rootView,
+      @NonNull BottomNavigationView bottomNav, @NonNull ImageView hamburger,
       @NonNull EditText hrSearchbar, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
+    this.bottomNav = bottomNav;
     this.hamburger = hamburger;
     this.hrSearchbar = hrSearchbar;
     this.toolbar = toolbar;
@@ -65,6 +71,12 @@ public final class ActivityRemediesBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.bottomNav;
+      BottomNavigationView bottomNav = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNav == null) {
+        break missingId;
+      }
+
       id = R.id.hamburger;
       ImageView hamburger = ViewBindings.findChildViewById(rootView, id);
       if (hamburger == null) {
@@ -83,7 +95,8 @@ public final class ActivityRemediesBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityRemediesBinding((LinearLayout) rootView, hamburger, hrSearchbar, toolbar);
+      return new ActivityRemediesBinding((LinearLayout) rootView, bottomNav, hamburger, hrSearchbar,
+          toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

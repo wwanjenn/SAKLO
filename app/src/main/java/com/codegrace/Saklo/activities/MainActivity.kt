@@ -18,6 +18,12 @@ class MainActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
+        val btnHome = findViewById<Button>(R.id.btnHome)
+        btnHome.setOnClickListener {
+            val intentAppoint = Intent(this, MainActivity::class.java)
+            startActivity(intentAppoint)
+        }
+
         val btnAppoint = findViewById<Button>(R.id.btnAppoint)
         btnAppoint.setOnClickListener {
             val intentAppoint = Intent(this, AppointmentActivity::class.java)

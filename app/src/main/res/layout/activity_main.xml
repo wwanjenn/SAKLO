@@ -7,17 +7,14 @@
     tools:context=".activities.MainActivity"
     android:background="@color/white">
 
-    <TextView
-        android:id="@+id/textView"
+
+    <Button
+        android:id="@+id/btnHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Home"
-        android:textSize="50sp"
-        app:layout_constraintBaseline_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,8 +22,8 @@
         android:id="@+id/btnAppoint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
         android:text="Appointment"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,7 +37,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
@@ -67,4 +63,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/nav_menu"
         android:scrollIndicators="left"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

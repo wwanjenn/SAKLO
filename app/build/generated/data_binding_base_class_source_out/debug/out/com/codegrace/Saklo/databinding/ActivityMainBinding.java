@@ -5,13 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.codegrace.Saklo.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,29 +21,29 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final BottomNavigationView bottomNav;
+
+  @NonNull
   public final Button btnAppoint;
 
   @NonNull
-  public final Button btnDrugs;
+  public final Button btnHome;
 
   @NonNull
-  public final Button btnHerbal;
+  public final Button btnRemedies;
 
   @NonNull
   public final Button btnSignout;
 
-  @NonNull
-  public final TextView textView;
-
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnAppoint,
-      @NonNull Button btnDrugs, @NonNull Button btnHerbal, @NonNull Button btnSignout,
-      @NonNull TextView textView) {
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
+      @NonNull BottomNavigationView bottomNav, @NonNull Button btnAppoint, @NonNull Button btnHome,
+      @NonNull Button btnRemedies, @NonNull Button btnSignout) {
     this.rootView = rootView;
+    this.bottomNav = bottomNav;
     this.btnAppoint = btnAppoint;
-    this.btnDrugs = btnDrugs;
-    this.btnHerbal = btnHerbal;
+    this.btnHome = btnHome;
+    this.btnRemedies = btnRemedies;
     this.btnSignout = btnSignout;
-    this.textView = textView;
   }
 
   @Override
@@ -73,21 +73,27 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.bottomNav;
+      BottomNavigationView bottomNav = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNav == null) {
+        break missingId;
+      }
+
       id = R.id.btnAppoint;
       Button btnAppoint = ViewBindings.findChildViewById(rootView, id);
       if (btnAppoint == null) {
         break missingId;
       }
 
-      id = R.id.btnDrugs;
-      Button btnDrugs = ViewBindings.findChildViewById(rootView, id);
-      if (btnDrugs == null) {
+      id = R.id.btnHome;
+      Button btnHome = ViewBindings.findChildViewById(rootView, id);
+      if (btnHome == null) {
         break missingId;
       }
 
-      id = R.id.btnHerbal;
-      Button btnHerbal = ViewBindings.findChildViewById(rootView, id);
-      if (btnHerbal == null) {
+      id = R.id.btnRemedies;
+      Button btnRemedies = ViewBindings.findChildViewById(rootView, id);
+      if (btnRemedies == null) {
         break missingId;
       }
 
@@ -97,14 +103,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
-        break missingId;
-      }
-
-      return new ActivityMainBinding((ConstraintLayout) rootView, btnAppoint, btnDrugs, btnHerbal,
-          btnSignout, textView);
+      return new ActivityMainBinding((ConstraintLayout) rootView, bottomNav, btnAppoint, btnHome,
+          btnRemedies, btnSignout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

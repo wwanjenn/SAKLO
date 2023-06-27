@@ -2985,7 +2985,10 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_dehaze_24
+drawable baseline_healing_24
+drawable baseline_home_24
 drawable baseline_lock_24
+drawable baseline_medical_services_24
 drawable baseline_person_24
 drawable baseline_search_24
 drawable baseline_square_24
@@ -3235,6 +3238,7 @@ id beginning
 id bestChoice
 id blocking
 id bottom
+id bottomNav
 id bounce
 id bounceBoth
 id bounceEnd
@@ -3245,8 +3249,8 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnAppoint
-id btnDrugs
-id btnHerbal
+id btnHome
+id btnRemedies
 id btnSignout
 id btn_intro
 id btn_login
@@ -3641,7 +3645,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3900,6 +3903,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation register_login_nav
