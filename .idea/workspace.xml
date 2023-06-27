@@ -9,12 +9,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61b7448f-9f86-46c2-a9e4-48dfa5db224e" name="Changes" comment="Added a slide-to-act button for Register">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rect_rounded_upper_corners.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/register_vector_art.png" afterDir="false" />
+    <list default="true" id="61b7448f-9f86-46c2-a9e4-48dfa5db224e" name="Changes" comment="Added textviews and vector design">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/login_vector_art.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rect_btn_google.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/rectangle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rectangle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687877574545</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added textviews and vector design">
+      <created>1687884789544</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1687884789544</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -339,6 +347,7 @@
     <MESSAGE value="Added onDoubleBackPressed function to exit RegisterLogin Activity if no fragment stack" />
     <MESSAGE value="Changed register input fields layout and added vector assets" />
     <MESSAGE value="Added a slide-to-act button for Register" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a slide-to-act button for Register" />
+    <MESSAGE value="Added textviews and vector design" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added textviews and vector design" />
   </component>
 </project>
