@@ -23,13 +23,9 @@ class MainActivity : AppCompatActivity() {
             val intentAppoint = Intent(this, AppointmentActivity::class.java)
             startActivity(intentAppoint)
         }
-        val btnDrugs = findViewById<Button>(R.id.btnDrugs)
-        btnDrugs.setOnClickListener {
-            val intentDrugs = Intent(this, RemediesActivity::class.java)
-            startActivity(intentDrugs)
-        }
-        val btnHerbal = findViewById<Button>(R.id.btnHerbal)
-        btnHerbal.setOnClickListener {
+
+        val btnRemedies = findViewById<Button>(R.id.btnRemedies)
+        btnRemedies.setOnClickListener {
             val intentHerbal = Intent(this, RemediesActivity::class.java)
             startActivity(intentHerbal)
         }
