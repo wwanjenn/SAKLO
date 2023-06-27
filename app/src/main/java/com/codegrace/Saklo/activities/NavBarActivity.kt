@@ -7,6 +7,7 @@ import android.widget.Button
 import com.codegrace.Saklo.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
+
 class NavBarActivity : AppCompatActivity() {
 
     lateinit var bottomNav : BottomNavigationView
@@ -14,7 +15,7 @@ class NavBarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nav_bar)
 
-        bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
+        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.btnHome -> {
