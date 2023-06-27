@@ -4,12 +4,20 @@
         "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\fragment_login.xml"
     },
     {
+        "merged": "com.codegrace.Saklo.app-mergeDebugResources-73:/layout/fragment_register.xml",
+        "source": "com.codegrace.Saklo.app-main-76:/layout/fragment_register.xml"
+    },
+    {
         "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-73:\\layout\\fragment_accountoptions.xml",
         "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\fragment_accountoptions.xml"
     },
     {
         "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-73:\\layout\\activity_register_login.xml",
         "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\activity_register_login.xml"
+    },
+    {
+        "merged": "com.codegrace.Saklo.app-mergeDebugResources-73:/layout/fragment_accountoptions.xml",
+        "source": "com.codegrace.Saklo.app-main-76:/layout/fragment_accountoptions.xml"
     },
     {
         "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-73:\\layout\\fragment_introduction.xml",
@@ -24,16 +32,20 @@
         "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\activity_remedies.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-73:\\layout\\activity_appointment.xml",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\activity_appointment.xml"
-    },
-    {
         "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-73:\\layout\\activity_splash.xml",
         "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "com.codegrace.Saklo.app-mergeDebugResources-73:/layout/activity_main.xml",
-        "source": "com.codegrace.Saklo.app-main-76:/layout/activity_main.xml"
+        "merged": "com.codegrace.Saklo.app-mergeDebugResources-73:/layout/fragment_login.xml",
+        "source": "com.codegrace.Saklo.app-main-76:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "com.codegrace.Saklo.app-mergeDebugResources-73:/layout/fragment_introduction.xml",
+        "source": "com.codegrace.Saklo.app-main-76:/layout/fragment_introduction.xml"
+    },
+    {
+        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-73:\\layout\\activity_appointment.xml",
+        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\activity_appointment.xml"
     },
     {
         "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-73:\\layout\\activity_main.xml",

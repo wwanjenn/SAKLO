@@ -5,10 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.codegrace.Saklo.R;
@@ -18,7 +18,7 @@ import java.lang.String;
 
 public final class FragmentRegisterBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final AppCompatButton btnRegister;
@@ -35,7 +35,7 @@ public final class FragmentRegisterBinding implements ViewBinding {
   @NonNull
   public final EditText regPassword;
 
-  private FragmentRegisterBinding(@NonNull LinearLayout rootView,
+  private FragmentRegisterBinding(@NonNull ConstraintLayout rootView,
       @NonNull AppCompatButton btnRegister, @NonNull AppCompatButton btnTologin,
       @NonNull EditText regConpassword, @NonNull EditText regEmail, @NonNull EditText regPassword) {
     this.rootView = rootView;
@@ -48,7 +48,7 @@ public final class FragmentRegisterBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -103,7 +103,7 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentRegisterBinding((LinearLayout) rootView, btnRegister, btnTologin,
+      return new FragmentRegisterBinding((ConstraintLayout) rootView, btnRegister, btnTologin,
           regConpassword, regEmail, regPassword);
     }
     String missingId = rootView.getResources().getResourceName(id);

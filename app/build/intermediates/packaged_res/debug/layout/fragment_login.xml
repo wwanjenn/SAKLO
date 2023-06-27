@@ -19,7 +19,9 @@
             android:orientation="vertical"
             android:layout_gravity="center"
             android:padding="24dp"
-            android:background="@color/light_blu">
+            android:background="@color/light_blu"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -37,9 +39,7 @@
                 android:drawableLeft="@drawable/baseline_person_24"
                 android:textColorHint="@color/dark_gr"
                 android:textColor="@color/dark_gr"
-                android:drawablePadding="8dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
+                android:drawablePadding="8dp" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -52,9 +52,7 @@
                 android:textColorHint="@color/dark_gr"
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:textColor="@color/dark_gr"
-                android:drawablePadding="8dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
+                android:drawablePadding="8dp" />
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -63,9 +61,7 @@
                 android:id="@+id/btn_login"
                 android:textSize="18sp"
                 android:layout_marginTop="30dp"
-                android:background="@drawable/rectangle_dark_blu"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
+                android:background="@drawable/rectangle_dark_blu" />
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -74,9 +70,7 @@
                 android:id="@+id/btn_toregister"
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/rectangle_dark_gr"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
+                android:background="@drawable/rectangle_dark_gr" />
         </LinearLayout>
     </LinearLayout>
 
