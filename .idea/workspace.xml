@@ -9,11 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61b7448f-9f86-46c2-a9e4-48dfa5db224e" name="Changes" comment="Initial draft for onSlideComplete function of Login Slider Btn">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/fragment/loginRegister/LoginFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/fragment/loginRegister/LoginFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/fragment/loginRegister/RegisterFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/fragment/loginRegister/RegisterFragment.kt" afterDir="false" />
-    </list>
+    <list default="true" id="61b7448f-9f86-46c2-a9e4-48dfa5db224e" name="Changes" comment="Initial draft for onSlideComplete function of Register Slider Btn" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -331,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687903211500</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Initial draft for onSlideComplete function of Register Slider Btn">
+      <created>1687903779081</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1687903779081</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -377,6 +380,7 @@
     <MESSAGE value="Reworked accountOptions interface" />
     <MESSAGE value="Minor changes to accountOptions fragment layout" />
     <MESSAGE value="Initial draft for onSlideComplete function of Login Slider Btn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial draft for onSlideComplete function of Login Slider Btn" />
+    <MESSAGE value="Initial draft for onSlideComplete function of Register Slider Btn" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial draft for onSlideComplete function of Register Slider Btn" />
   </component>
 </project>
