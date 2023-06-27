@@ -5,28 +5,33 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.codegrace.Saklo.R
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class NavBarActivity : AppCompatActivity() {
+
+    lateinit var bottomNav : BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nav_bar)
 
-        val btnHome = findViewById<Button>(R.id.btnHome)
-        btnHome.setOnClickListener {
-            val intentAppoint = Intent(this, MainActivity::class.java)
-            startActivity(intentAppoint)
-        }
+        bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
+        bottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.btnHome -> {
+                    startActivity(Intent(this, MainActivity::class.java))
+                    true
+                }
+                R.id.btnAppoint -> {
+                    startActivity(Intent(this, AppointmentActivity::class.java))
+                    true
+                }
+                R.id.btnRemedies -> {
+                    startActivity(Intent(this, RemediesActivity::class.java))
+                    true
+                }
 
-        val btnAppoint = findViewById<Button>(R.id.btnAppoint)
-        btnAppoint.setOnClickListener {
-            val intentAppoint = Intent(this, AppointmentActivity::class.java)
-            startActivity(intentAppoint)
-        }
-
-        val btnRemedies = findViewById<Button>(R.id.btnRemedies)
-        btnRemedies.setOnClickListener {
-            val intentHerbal = Intent(this, RemediesActivity::class.java)
-            startActivity(intentHerbal)
+                else -> throw AssertionError()
+            }
         }
     }
 }

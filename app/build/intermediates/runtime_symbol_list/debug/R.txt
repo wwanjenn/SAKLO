@@ -3816,6 +3816,7 @@ int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_appointment 0x7f0b001c
 int layout activity_main 0x7f0b001d
+int layout activity_nav_bar 0x7f0b0074
 int layout activity_register_login 0x7f0b001e
 int layout activity_remedies 0x7f0b001f
 int layout activity_splash 0x7f0b0020

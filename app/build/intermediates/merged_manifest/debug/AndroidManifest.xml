@@ -33,10 +33,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.Saklo" >
         <activity
+            android:name="com.codegrace.Saklo.activities.NavBarActivity"
+            android:exported="false" />
+        <activity
             android:name="com.codegrace.Saklo.activities.SplashActivity"
             android:exported="true"
-            android:theme="@style/SplashTheme" >
-        </activity>
+            android:theme="@style/SplashTheme" />
         <activity
             android:name="com.codegrace.Saklo.activities.RegisterLoginActivity"
             android:exported="true" >

@@ -3817,6 +3817,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_appointment
 layout activity_main
+layout activity_nav_bar
 layout activity_register_login
 layout activity_remedies
 layout activity_splash
