@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.codegrace.Saklo.R
 import com.codegrace.Saklo.databinding.FragmentRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.ncorti.slidetoact.SlideToActView
 
 class RegisterFragment: Fragment(R.layout.fragment_register) {
     private lateinit var binding: FragmentRegisterBinding
@@ -29,38 +30,41 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
-        binding.btnRegister.setOnClickListener {
-            val email = binding.regEmail.text.toString()
-            val password = binding.regPassword.text.toString()
-            var conPassword = binding.regConpassword.text.toString()
+        binding.registerBtn.onSlideCompleteListener = object : SlideToActView.OnSlideCompleteListener {
+            override fun onSlideComplete(view: SlideToActView) {
+                val email = binding.regEmail.editText?.text.toString()
+                val password = binding.regPassword.editText?.text.toString()
+                var conPassword = binding.regConpassword.editText?.text.toString()
 
-            if(isRegistrationInputValid(email, password)){
-                if(password == conPassword) {
-                    firebaseAuth.createUserWithEmailAndPassword(email, password)
-                        .addOnCompleteListener {
-                            if (it.isSuccessful) {
-                                Toast.makeText(
-                                    requireActivity(),
-                                    "Successfully Registered!",
-                                    Toast.LENGTH_SHORT
-                                ).show()
-                                findNavController().navigate(R.id.action_registerFragment_to_mainActivity)
-                            } else {
-                                Toast.makeText(
-                                    requireActivity(),
-                                    "Registration Failed",
-                                    Toast.LENGTH_SHORT
-                                ).show()
+                if (isRegistrationInputValid(email, password)) {
+                    if (password == conPassword) {
+                        firebaseAuth.createUserWithEmailAndPassword(email, password)
+                            .addOnCompleteListener {
+                                if (it.isSuccessful) {
+                                    Toast.makeText(
+                                        requireActivity(),
+                                        "Successfully Registered!",
+                                        Toast.LENGTH_SHORT
+                                    ).show()
+                                    findNavController().navigate(R.id.action_registerFragment_to_mainActivity)
+                                } else {
+                                    Toast.makeText(
+                                        requireActivity(),
+                                        "Registration Failed",
+                                        Toast.LENGTH_SHORT
+                                    ).show()
+                                }
                             }
-                        }
-                } else {
-                    binding.regConpassword.error = "Passwords are not identical. Please try again"
-                    binding.regConpassword.requestFocus()
+                    } else {
+                        binding.regConpassword.error =
+                            "Passwords are not identical. Please try again"
+                        binding.regConpassword.requestFocus()
+                    }
                 }
             }
         }
 
-        binding.btnTologin.setOnClickListener {
+        binding.tvLoginHere.setOnClickListener {
             findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
         }
     }
