@@ -33,9 +33,6 @@
         android:testOnly="true"
         android:theme="@style/Theme.Saklo" >
         <activity
-            android:name="com.codegrace.Saklo.activities.NavBarActivity"
-            android:exported="false" />
-        <activity
             android:name="com.codegrace.Saklo.activities.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme" />

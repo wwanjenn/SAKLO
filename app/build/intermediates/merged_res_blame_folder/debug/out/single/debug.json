@@ -48,16 +48,12 @@
         "source": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\baseline_square_24.xml"
     },
     {
-        "merged": "com.codegrace.Saklo.app-merged_res-74:/layout_activity_main.xml.flat",
-        "source": "com.codegrace.Saklo.app-main-76:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\navigation_register_login_nav.xml.flat",
+        "source": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\navigation\\register_login_nav.xml"
     },
     {
         "merged": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_saklogo.png.flat",
         "source": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\saklogo.png"
-    },
-    {
-        "merged": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\navigation_register_login_nav.xml.flat",
-        "source": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\navigation\\register_login_nav.xml"
     },
     {
         "merged": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_vector_login_1.jpg.flat",
@@ -86,10 +82,6 @@
     {
         "merged": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_baseline_medical_services_24.xml.flat",
         "source": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\baseline_medical_services_24.xml"
-    },
-    {
-        "merged": "com.codegrace.Saklo.app-merged_res-74:/layout_activity_register_login.xml.flat",
-        "source": "com.codegrace.Saklo.app-main-76:/layout/activity_register_login.xml"
     },
     {
         "merged": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\layout_fragment_login.xml.flat",
@@ -128,10 +120,6 @@
         "source": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\activity_register_login.xml"
     },
     {
-        "merged": "com.codegrace.Saklo.app-merged_res-74:/layout_activity_remedies.xml.flat",
-        "source": "com.codegrace.Saklo.app-main-76:/layout/activity_remedies.xml"
-    },
-    {
         "merged": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\layout_fragment_register.xml.flat",
         "source": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\fragment_register.xml"
     },
@@ -146,6 +134,10 @@
     {
         "merged": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\layout_activity_nav_bar.xml.flat",
+        "source": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\activity_nav_bar.xml"
     },
     {
         "merged": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_edit_text_border.xml.flat",
@@ -166,10 +158,6 @@
     {
         "merged": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\xml\\backup_rules.xml"
-    },
-    {
-        "merged": "com.codegrace.Saklo.app-merged_res-74:/layout_activity_appointment.xml.flat",
-        "source": "com.codegrace.Saklo.app-main-76:/layout/activity_appointment.xml"
     },
     {
         "merged": "C:\\Users\\Wanjin\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_rectangle_dark_blu.xml.flat",
