@@ -50,7 +50,10 @@
         tools:layout="@layout/fragment_introduction">
         <action
             android:id="@+id/action_introductionFragment_to_accountOptFragment"
-            app:destination="@id/accountOptFragment" />
+            app:destination="@id/accountOptFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/introductionFragment" />
     </fragment>
     <activity
         android:id="@+id/mainActivity"

@@ -6,11 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.codegrace.Saklo.R;
@@ -23,22 +23,22 @@ public final class FragmentAccountoptionsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnTologin;
+  public final Button btnToLogin;
 
   @NonNull
-  public final Button btnToregister;
+  public final Button btnToRegister;
 
   @NonNull
-  public final Guideline guidelineAccopt1;
-
-  @NonNull
-  public final Guideline guidelineAccopt2;
+  public final RelativeLayout dividerAccopt;
 
   @NonNull
   public final ImageView imageView2;
 
   @NonNull
-  public final ImageView imageView3;
+  public final ImageView ivLogoAccopt;
+
+  @NonNull
+  public final RelativeLayout relativeLayout;
 
   @NonNull
   public final TextView tvAccopt1;
@@ -46,20 +46,24 @@ public final class FragmentAccountoptionsBinding implements ViewBinding {
   @NonNull
   public final TextView tvAccopt2;
 
+  @NonNull
+  public final TextView tvAccoptDiv;
+
   private FragmentAccountoptionsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnTologin, @NonNull Button btnToregister,
-      @NonNull Guideline guidelineAccopt1, @NonNull Guideline guidelineAccopt2,
-      @NonNull ImageView imageView2, @NonNull ImageView imageView3, @NonNull TextView tvAccopt1,
-      @NonNull TextView tvAccopt2) {
+      @NonNull Button btnToLogin, @NonNull Button btnToRegister,
+      @NonNull RelativeLayout dividerAccopt, @NonNull ImageView imageView2,
+      @NonNull ImageView ivLogoAccopt, @NonNull RelativeLayout relativeLayout,
+      @NonNull TextView tvAccopt1, @NonNull TextView tvAccopt2, @NonNull TextView tvAccoptDiv) {
     this.rootView = rootView;
-    this.btnTologin = btnTologin;
-    this.btnToregister = btnToregister;
-    this.guidelineAccopt1 = guidelineAccopt1;
-    this.guidelineAccopt2 = guidelineAccopt2;
+    this.btnToLogin = btnToLogin;
+    this.btnToRegister = btnToRegister;
+    this.dividerAccopt = dividerAccopt;
     this.imageView2 = imageView2;
-    this.imageView3 = imageView3;
+    this.ivLogoAccopt = ivLogoAccopt;
+    this.relativeLayout = relativeLayout;
     this.tvAccopt1 = tvAccopt1;
     this.tvAccopt2 = tvAccopt2;
+    this.tvAccoptDiv = tvAccoptDiv;
   }
 
   @Override
@@ -89,27 +93,21 @@ public final class FragmentAccountoptionsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_tologin;
-      Button btnTologin = ViewBindings.findChildViewById(rootView, id);
-      if (btnTologin == null) {
+      id = R.id.btn_toLogin;
+      Button btnToLogin = ViewBindings.findChildViewById(rootView, id);
+      if (btnToLogin == null) {
         break missingId;
       }
 
-      id = R.id.btn_toregister;
-      Button btnToregister = ViewBindings.findChildViewById(rootView, id);
-      if (btnToregister == null) {
+      id = R.id.btn_toRegister;
+      Button btnToRegister = ViewBindings.findChildViewById(rootView, id);
+      if (btnToRegister == null) {
         break missingId;
       }
 
-      id = R.id.guideline_accopt1;
-      Guideline guidelineAccopt1 = ViewBindings.findChildViewById(rootView, id);
-      if (guidelineAccopt1 == null) {
-        break missingId;
-      }
-
-      id = R.id.guideline_accopt2;
-      Guideline guidelineAccopt2 = ViewBindings.findChildViewById(rootView, id);
-      if (guidelineAccopt2 == null) {
+      id = R.id.divider_accopt;
+      RelativeLayout dividerAccopt = ViewBindings.findChildViewById(rootView, id);
+      if (dividerAccopt == null) {
         break missingId;
       }
 
@@ -119,9 +117,15 @@ public final class FragmentAccountoptionsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView3;
-      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView3 == null) {
+      id = R.id.iv_logo_accopt;
+      ImageView ivLogoAccopt = ViewBindings.findChildViewById(rootView, id);
+      if (ivLogoAccopt == null) {
+        break missingId;
+      }
+
+      id = R.id.relativeLayout;
+      RelativeLayout relativeLayout = ViewBindings.findChildViewById(rootView, id);
+      if (relativeLayout == null) {
         break missingId;
       }
 
@@ -137,9 +141,15 @@ public final class FragmentAccountoptionsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAccountoptionsBinding((ConstraintLayout) rootView, btnTologin,
-          btnToregister, guidelineAccopt1, guidelineAccopt2, imageView2, imageView3, tvAccopt1,
-          tvAccopt2);
+      id = R.id.tv_accopt_div;
+      TextView tvAccoptDiv = ViewBindings.findChildViewById(rootView, id);
+      if (tvAccoptDiv == null) {
+        break missingId;
+      }
+
+      return new FragmentAccountoptionsBinding((ConstraintLayout) rootView, btnToLogin,
+          btnToRegister, dividerAccopt, imageView2, ivLogoAccopt, relativeLayout, tvAccopt1,
+          tvAccopt2, tvAccoptDiv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -4,55 +4,73 @@ package com.codegrace.Saklo.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.codegrace.Saklo.R;
+import com.google.android.material.textfield.TextInputLayout;
+import com.ncorti.slidetoact.SlideToActView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class FragmentRegisterBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnRegister;
+  public final RelativeLayout container1;
 
   @NonNull
-  public final Button btnTologin;
+  public final ImageView ivVectorReg;
 
   @NonNull
-  public final EditText regConpassword;
+  public final TextInputLayout regConpassword;
 
   @NonNull
-  public final EditText regEmail;
+  public final TextInputLayout regEmail;
 
   @NonNull
-  public final EditText regPassword;
+  public final TextInputLayout regPassword;
 
   @NonNull
-  public final EditText regUsername;
+  public final TextInputLayout regUsername;
 
-  private FragmentRegisterBinding(@NonNull LinearLayout rootView, @NonNull Button btnRegister,
-      @NonNull Button btnTologin, @NonNull EditText regConpassword, @NonNull EditText regEmail,
-      @NonNull EditText regPassword, @NonNull EditText regUsername) {
+  @NonNull
+  public final SlideToActView registerBtn;
+
+  @NonNull
+  public final TextView tvLoginHere;
+
+  @NonNull
+  public final TextView tvLoginIndicator;
+
+  private FragmentRegisterBinding(@NonNull ConstraintLayout rootView,
+      @NonNull RelativeLayout container1, @NonNull ImageView ivVectorReg,
+      @NonNull TextInputLayout regConpassword, @NonNull TextInputLayout regEmail,
+      @NonNull TextInputLayout regPassword, @NonNull TextInputLayout regUsername,
+      @NonNull SlideToActView registerBtn, @NonNull TextView tvLoginHere,
+      @NonNull TextView tvLoginIndicator) {
     this.rootView = rootView;
-    this.btnRegister = btnRegister;
-    this.btnTologin = btnTologin;
+    this.container1 = container1;
+    this.ivVectorReg = ivVectorReg;
     this.regConpassword = regConpassword;
     this.regEmail = regEmail;
     this.regPassword = regPassword;
     this.regUsername = regUsername;
+    this.registerBtn = registerBtn;
+    this.tvLoginHere = tvLoginHere;
+    this.tvLoginIndicator = tvLoginIndicator;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -77,44 +95,63 @@ public final class FragmentRegisterBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_register;
-      Button btnRegister = ViewBindings.findChildViewById(rootView, id);
-      if (btnRegister == null) {
+      id = R.id.container_1;
+      RelativeLayout container1 = ViewBindings.findChildViewById(rootView, id);
+      if (container1 == null) {
         break missingId;
       }
 
-      id = R.id.btn_tologin;
-      Button btnTologin = ViewBindings.findChildViewById(rootView, id);
-      if (btnTologin == null) {
+      id = R.id.iv_vector_reg;
+      ImageView ivVectorReg = ViewBindings.findChildViewById(rootView, id);
+      if (ivVectorReg == null) {
         break missingId;
       }
 
       id = R.id.reg_conpassword;
-      EditText regConpassword = ViewBindings.findChildViewById(rootView, id);
+      TextInputLayout regConpassword = ViewBindings.findChildViewById(rootView, id);
       if (regConpassword == null) {
         break missingId;
       }
 
       id = R.id.reg_email;
-      EditText regEmail = ViewBindings.findChildViewById(rootView, id);
+      TextInputLayout regEmail = ViewBindings.findChildViewById(rootView, id);
       if (regEmail == null) {
         break missingId;
       }
 
       id = R.id.reg_password;
-      EditText regPassword = ViewBindings.findChildViewById(rootView, id);
+      TextInputLayout regPassword = ViewBindings.findChildViewById(rootView, id);
       if (regPassword == null) {
         break missingId;
       }
 
       id = R.id.reg_username;
-      EditText regUsername = ViewBindings.findChildViewById(rootView, id);
+      TextInputLayout regUsername = ViewBindings.findChildViewById(rootView, id);
       if (regUsername == null) {
         break missingId;
       }
 
-      return new FragmentRegisterBinding((LinearLayout) rootView, btnRegister, btnTologin,
-          regConpassword, regEmail, regPassword, regUsername);
+      id = R.id.registerBtn;
+      SlideToActView registerBtn = ViewBindings.findChildViewById(rootView, id);
+      if (registerBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_loginHere;
+      TextView tvLoginHere = ViewBindings.findChildViewById(rootView, id);
+      if (tvLoginHere == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_loginIndicator;
+      TextView tvLoginIndicator = ViewBindings.findChildViewById(rootView, id);
+      if (tvLoginIndicator == null) {
+        break missingId;
+      }
+
+      return new FragmentRegisterBinding((ConstraintLayout) rootView, container1, ivVectorReg,
+          regConpassword, regEmail, regPassword, regUsername, registerBtn, tvLoginHere,
+          tvLoginIndicator);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

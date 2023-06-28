@@ -16,6 +16,8 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
     private lateinit var binding: FragmentRegisterBinding
     private lateinit var firebaseAuth: FirebaseAuth
 
+    private var proceed:Boolean = true
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -46,8 +48,14 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
                                         "Successfully Registered!",
                                         Toast.LENGTH_SHORT
                                     ).show()
+                                    if(!proceed){
+                                        proceed = !proceed
+                                    }
                                     findNavController().navigate(R.id.action_registerFragment_to_mainActivity)
                                 } else {
+                                    if(proceed){
+                                        proceed = !proceed
+                                    }
                                     Toast.makeText(
                                         requireActivity(),
                                         "Registration Failed",
@@ -56,11 +64,34 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
                                 }
                             }
                     } else {
+                        if(proceed){
+                            proceed = !proceed
+                        }
                         binding.regConpassword.error =
                             "Passwords are not identical. Please try again"
                         binding.regConpassword.requestFocus()
                     }
                 }
+            }
+        }
+        
+        binding.registerBtn.onSlideToActAnimationEventListener = object :SlideToActView.OnSlideToActAnimationEventListener {
+            override fun onSlideCompleteAnimationEnded(view: SlideToActView) {
+                if(!proceed) {
+                    binding.registerBtn.resetSlider()
+                }
+            }
+
+            override fun onSlideCompleteAnimationStarted(view: SlideToActView, threshold: Float) {
+                //
+            }
+
+            override fun onSlideResetAnimationEnded(view: SlideToActView) {
+                //
+            }
+
+            override fun onSlideResetAnimationStarted(view: SlideToActView) {
+                //
             }
         }
 
@@ -72,18 +103,27 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
     private fun isRegistrationInputValid(email: String, password: String): Boolean {
         if (email.isEmpty() || password.isEmpty()) {
             Toast.makeText(requireActivity(), "Empty fields are not allowed", Toast.LENGTH_LONG).show()
+            if(proceed){
+                proceed = !proceed
+            }
             return false
         }
 
         if (!isValidEmail(email)) {
             binding.regEmail.error = "Invalid email format"
             binding.regEmail.requestFocus()
+            if(proceed){
+                proceed = !proceed
+            }
             return false
         }
 
         if (password.length < 6) {
             binding.regPassword.error = "Password should be at least 6 characters"
             binding.regPassword.requestFocus()
+            if(proceed){
+                proceed = !proceed
+            }
             return false
         }
 

@@ -4,47 +4,78 @@ package com.codegrace.Saklo.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
+import android.widget.CheckBox;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.codegrace.Saklo.R;
+import com.google.android.material.textfield.TextInputLayout;
+import com.ncorti.slidetoact.SlideToActView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class FragmentLoginBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnLogin;
+  public final CheckBox cbRememberMe;
 
   @NonNull
-  public final Button btnToregister;
+  public final RelativeLayout container2;
 
   @NonNull
-  public final EditText loginPassword;
+  public final ImageView ivVectorLog;
 
   @NonNull
-  public final EditText loginUsername;
+  public final TextInputLayout logEmail;
 
-  private FragmentLoginBinding(@NonNull LinearLayout rootView, @NonNull Button btnLogin,
-      @NonNull Button btnToregister, @NonNull EditText loginPassword,
-      @NonNull EditText loginUsername) {
+  @NonNull
+  public final RelativeLayout logOptions;
+
+  @NonNull
+  public final TextInputLayout logPassword;
+
+  @NonNull
+  public final SlideToActView loginBtn;
+
+  @NonNull
+  public final TextView tvForgotPass;
+
+  @NonNull
+  public final TextView tvRegisterHere;
+
+  @NonNull
+  public final TextView tvRegisterIndicator;
+
+  private FragmentLoginBinding(@NonNull ConstraintLayout rootView, @NonNull CheckBox cbRememberMe,
+      @NonNull RelativeLayout container2, @NonNull ImageView ivVectorLog,
+      @NonNull TextInputLayout logEmail, @NonNull RelativeLayout logOptions,
+      @NonNull TextInputLayout logPassword, @NonNull SlideToActView loginBtn,
+      @NonNull TextView tvForgotPass, @NonNull TextView tvRegisterHere,
+      @NonNull TextView tvRegisterIndicator) {
     this.rootView = rootView;
-    this.btnLogin = btnLogin;
-    this.btnToregister = btnToregister;
-    this.loginPassword = loginPassword;
-    this.loginUsername = loginUsername;
+    this.cbRememberMe = cbRememberMe;
+    this.container2 = container2;
+    this.ivVectorLog = ivVectorLog;
+    this.logEmail = logEmail;
+    this.logOptions = logOptions;
+    this.logPassword = logPassword;
+    this.loginBtn = loginBtn;
+    this.tvForgotPass = tvForgotPass;
+    this.tvRegisterHere = tvRegisterHere;
+    this.tvRegisterIndicator = tvRegisterIndicator;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -69,32 +100,69 @@ public final class FragmentLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_login;
-      Button btnLogin = ViewBindings.findChildViewById(rootView, id);
-      if (btnLogin == null) {
+      id = R.id.cb_rememberMe;
+      CheckBox cbRememberMe = ViewBindings.findChildViewById(rootView, id);
+      if (cbRememberMe == null) {
         break missingId;
       }
 
-      id = R.id.btn_toregister;
-      Button btnToregister = ViewBindings.findChildViewById(rootView, id);
-      if (btnToregister == null) {
+      id = R.id.container_2;
+      RelativeLayout container2 = ViewBindings.findChildViewById(rootView, id);
+      if (container2 == null) {
         break missingId;
       }
 
-      id = R.id.login_password;
-      EditText loginPassword = ViewBindings.findChildViewById(rootView, id);
-      if (loginPassword == null) {
+      id = R.id.iv_vector_log;
+      ImageView ivVectorLog = ViewBindings.findChildViewById(rootView, id);
+      if (ivVectorLog == null) {
         break missingId;
       }
 
-      id = R.id.login_username;
-      EditText loginUsername = ViewBindings.findChildViewById(rootView, id);
-      if (loginUsername == null) {
+      id = R.id.log_email;
+      TextInputLayout logEmail = ViewBindings.findChildViewById(rootView, id);
+      if (logEmail == null) {
         break missingId;
       }
 
-      return new FragmentLoginBinding((LinearLayout) rootView, btnLogin, btnToregister,
-          loginPassword, loginUsername);
+      id = R.id.log_options;
+      RelativeLayout logOptions = ViewBindings.findChildViewById(rootView, id);
+      if (logOptions == null) {
+        break missingId;
+      }
+
+      id = R.id.log_password;
+      TextInputLayout logPassword = ViewBindings.findChildViewById(rootView, id);
+      if (logPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.loginBtn;
+      SlideToActView loginBtn = ViewBindings.findChildViewById(rootView, id);
+      if (loginBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_forgotPass;
+      TextView tvForgotPass = ViewBindings.findChildViewById(rootView, id);
+      if (tvForgotPass == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_registerHere;
+      TextView tvRegisterHere = ViewBindings.findChildViewById(rootView, id);
+      if (tvRegisterHere == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_registerIndicator;
+      TextView tvRegisterIndicator = ViewBindings.findChildViewById(rootView, id);
+      if (tvRegisterIndicator == null) {
+        break missingId;
+      }
+
+      return new FragmentLoginBinding((ConstraintLayout) rootView, cbRememberMe, container2,
+          ivVectorLog, logEmail, logOptions, logPassword, loginBtn, tvForgotPass, tvRegisterHere,
+          tvRegisterIndicator);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
