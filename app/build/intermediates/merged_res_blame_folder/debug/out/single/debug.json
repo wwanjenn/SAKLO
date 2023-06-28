@@ -68,6 +68,10 @@
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-77:\\drawable\\baseline_dehaze_24.xml"
     },
     {
+        "merged": "com.codegrace.Saklo.app-merged_res-75:/layout_fragment_login.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-77:/layout/fragment_login.xml"
+    },
+    {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-75:\\drawable_baseline_slide_error_24.xml.flat",
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-77:\\drawable\\baseline_slide_error_24.xml"
     },
@@ -184,12 +188,12 @@
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-77:\\layout\\activity_nav_bar.xml"
     },
     {
-        "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-75:\\drawable_edit_text_border.xml.flat",
-        "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-77:\\drawable\\edit_text_border.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-75:/layout_fragment_register.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-77:/layout/fragment_register.xml"
     },
     {
-        "merged": "com.codegrace.Saklo.app-merged_res-75:/navigation_register_login_nav.xml.flat",
-        "source": "com.codegrace.Saklo.app-main-77:/navigation/register_login_nav.xml"
+        "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-75:\\drawable_edit_text_border.xml.flat",
+        "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-77:\\drawable\\edit_text_border.xml"
     },
     {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-75:\\layout_fragment_login.xml.flat",

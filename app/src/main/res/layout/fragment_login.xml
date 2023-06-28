@@ -10,27 +10,43 @@
     tools:context=".fragment.loginRegister.RegisterFragment">
 
     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:src="@drawable/login_vector_art_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"></ImageView>
+
+    <ImageView
         android:id="@+id/iv_vector_log"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:src="@drawable/login_vector_art"
+        app:layout_constraintBottom_toBottomOf="@+id/container_2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
         android:text="Login to your \n Account"
         android:textAlignment="textEnd"
-        android:textColor="@color/white"
-        android:textSize="30.5sp"
+        android:textColor="@color/light_blu"
+        android:textFontWeight="350"
+        android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/container_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintHorizontal_bias="0.86"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.809" />
+        app:layout_constraintVertical_bias="0.591" />
 
     <RelativeLayout
         android:id="@+id/container_2"

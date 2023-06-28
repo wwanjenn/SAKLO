@@ -10,26 +10,41 @@
     tools:context=".fragment.loginRegister.RegisterFragment">
 
     <ImageView
-        android:id="@+id/iv_vector_reg"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:src="@drawable/register_vector_art"
+        android:layout_height="500dp"
+        android:src="@drawable/introduction_vector_art_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/container_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"/>
+
+    <ImageView
+        android:id="@+id/iv_vector_reg"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:src="@drawable/register_vector_art"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
         android:text="Create an \n Account"
         android:textColor="@color/white"
-        android:textSize="31sp"
+        android:textFontWeight="300"
+        android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/container_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.829" />
+        app:layout_constraintVertical_bias="0.605" />
 
     <RelativeLayout
         android:id="@+id/container_1"
