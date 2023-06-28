@@ -61,8 +61,9 @@ class MainActivity : AppCompatActivity() {
         val btnLogout = findViewById<Button>(R.id.btnSignout)
         btnLogout.setOnClickListener {
             firebaseAuth!!.signOut()
-            val intentLogout = Intent(this, RegisterLoginActivity::class.java)
-            startActivity(intentLogout)
+            val intent = Intent(this, RegisterLoginActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
         }
 
         mAuthListener = FirebaseAuth.AuthStateListener { firebaseAuth ->

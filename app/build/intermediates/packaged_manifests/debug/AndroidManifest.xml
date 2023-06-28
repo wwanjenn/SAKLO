@@ -35,7 +35,13 @@
         <activity
             android:name="com.codegrace.Saklo.activities.SplashActivity"
             android:exported="true"
-            android:theme="@style/SplashTheme" />
+            android:theme="@style/SplashTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.codegrace.Saklo.activities.RegisterLoginActivity"
             android:exported="true" >
@@ -49,9 +55,9 @@
             android:name="com.codegrace.Saklo.activities.MainActivity"
             android:exported="true" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity

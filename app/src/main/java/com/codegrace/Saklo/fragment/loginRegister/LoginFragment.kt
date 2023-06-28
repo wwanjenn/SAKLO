@@ -13,6 +13,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException
 import com.google.firebase.auth.FirebaseUser
+import com.ncorti.slidetoact.SlideToActView
 
 class LoginFragment: Fragment(R.layout.fragment_login) {
     private lateinit var binding: FragmentLoginBinding
@@ -31,51 +32,53 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
-        binding.btnLogin.setOnClickListener {
-            val email = binding.loginUsername.text.toString()
-            val password = binding.loginPassword.text.toString()
+        binding.loginBtn.onSlideCompleteListener = object : SlideToActView.OnSlideCompleteListener {
+            override fun onSlideComplete(view: SlideToActView) {
+                val email = binding.logEmail.editText?.text.toString()
+                val password = binding.logPassword.editText?.text.toString()
 
-            if(email.isNotEmpty() && password.isNotEmpty()){
-                if(isValidEmail(email)) {
-                    firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener {
-                        if (it.isSuccessful) {
-                            Toast.makeText(
-                                requireActivity(),
-                                "Successfully Logged In!",
-                                Toast.LENGTH_SHORT
-                            ).show()
-                            findNavController().navigate(R.id.action_loginFragment_to_mainActivity)
-                        } else {
-                            try {
-                                throw it.exception!!
-                            } catch (e: FirebaseAuthInvalidUserException) {
-                                // Handle invalid user exception
-                                binding.loginUsername.error = "Invalid email address. Account does not exist or is no longer valid"
-                                binding.loginUsername.requestFocus()
-                            } catch (e: FirebaseAuthInvalidCredentialsException) {
-                                // Handle invalid credentials exception
-                                binding.loginPassword.error = "Incorrect password"
-                                binding.loginPassword.requestFocus()
-                            } catch (e: Exception) {
-                                // Handle other exceptions
+                if(email.isNotEmpty() && password.isNotEmpty()){
+                    if(isValidEmail(email)) {
+                        firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener {
+                            if (it.isSuccessful) {
                                 Toast.makeText(
                                     requireActivity(),
-                                    "Authentication failed: " + e.message,
+                                    "Successfully Logged In!",
                                     Toast.LENGTH_SHORT
                                 ).show()
+                                findNavController().navigate(R.id.action_loginFragment_to_mainActivity)
+                            } else {
+                                try {
+                                    throw it.exception!!
+                                } catch (e: FirebaseAuthInvalidUserException) {
+                                    // Handle invalid user exception
+                                    binding.logEmail.error = "Invalid email address. Account does not exist or is no longer valid"
+                                    binding.logEmail.requestFocus()
+                                } catch (e: FirebaseAuthInvalidCredentialsException) {
+                                    // Handle invalid credentials exception
+                                    binding.logPassword.error = "Incorrect password"
+                                    binding.logPassword.requestFocus()
+                                } catch (e: Exception) {
+                                    // Handle other exceptions
+                                    Toast.makeText(
+                                        requireActivity(),
+                                        "Authentication failed: " + e.message,
+                                        Toast.LENGTH_SHORT
+                                    ).show()
+                                }
                             }
                         }
+                    }else{
+                        binding.logEmail.error = "Invalid email format"
+                        binding.logEmail.requestFocus()
                     }
                 }else{
-                    binding.loginUsername.error = "Invalid email format"
-                    binding.loginUsername.requestFocus()
+                    Toast.makeText(requireActivity(), "Empty fields are not allowed", Toast.LENGTH_LONG).show()
                 }
-            }else{
-                Toast.makeText(requireActivity(), "Empty fields are not allowed", Toast.LENGTH_LONG).show()
             }
         }
 
-        binding.btnToregister.setOnClickListener {
+        binding.tvRegisterHere.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
         }
     }
@@ -85,3 +88,5 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
         return email.matches(emailPattern.toRegex())
     }
 }
+
+

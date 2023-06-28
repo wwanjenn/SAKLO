@@ -26,6 +26,8 @@
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:text="Get Started"
+        android:textSize="20sp"
+        android:padding="11dp"
         android:layout_marginTop="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline_intro2"

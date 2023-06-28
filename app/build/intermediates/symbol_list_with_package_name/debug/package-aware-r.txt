@@ -48,6 +48,8 @@ anim nav_default_pop_exit_anim
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
+animator fade_in
+animator fade_out
 animator fragment_close_enter
 animator fragment_close_exit
 animator fragment_fade_enter
@@ -83,6 +85,7 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
+animator slidetoact_animator_ic_check
 attr SharedValue
 attr SharedValueId
 attr action
@@ -139,10 +142,13 @@ attr animateCircleAngleTo
 attr animateMenuItems
 attr animateNavigationIcon
 attr animateRelativeTo
+attr animate_completion
 attr animationMode
+attr animation_duration
 attr appBarLayoutStyle
 attr applyMotionScene
 attr arcMode
+attr area_margin
 attr argType
 attr arrowHeadLength
 attr arrowShaftLength
@@ -202,6 +208,7 @@ attr blendSrc
 attr borderRound
 attr borderRoundPercent
 attr borderWidth
+attr border_radius
 attr borderlessButtonStyle
 attr bottomAppBarStyle
 attr bottomInsetScrimEnabled
@@ -221,6 +228,7 @@ attr boxStrokeErrorColor
 attr boxStrokeWidth
 attr boxStrokeWidthFocused
 attr brightness
+attr bump_vibration
 attr buttonBarButtonStyle
 attr buttonBarNegativeButtonStyle
 attr buttonBarNeutralButtonStyle
@@ -391,6 +399,7 @@ attr colorTertiaryFixed
 attr colorTertiaryFixedDim
 attr commitIcon
 attr compatShadowEnabled
+attr complete_icon
 attr constraintRotate
 attr constraintSet
 attr constraintSetEnd
@@ -649,6 +658,7 @@ attr iconSize
 attr iconStartPadding
 attr iconTint
 attr iconTintMode
+attr icon_margin
 attr iconifiedByDefault
 attr ifTagNotSet
 attr ifTagSet
@@ -667,6 +677,7 @@ attr indicatorDirectionLinear
 attr indicatorInset
 attr indicatorSize
 attr initialActivityCount
+attr inner_color
 attr insetForeground
 attr isLightTheme
 attr isMaterial3DynamicColorApplied
@@ -953,6 +964,7 @@ attr onPositiveCross
 attr onShow
 attr onStateTransition
 attr onTouchUp
+attr outer_color
 attr overlapAnchor
 attr overlay
 attr paddingBottomNoButtons
@@ -1026,6 +1038,7 @@ attr removeEmbeddedFabElevation
 attr restoreState
 attr reverseLayout
 attr rippleColor
+attr rotate_icon
 attr rotationCenterId
 attr round
 attr roundPercent
@@ -1080,7 +1093,13 @@ attr singleChoiceItemLayout
 attr singleLine
 attr singleSelection
 attr sizePercent
+attr slideToActViewStyle
 attr sliderStyle
+attr slider_height
+attr slider_icon
+attr slider_icon_color
+attr slider_locked
+attr slider_reversed
 attr snackbarButtonStyle
 attr snackbarStyle
 attr snackbarTextViewStyle
@@ -1112,6 +1131,7 @@ attr startIconTintMode
 attr state_above_anchor
 attr state_collapsed
 attr state_collapsible
+attr state_complete
 attr state_dragged
 attr state_error
 attr state_indeterminate
@@ -1176,6 +1196,7 @@ attr targetPackage
 attr telltales_tailColor
 attr telltales_tailScale
 attr telltales_velocityMode
+attr text
 attr textAllCaps
 attr textAppearanceBody1
 attr textAppearanceBody2
@@ -1237,6 +1258,10 @@ attr textOutlineThickness
 attr textPanX
 attr textPanY
 attr textStartPadding
+attr text_appearance
+attr text_color
+attr text_size
+attr text_style
 attr textureBlurFactor
 attr textureEffect
 attr textureHeight
@@ -2112,6 +2137,8 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color slidetoact_defaultAccent
+color slidetoact_white
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -2894,6 +2921,9 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen slidetoact_default_area_margin
+dimen slidetoact_default_icon_margin
+dimen slidetoact_default_text_size
 dimen sliding_pane_detail_pane_width
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
@@ -2985,12 +3015,14 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_dehaze_24
+drawable baseline_email_24
 drawable baseline_healing_24
 drawable baseline_home_24
 drawable baseline_lock_24
 drawable baseline_medical_services_24
 drawable baseline_person_24
 drawable baseline_search_24
+drawable baseline_slide_error_24
 drawable baseline_square_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3047,6 +3079,8 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable introduction_vector_art
+drawable login_vector_art
 drawable logo
 drawable m3_appbar_background
 drawable m3_avd_hide_password
@@ -3119,13 +3153,20 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rect_btn_google
+drawable rect_rounded_all_corners
+drawable rect_rounded_upper_corners
 drawable rectangle
 drawable rectangle_button
 drawable rectangle_button1
 drawable rectangle_dark_blu
 drawable rectangle_dark_gr
+drawable register_vector_art
 drawable saklogo
 drawable saklogo_cropped
+drawable slidetoact_animated_ic_check
+drawable slidetoact_ic_arrow
+drawable slidetoact_ic_check
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3237,6 +3278,7 @@ id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
+id bold
 id bottom
 id bottomNav
 id bounce
@@ -3253,15 +3295,14 @@ id btnHome
 id btnRemedies
 id btnSignout
 id btn_intro
-id btn_login
-id btn_register
-id btn_tologin
-id btn_toregister
+id btn_toLogin
+id btn_toRegister
 id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
 id carryVelocity
+id cb_rememberMe
 id center
 id centerCrop
 id centerInside
@@ -3286,6 +3327,8 @@ id confirm_button
 id constraint
 id consume_window_insets_tag
 id container
+id container_1
+id container_2
 id content
 id contentPanel
 id contiguous
@@ -3319,6 +3362,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id divider_accopt
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3369,8 +3413,6 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
-id guideline_accopt1
-id guideline_accopt2
 id guideline_intro1
 id guideline_intro2
 id hamburger
@@ -3391,7 +3433,6 @@ id ignoreRequest
 id image
 id imageView
 id imageView2
-id imageView3
 id immediateStop
 id included
 id indeterminate
@@ -3403,6 +3444,9 @@ id inward
 id is_pooling_container_tag
 id italic
 id item_touch_helper_previous_elevation
+id iv_logo_accopt
+id iv_vector_log
+id iv_vector_reg
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3417,9 +3461,11 @@ id linear
 id listMode
 id list_item
 id locale
+id log_email
+id log_options
+id log_password
+id loginBtn
 id loginFragment
-id login_password
-id login_username
 id logo
 id ltr
 id m3_side_sheet
@@ -3535,8 +3581,10 @@ id reg_conpassword
 id reg_email
 id reg_password
 id reg_username
+id registerBtn
 id registerFragment
 id register_login_nav
+id relativeLayout
 id report_drawn
 id reverseSawtooth
 id right
@@ -3674,7 +3722,13 @@ id transition_transform
 id triangle
 id tv_accopt1
 id tv_accopt2
+id tv_accopt_div
+id tv_forgotPass
 id tv_intro
+id tv_loginHere
+id tv_loginIndicator
+id tv_registerHere
+id tv_registerIndicator
 id unchecked
 id uniform
 id unlabeled
@@ -4127,6 +4181,7 @@ string side_sheet_behavior
 string status_bar_notification_info_overflow
 string tab
 string template_percent
+style AccOptBtns
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -4525,6 +4580,7 @@ style ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day
 style ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Window_Fullscreen
 style ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Year
 style ShapeAppearanceOverlay_MaterialComponents_TextInputLayout_FilledBox
+style SlideToActView
 style SplashTheme
 style TextAppearance_AppCompat
 style TextAppearance_AppCompat_Body1
@@ -5238,7 +5294,6 @@ style Widget_Support_CoordinatorLayout
 style login_Theme
 style primaryBtn
 style secondaryBtn
-style tertiaryBtn
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
@@ -5379,6 +5434,8 @@ styleable ShapeAppearance cornerFamily cornerFamilyBottomLeft cornerFamilyBottom
 styleable ShapeableImageView contentPadding contentPaddingBottom contentPaddingEnd contentPaddingLeft contentPaddingRight contentPaddingStart contentPaddingTop shapeAppearance shapeAppearanceOverlay strokeColor strokeWidth
 styleable SideSheetBehavior_Layout android_maxWidth android_maxHeight android_elevation backgroundTint behavior_draggable coplanarSiblingViewId shapeAppearance shapeAppearanceOverlay
 styleable SignInButton buttonSize colorScheme scopeUris
+styleable SlideToActView animate_completion animation_duration area_margin border_radius bump_vibration complete_icon icon_margin inner_color outer_color rotate_icon slider_height slider_icon slider_icon_color slider_locked slider_reversed state_complete text text_appearance text_color text_size text_style
+styleable SlideToActViewTheme slideToActViewStyle
 styleable Slider android_enabled android_value android_stepSize android_valueFrom android_valueTo haloColor haloRadius labelBehavior labelStyle minTouchTargetSize thumbColor thumbElevation thumbRadius thumbStrokeColor thumbStrokeWidth tickColor tickColorActive tickColorInactive tickRadiusActive tickRadiusInactive tickVisible trackColor trackColorActive trackColorInactive trackHeight
 styleable Snackbar snackbarButtonStyle snackbarStyle snackbarTextViewStyle
 styleable SnackbarLayout android_maxWidth actionTextColorAlpha animationMode backgroundOverlayColorAlpha backgroundTint backgroundTintMode elevation maxActionInlineWidth shapeAppearance shapeAppearanceOverlay
