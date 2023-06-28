@@ -3,11 +3,8 @@ package com.codegrace.Saklo.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import androidx.core.app.ActivityCompat.finishAffinity
-import androidx.core.view.WindowCompat
-import androidx.core.view.WindowInsetsControllerCompat
 import com.codegrace.Saklo.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
@@ -20,7 +17,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        changeStatusBarTextColor()
 
         firebaseAuth = FirebaseAuth.getInstance()
 
@@ -94,16 +90,6 @@ class MainActivity : AppCompatActivity() {
         } else {
             startActivity(Intent(this@MainActivity, RegisterLoginActivity::class.java))
             finish()
-        }
-    }
-
-    private fun changeStatusBarTextColor() {
-        val decorView: View = window.decorView
-        WindowCompat.setDecorFitsSystemWindows(window, true)
-        WindowInsetsControllerCompat(window, decorView).run {
-            isAppearanceLightStatusBars = true
-            isAppearanceLightNavigationBars = true
-            systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
         }
     }
 }

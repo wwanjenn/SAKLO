@@ -1,0 +1,417 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.codegrace.Saklo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:25:5-67
+11-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:25:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:26:5-79
+12-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:26:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\4af1cfef2762634fcd920139c48031c2\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:24:5-68
+13-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\4af1cfef2762634fcd920139c48031c2\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:24:22-65
+14    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+14-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\4af1cfef2762634fcd920139c48031c2\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:25:5-79
+14-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\4af1cfef2762634fcd920139c48031c2\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:25:22-76
+15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+15-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\bb8cce5741939278d702986a2fdd34a6\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:5-110
+15-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\bb8cce5741939278d702986a2fdd34a6\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:22-107
+16
+17    <permission
+17-->[androidx.core:core:1.10.1] C:\Users\jolyn\.gradle\caches\transforms-3\58a3236211dd9a75a05b7c10475043ec\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+18        android:name="com.codegrace.Saklo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.10.1] C:\Users\jolyn\.gradle\caches\transforms-3\58a3236211dd9a75a05b7c10475043ec\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.10.1] C:\Users\jolyn\.gradle\caches\transforms-3\58a3236211dd9a75a05b7c10475043ec\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.codegrace.Saklo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.10.1] C:\Users\jolyn\.gradle\caches\transforms-3\58a3236211dd9a75a05b7c10475043ec\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.10.1] C:\Users\jolyn\.gradle\caches\transforms-3\58a3236211dd9a75a05b7c10475043ec\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+22
+23    <application
+23-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:5:5-56:19
+24        android:allowBackup="true"
+24-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:6:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.10.1] C:\Users\jolyn\.gradle\caches\transforms-3\58a3236211dd9a75a05b7c10475043ec\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+26        android:dataExtractionRules="@xml/data_extraction_rules"
+26-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:7:9-65
+27        android:debuggable="true"
+28        android:fullBackupContent="@xml/backup_rules"
+28-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:8:9-54
+29        android:icon="@drawable/logo"
+29-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:9:9-38
+30        android:label="@string/app_name"
+30-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:10:9-41
+31        android:roundIcon="@drawable/logo"
+31-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:11:9-43
+32        android:supportsRtl="true"
+32-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:12:9-35
+33        android:testOnly="true"
+34        android:theme="@style/Theme.Saklo" >
+34-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:13:9-43
+35        <activity
+35-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:15:9-23:20
+36            android:name="com.codegrace.Saklo.activities.SplashActivity"
+36-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:16:13-54
+37            android:exported="true"
+37-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:17:13-36
+38            android:theme="@style/SplashTheme" >
+38-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:18:13-47
+39            <intent-filter>
+39-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:19:13-22:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:20:17-69
+40-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:20:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:21:17-77
+42-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:21:27-74
+43            </intent-filter>
+44        </activity>
+45        <activity
+45-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:24:9-31:20
+46            android:name="com.codegrace.Saklo.activities.RegisterLoginActivity"
+46-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:25:13-61
+47            android:exported="true" >
+47-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:26:13-36
+48            <intent-filter>
+48-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:27:13-30:29
+49                <action android:name="android.intent.action.VIEW" />
+49-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:28:17-69
+49-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:28:25-66
+50
+51                <category android:name="android.intent.category.DEFAULT" />
+51-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:29:17-76
+51-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:29:27-73
+52            </intent-filter>
+53        </activity>
+54        <activity
+54-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:32:9-39:20
+55            android:name="com.codegrace.Saklo.activities.MainActivity"
+55-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:33:13-52
+56            android:exported="true" >
+56-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:34:13-36
+57            <intent-filter>
+57-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:27:13-30:29
+58                <action android:name="android.intent.action.VIEW" />
+58-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:28:17-69
+58-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:28:25-66
+59
+60                <category android:name="android.intent.category.DEFAULT" />
+60-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:29:17-76
+60-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:29:27-73
+61            </intent-filter>
+62        </activity>
+63        <activity
+63-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:40:9-47:20
+64            android:name="com.codegrace.Saklo.activities.AppointmentActivity"
+64-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:41:13-59
+65            android:exported="true" >
+65-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:42:13-36
+66            <intent-filter>
+66-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:27:13-30:29
+67                <action android:name="android.intent.action.VIEW" />
+67-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:28:17-69
+67-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:28:25-66
+68
+69                <category android:name="android.intent.category.DEFAULT" />
+69-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:29:17-76
+69-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:29:27-73
+70            </intent-filter>
+71        </activity>
+72        <activity
+72-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:48:9-55:20
+73            android:name="com.codegrace.Saklo.activities.RemediesActivity"
+73-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:49:13-56
+74            android:exported="true" >
+74-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:50:13-36
+75            <intent-filter>
+75-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:27:13-30:29
+76                <action android:name="android.intent.action.VIEW" />
+76-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:28:17-69
+76-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:28:25-66
+77
+78                <category android:name="android.intent.category.DEFAULT" />
+78-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:29:17-76
+78-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:29:27-73
+79            </intent-filter>
+80        </activity>
+81        <activity
+81-->[androidx.compose.ui:ui-tooling:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\109fb1c625edd3b055e51058bd39c7ea\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:23:9-25:39
+82            android:name="androidx.compose.ui.tooling.PreviewActivity"
+82-->[androidx.compose.ui:ui-tooling:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\109fb1c625edd3b055e51058bd39c7ea\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:24:13-71
+83            android:exported="true" />
+83-->[androidx.compose.ui:ui-tooling:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\109fb1c625edd3b055e51058bd39c7ea\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:25:13-36
+84        <activity
+84-->[androidx.compose.ui:ui-test-manifest:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\f4e73deb4cd5c4ac27f48dd09b6334aa\transformed\jetified-ui-test-manifest-1.3.0\AndroidManifest.xml:23:9-25:39
+85            android:name="androidx.activity.ComponentActivity"
+85-->[androidx.compose.ui:ui-test-manifest:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\f4e73deb4cd5c4ac27f48dd09b6334aa\transformed\jetified-ui-test-manifest-1.3.0\AndroidManifest.xml:24:13-63
+86            android:exported="true" />
+86-->[androidx.compose.ui:ui-test-manifest:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\f4e73deb4cd5c4ac27f48dd09b6334aa\transformed\jetified-ui-test-manifest-1.3.0\AndroidManifest.xml:25:13-36
+87
+88        <service
+88-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\9d6d43dfd08902c7fbe28ee9ab5aa1fe\transformed\jetified-firebase-auth-ktx-22.0.0\AndroidManifest.xml:8:9-14:19
+89            android:name="com.google.firebase.components.ComponentDiscoveryService"
+89-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\9d6d43dfd08902c7fbe28ee9ab5aa1fe\transformed\jetified-firebase-auth-ktx-22.0.0\AndroidManifest.xml:9:13-84
+90            android:directBootAware="true"
+90-->[com.google.firebase:firebase-common:20.3.2] C:\Users\jolyn\.gradle\caches\transforms-3\8868c5b959e8b4559d69423ed1f5daaa\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+91            android:exported="false" >
+91-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\9d6d43dfd08902c7fbe28ee9ab5aa1fe\transformed\jetified-firebase-auth-ktx-22.0.0\AndroidManifest.xml:10:13-37
+92            <meta-data
+92-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\9d6d43dfd08902c7fbe28ee9ab5aa1fe\transformed\jetified-firebase-auth-ktx-22.0.0\AndroidManifest.xml:11:13-13:85
+93                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+93-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\9d6d43dfd08902c7fbe28ee9ab5aa1fe\transformed\jetified-firebase-auth-ktx-22.0.0\AndroidManifest.xml:12:17-116
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\9d6d43dfd08902c7fbe28ee9ab5aa1fe\transformed\jetified-firebase-auth-ktx-22.0.0\AndroidManifest.xml:13:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:69:13-71:85
+96                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+96-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:70:17-109
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:71:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-database:20.2.2] C:\Users\jolyn\.gradle\caches\transforms-3\12018c2beca335ff7f65e3d387e2a8df\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:31:13-33:85
+99                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+99-->[com.google.firebase:firebase-database:20.2.2] C:\Users\jolyn\.gradle\caches\transforms-3\12018c2beca335ff7f65e3d387e2a8df\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:32:17-109
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-database:20.2.2] C:\Users\jolyn\.gradle\caches\transforms-3\12018c2beca335ff7f65e3d387e2a8df\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:33:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\jolyn\.gradle\caches\transforms-3\8ac129e9cddd93be25031c47eeda9ef7\transformed\jetified-firebase-common-ktx-20.2.0\AndroidManifest.xml:14:13-16:85
+102                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+102-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\jolyn\.gradle\caches\transforms-3\8ac129e9cddd93be25031c47eeda9ef7\transformed\jetified-firebase-common-ktx-20.2.0\AndroidManifest.xml:15:17-113
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\jolyn\.gradle\caches\transforms-3\8ac129e9cddd93be25031c47eeda9ef7\transformed\jetified-firebase-common-ktx-20.2.0\AndroidManifest.xml:16:17-82
+104            <meta-data
+104-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\4af1cfef2762634fcd920139c48031c2\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:31:13-33:85
+105                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+105-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\4af1cfef2762634fcd920139c48031c2\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:32:17-139
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\4af1cfef2762634fcd920139c48031c2\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:33:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\jolyn\.gradle\caches\transforms-3\52f67190d0c248b24317db8b7fa66fe5\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+108                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+108-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\jolyn\.gradle\caches\transforms-3\52f67190d0c248b24317db8b7fa66fe5\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\jolyn\.gradle\caches\transforms-3\52f67190d0c248b24317db8b7fa66fe5\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+110        </service>
+111
+112        <activity
+112-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:29:9-46:20
+113            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+113-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:30:13-80
+114            android:excludeFromRecents="true"
+114-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:31:13-46
+115            android:exported="true"
+115-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:32:13-36
+116            android:launchMode="singleTask"
+116-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:33:13-44
+117            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+117-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:34:13-72
+118            <intent-filter>
+118-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:35:13-45:29
+119                <action android:name="android.intent.action.VIEW" />
+119-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:28:17-69
+119-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:28:25-66
+120
+121                <category android:name="android.intent.category.DEFAULT" />
+121-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:29:17-76
+121-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:29:27-73
+122                <category android:name="android.intent.category.BROWSABLE" />
+122-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
+122-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
+123
+124                <data
+124-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
+125                    android:host="firebase.auth"
+125-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
+126                    android:path="/"
+126-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
+127                    android:scheme="genericidp" />
+127-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
+128            </intent-filter>
+129        </activity>
+130        <activity
+130-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:47:9-64:20
+131            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+131-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:48:13-79
+132            android:excludeFromRecents="true"
+132-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:49:13-46
+133            android:exported="true"
+133-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:50:13-36
+134            android:launchMode="singleTask"
+134-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:51:13-44
+135            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+135-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:52:13-72
+136            <intent-filter>
+136-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:53:13-63:29
+137                <action android:name="android.intent.action.VIEW" />
+137-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:28:17-69
+137-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:28:25-66
+138
+139                <category android:name="android.intent.category.DEFAULT" />
+139-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:29:17-76
+139-->D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:29:27-73
+140                <category android:name="android.intent.category.BROWSABLE" />
+140-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
+140-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
+141
+142                <data
+142-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
+143                    android:host="firebase.auth"
+143-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
+144                    android:path="/"
+144-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
+145                    android:scheme="recaptcha" />
+145-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\0b4e8038c7c2201323b31c484904f25c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
+146            </intent-filter>
+147        </activity>
+148
+149        <provider
+149-->[com.google.firebase:firebase-common:20.3.2] C:\Users\jolyn\.gradle\caches\transforms-3\8868c5b959e8b4559d69423ed1f5daaa\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+150            android:name="com.google.firebase.provider.FirebaseInitProvider"
+150-->[com.google.firebase:firebase-common:20.3.2] C:\Users\jolyn\.gradle\caches\transforms-3\8868c5b959e8b4559d69423ed1f5daaa\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+151            android:authorities="com.codegrace.Saklo.firebaseinitprovider"
+151-->[com.google.firebase:firebase-common:20.3.2] C:\Users\jolyn\.gradle\caches\transforms-3\8868c5b959e8b4559d69423ed1f5daaa\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+152            android:directBootAware="true"
+152-->[com.google.firebase:firebase-common:20.3.2] C:\Users\jolyn\.gradle\caches\transforms-3\8868c5b959e8b4559d69423ed1f5daaa\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+153            android:exported="false"
+153-->[com.google.firebase:firebase-common:20.3.2] C:\Users\jolyn\.gradle\caches\transforms-3\8868c5b959e8b4559d69423ed1f5daaa\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+154            android:initOrder="100" />
+154-->[com.google.firebase:firebase-common:20.3.2] C:\Users\jolyn\.gradle\caches\transforms-3\8868c5b959e8b4559d69423ed1f5daaa\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+155
+156        <activity
+156-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\jolyn\.gradle\caches\transforms-3\68aaad20322574ecb89bd4ab9c775bca\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+157            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+157-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\jolyn\.gradle\caches\transforms-3\68aaad20322574ecb89bd4ab9c775bca\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+158            android:exported="false"
+158-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\jolyn\.gradle\caches\transforms-3\68aaad20322574ecb89bd4ab9c775bca\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+159            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+159-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\jolyn\.gradle\caches\transforms-3\68aaad20322574ecb89bd4ab9c775bca\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+160
+161        <receiver
+161-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\bb8cce5741939278d702986a2fdd34a6\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:29:9-33:20
+162            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+162-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\bb8cce5741939278d702986a2fdd34a6\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:30:13-85
+163            android:enabled="true"
+163-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\bb8cce5741939278d702986a2fdd34a6\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:31:13-35
+164            android:exported="false" >
+164-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\bb8cce5741939278d702986a2fdd34a6\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:32:13-37
+165        </receiver>
+166
+167        <service
+167-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\bb8cce5741939278d702986a2fdd34a6\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:35:9-38:40
+168            android:name="com.google.android.gms.measurement.AppMeasurementService"
+168-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\bb8cce5741939278d702986a2fdd34a6\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:36:13-84
+169            android:enabled="true"
+169-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\bb8cce5741939278d702986a2fdd34a6\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:37:13-35
+170            android:exported="false" />
+170-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\bb8cce5741939278d702986a2fdd34a6\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:38:13-37
+171        <service
+171-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\bb8cce5741939278d702986a2fdd34a6\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:39:9-43:72
+172            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+172-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\bb8cce5741939278d702986a2fdd34a6\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:40:13-87
+173            android:enabled="true"
+173-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\bb8cce5741939278d702986a2fdd34a6\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:41:13-35
+174            android:exported="false"
+174-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\bb8cce5741939278d702986a2fdd34a6\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:42:13-37
+175            android:permission="android.permission.BIND_JOB_SERVICE" />
+175-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\bb8cce5741939278d702986a2fdd34a6\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:43:13-69
+176
+177        <meta-data
+177-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\jolyn\.gradle\caches\transforms-3\968366fb43dca869224e484da981ffab\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+178            android:name="com.google.android.gms.version"
+178-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\jolyn\.gradle\caches\transforms-3\968366fb43dca869224e484da981ffab\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+179            android:value="@integer/google_play_services_version" />
+179-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\jolyn\.gradle\caches\transforms-3\968366fb43dca869224e484da981ffab\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+180
+181        <provider
+181-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jolyn\.gradle\caches\transforms-3\1adf87e2b2b31e13495b72d2b651900c\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+182            android:name="androidx.startup.InitializationProvider"
+182-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jolyn\.gradle\caches\transforms-3\1adf87e2b2b31e13495b72d2b651900c\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+183            android:authorities="com.codegrace.Saklo.androidx-startup"
+183-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jolyn\.gradle\caches\transforms-3\1adf87e2b2b31e13495b72d2b651900c\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+184            android:exported="false" >
+184-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jolyn\.gradle\caches\transforms-3\1adf87e2b2b31e13495b72d2b651900c\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+185            <meta-data
+185-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jolyn\.gradle\caches\transforms-3\1adf87e2b2b31e13495b72d2b651900c\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+186                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+186-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jolyn\.gradle\caches\transforms-3\1adf87e2b2b31e13495b72d2b651900c\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+187                android:value="androidx.startup" />
+187-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jolyn\.gradle\caches\transforms-3\1adf87e2b2b31e13495b72d2b651900c\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+188            <meta-data
+188-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\jolyn\.gradle\caches\transforms-3\c0a4777edff19fbd92285cb8a9e8ebcc\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+189                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+189-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\jolyn\.gradle\caches\transforms-3\c0a4777edff19fbd92285cb8a9e8ebcc\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+190                android:value="androidx.startup" />
+190-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\jolyn\.gradle\caches\transforms-3\c0a4777edff19fbd92285cb8a9e8ebcc\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+191            <meta-data
+191-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+192                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+192-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+193                android:value="androidx.startup" />
+193-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+194        </provider>
+195
+196        <uses-library
+196-->[androidx.window:window:1.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\404ce10d63b576b3439c4d521d4d3d3a\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+197            android:name="androidx.window.extensions"
+197-->[androidx.window:window:1.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\404ce10d63b576b3439c4d521d4d3d3a\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+198            android:required="false" />
+198-->[androidx.window:window:1.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\404ce10d63b576b3439c4d521d4d3d3a\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+199        <uses-library
+199-->[androidx.window:window:1.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\404ce10d63b576b3439c4d521d4d3d3a\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+200            android:name="androidx.window.sidecar"
+200-->[androidx.window:window:1.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\404ce10d63b576b3439c4d521d4d3d3a\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+201            android:required="false" />
+201-->[androidx.window:window:1.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\404ce10d63b576b3439c4d521d4d3d3a\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+202
+203        <receiver
+203-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+204            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+204-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+205            android:directBootAware="false"
+205-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+206            android:enabled="true"
+206-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+207            android:exported="true"
+207-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+208            android:permission="android.permission.DUMP" >
+208-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+209            <intent-filter>
+209-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+210                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+210-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+210-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+211            </intent-filter>
+212            <intent-filter>
+212-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+213                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+213-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+213-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+214            </intent-filter>
+215            <intent-filter>
+215-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+216                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+216-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+216-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+217            </intent-filter>
+218            <intent-filter>
+218-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+219                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+219-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+219-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+220            </intent-filter>
+221        </receiver>
+222    </application>
+223
+224</manifest>
