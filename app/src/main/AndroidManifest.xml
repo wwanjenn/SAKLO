@@ -23,7 +23,8 @@
         </activity>
         <activity
             android:name=".activities.RegisterLoginActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/login_Theme">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -31,27 +32,18 @@
         </activity>
         <activity
             android:name=".activities.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            android:exported="true"
+            android:theme="@style/GeneralTheme">
         </activity>
         <activity
             android:name=".activities.AppointmentActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            android:exported="true"
+            android:theme="@style/GeneralTheme">
         </activity>
         <activity
             android:name=".activities.RemediesActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            android:exported="true"
+            android:theme="@style/GeneralTheme">
         </activity>
     </application>
 
