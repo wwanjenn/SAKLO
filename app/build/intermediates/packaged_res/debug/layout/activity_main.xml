@@ -25,7 +25,7 @@
                 android:layout_gravity="center">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/profile"
+                    android:id="@+id/btnHome"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_gravity="center"
@@ -61,7 +61,7 @@
                     android:orientation="horizontal">
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/btnHerbal"
+                        android:id="@+id/btnRemedies"
                         android:layout_width="160dp"
                         android:layout_height="160dp"
                         android:layout_margin="3dp"
@@ -95,15 +95,9 @@
                         android:layout_height="160dp"
                         android:layout_margin="3dp"
                         android:background="@drawable/logout_btn" />
-                    <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnHome"
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
-                    android:layout_margin="3dp"
-                    android:background="@drawable/logout_btn" />
+
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
-        <include layout="@layout/activity_nav_bar"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3012,15 +3012,18 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable appointment_btn
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_dehaze_24
 drawable baseline_email_24
 drawable baseline_healing_24
 drawable baseline_home_24
+drawable baseline_location_on_24
 drawable baseline_lock_24
 drawable baseline_medical_services_24
 drawable baseline_person_24
+drawable baseline_phone_24
 drawable baseline_search_24
 drawable baseline_slide_error_24
 drawable baseline_square_24
@@ -3051,14 +3054,20 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable contact
+drawable contact_btn
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable drugs
+drawable drugs_btn
 drawable edit_text_border
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable herbal
+drawable herbal_btn
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3084,6 +3093,8 @@ drawable introduction_vector_art_bg
 drawable login_vector_art
 drawable login_vector_art_bg
 drawable logo
+drawable logout
+drawable logout_btn
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3143,6 +3154,7 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable new_vector_login
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3163,6 +3175,7 @@ drawable rectangle_button
 drawable rectangle_button1
 drawable rectangle_dark_blu
 drawable rectangle_dark_gr
+drawable rectangle_light_blu
 drawable register_vector_art
 drawable register_vector_art_bg
 drawable saklogo
@@ -3296,6 +3309,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnAppoint
+id btnDrugs
 id btnHome
 id btnRemedies
 id btnSignout
@@ -3420,7 +3434,6 @@ id grouping
 id groups
 id guideline_intro1
 id guideline_intro2
-id hamburger
 id header_title
 id hide_in_inspector_tag
 id hideable
@@ -3577,6 +3590,7 @@ id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
+id profile
 id progress_circular
 id progress_horizontal
 id radio
@@ -4475,6 +4489,7 @@ style CardView_Light
 style DialogWindowTheme
 style FloatingDialogTheme
 style FloatingDialogWindowTheme
+style GeneralTheme
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Animation
 style MaterialAlertDialog_Material3_Body_Text
@@ -5299,6 +5314,7 @@ style Widget_Support_CoordinatorLayout
 style login_Theme
 style primaryBtn
 style secondaryBtn
+style tertiaryBtn
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

@@ -14,7 +14,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 
 class MainActivity : AppCompatActivity() {
-    lateinit var bottomNav : BottomNavigationView
     private var firebaseAuth: FirebaseAuth? = null
     var mAuthListener: FirebaseAuth.AuthStateListener? = null
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,26 +22,6 @@ class MainActivity : AppCompatActivity() {
         changeStatusBarTextColor()
 
         firebaseAuth = FirebaseAuth.getInstance()
-
-        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
-        bottomNav.setOnItemSelectedListener {
-            when (it.itemId) {
-                R.id.btnHome -> {
-                    startActivity(Intent(this, MainActivity::class.java))
-                    true
-                }
-                R.id.btnAppoint -> {
-                    startActivity(Intent(this, AppointmentActivity::class.java))
-                    true
-                }
-                R.id.btnRemedies -> {
-                    startActivity(Intent(this, RemediesActivity::class.java))
-                    true
-                }
-
-                else -> throw AssertionError()
-            }
-        }
 
         val btnHome = findViewById<Button>(R.id.btnHome)
         btnHome.setOnClickListener {
@@ -58,6 +37,12 @@ class MainActivity : AppCompatActivity() {
 
         val btnRemedies = findViewById<Button>(R.id.btnRemedies)
         btnRemedies.setOnClickListener {
+            val intentHerbal = Intent(this, RemediesActivity::class.java)
+            startActivity(intentHerbal)
+        }
+
+        val btnDrugs = findViewById<Button>(R.id.btnDrugs)
+        btnDrugs.setOnClickListener {
             val intentHerbal = Intent(this, RemediesActivity::class.java)
             startActivity(intentHerbal)
         }
