@@ -8,8 +8,4 @@
     <color name="white">#FFFFFFFF</color>
     <color name="dark_blu">#5171FF</color>
     <color name="light_blu">#D4F5FF</color>
-    <color name="drk_prm_green">#067C5A</color>
-    <color name="lgt_prm_green">#00A872</color>
-    <color name="drk_scd_navyblue">#1D1D35</color>
-    <color name="lgt_neut_gray">#D9D9D9</color>
 </resources>

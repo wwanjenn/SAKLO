@@ -1,57 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activities.MainActivity"
-    android:background="@color/white">
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/almost_wh"
+        android:gravity="center"
+        tools:context=".activities.MainActivity">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:textColor="@color/white">
 
-    <Button
-        android:id="@+id/btnHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
 
-    <Button
-        android:id="@+id/btnAppoint"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
-        android:text="Appointment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/profile"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/baseline_person_24" />
 
-    <Button
-        android:id="@+id/btnRemedies"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="256dp"
-        android:text="Herbal Remedies"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/saklogo_cropped" />
 
-    <Button
-        android:id="@+id/btnSignout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="164dp"
-        android:text="Logout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+            </LinearLayout>
 
-    <include layout="@layout/activity_nav_bar"/>
+        </androidx.appcompat.widget.Toolbar>
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+                <LinearLayout
+                    android:layout_width="339dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnHerbal"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/herbal_btn" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnDrugs"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/drugs_btn" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="339dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnAppoint"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/contact_btn" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnSignout"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/logout_btn" />
+                    <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnHome"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/logout_btn" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <include layout="@layout/activity_nav_bar"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
