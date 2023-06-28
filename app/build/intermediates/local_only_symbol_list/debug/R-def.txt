@@ -10,8 +10,11 @@ color teal_700
 color white
 drawable appointment_btn
 drawable baseline_dehaze_24
+drawable baseline_email_24
+drawable baseline_location_on_24
 drawable baseline_lock_24
 drawable baseline_person_24
+drawable baseline_phone_24
 drawable baseline_search_24
 drawable baseline_square_24
 drawable contact

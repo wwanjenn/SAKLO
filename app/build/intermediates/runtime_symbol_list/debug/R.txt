@@ -2981,8 +2981,11 @@ int drawable appointment_btn 0x7f070078
 int drawable avd_hide_password 0x7f070079
 int drawable avd_show_password 0x7f07007a
 int drawable baseline_dehaze_24 0x7f07007b
+int drawable baseline_email_24 0x7f070115
+int drawable baseline_location_on_24 0x7f070116
 int drawable baseline_lock_24 0x7f07007c
 int drawable baseline_person_24 0x7f07007d
+int drawable baseline_phone_24 0x7f070117
 int drawable baseline_search_24 0x7f07007e
 int drawable baseline_square_24 0x7f07007f
 int drawable btn_checkbox_checked_mtrl 0x7f070080

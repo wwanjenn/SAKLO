@@ -38,7 +38,8 @@
 
         <activity
             android:name=".activities.AppointmentActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/GeneralTheme">
         </activity>
         <activity
             android:name=".activities.RemediesActivity"

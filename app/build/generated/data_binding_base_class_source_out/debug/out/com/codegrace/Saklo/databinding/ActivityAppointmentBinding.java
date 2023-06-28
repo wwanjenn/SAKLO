@@ -4,20 +4,38 @@ package com.codegrace.Saklo.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.codegrace.Saklo.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityAppointmentBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
-  private ActivityAppointmentBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final EditText hrSearchbar;
+
+  @NonNull
+  public final AppCompatButton profile;
+
+  @NonNull
+  public final Toolbar toolbar;
+
+  private ActivityAppointmentBinding(@NonNull ConstraintLayout rootView,
+      @NonNull EditText hrSearchbar, @NonNull AppCompatButton profile, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
+    this.hrSearchbar = hrSearchbar;
+    this.profile = profile;
+    this.toolbar = toolbar;
   }
 
   @Override
@@ -43,10 +61,32 @@ public final class ActivityAppointmentBinding implements ViewBinding {
 
   @NonNull
   public static ActivityAppointmentBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.hr_searchbar;
+      EditText hrSearchbar = ViewBindings.findChildViewById(rootView, id);
+      if (hrSearchbar == null) {
+        break missingId;
+      }
 
-    return new ActivityAppointmentBinding((ConstraintLayout) rootView);
+      id = R.id.profile;
+      AppCompatButton profile = ViewBindings.findChildViewById(rootView, id);
+      if (profile == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      return new ActivityAppointmentBinding((ConstraintLayout) rootView, hrSearchbar, profile,
+          toolbar);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

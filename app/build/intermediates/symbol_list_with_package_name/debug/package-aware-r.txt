@@ -2982,8 +2982,11 @@ drawable appointment_btn
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_dehaze_24
+drawable baseline_email_24
+drawable baseline_location_on_24
 drawable baseline_lock_24
 drawable baseline_person_24
+drawable baseline_phone_24
 drawable baseline_search_24
 drawable baseline_square_24
 drawable btn_checkbox_checked_mtrl

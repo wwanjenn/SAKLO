@@ -102,6 +102,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:text="EMAIL"
+                        android:drawableLeft="@drawable/baseline_email_24"
                         android:textAlignment="center"
                         android:textSize="20sp"
                         android:textColor="@color/dark_blu"
@@ -113,6 +114,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:text="ADDRESS"
+                        android:drawableLeft="@drawable/baseline_location_on_24"
                         android:textAlignment="center"
                         android:textSize="20sp"
                         android:textColor="@color/dark_blu"
@@ -124,6 +126,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:text="PHONE NUMBER"
+                        android:drawableLeft="@drawable/baseline_phone_24"
                         android:textAlignment="center"
                         android:textSize="20sp"
                         android:textColor="@color/dark_blu"
@@ -157,6 +160,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:text="EMAIL"
+                        android:drawableLeft="@drawable/baseline_email_24"
                         android:textAlignment="center"
                         android:textSize="20sp"
                         android:textColor="@color/dark_blu"
@@ -168,6 +172,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:text="ADDRESS"
+                        android:drawableLeft="@drawable/baseline_location_on_24"
                         android:textAlignment="center"
                         android:textSize="20sp"
                         android:textColor="@color/dark_blu"
@@ -179,6 +184,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:text="PHONE NUMBER"
+                        android:drawableLeft="@drawable/baseline_phone_24"
                         android:textAlignment="center"
                         android:textSize="20sp"
                         android:textColor="@color/dark_blu"
@@ -212,6 +218,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:text="EMAIL"
+                        android:drawableLeft="@drawable/baseline_email_24"
                         android:textAlignment="center"
                         android:textSize="20sp"
                         android:textColor="@color/dark_blu"
@@ -223,6 +230,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:text="ADDRESS"
+                        android:drawableLeft="@drawable/baseline_location_on_24"
                         android:textAlignment="center"
                         android:textSize="20sp"
                         android:textColor="@color/dark_blu"
@@ -234,6 +242,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:text="PHONE NUMBER"
+                        android:drawableLeft="@drawable/baseline_phone_24"
                         android:textAlignment="center"
                         android:textSize="20sp"
                         android:textColor="@color/dark_blu"
@@ -241,7 +250,6 @@
                         android:background="@drawable/rectangle_light_blu"
                         android:src="@drawable/logo" />
                 </LinearLayout>
-
 
             </LinearLayout>
 
