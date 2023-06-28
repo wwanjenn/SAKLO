@@ -1,230 +1,226 @@
 [
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_baseline_square_24.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\baseline_square_24.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_baseline_lock_24.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/baseline_lock_24.xml"
+    },
+    {
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_herbal.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/herbal.png"
+    },
+    {
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_contact.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/contact.png"
     },
     {
         "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_baseline_phone_24.xml.flat",
         "source": "com.codegrace.Saklo.app-main-76:/drawable/baseline_phone_24.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\layout_activity_remedies.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\activity_remedies.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_appointment_btn.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/appointment_btn.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_baseline_lock_24.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\baseline_lock_24.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_rectangle_button.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/rectangle_button.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_herbal.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\herbal.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_logout_btn.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/logout_btn.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_contact.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\contact.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\layout_activity_register_login.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\activity_register_login.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_contact_btn.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/contact_btn.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_baseline_search_24.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/baseline_search_24.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_vector_login_1.jpg.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/vector_login_1.jpg"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_baseline_person_24.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\baseline_person_24.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/layout_activity_main.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_rectangle_dark_blu.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\rectangle_dark_blu.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_drugs_btn.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/drugs_btn.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\xml\\backup_rules.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_edit_text_border.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\edit_text_border.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_logo.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/logo.png"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_vector_login_2.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\vector_login_2.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/layout_activity_register_login.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/layout/activity_register_login.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_logout_btn.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\logout_btn.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/layout_activity_splash.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/layout/activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\layout_fragment_accountoptions.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\fragment_accountoptions.xml"
-    },
-    {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\xml_activity_splash_scene.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\xml\\activity_splash_scene.xml"
-    },
-    {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\navigation_register_login_nav.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\navigation\\register_login_nav.xml"
-    },
-    {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_new_vector_login.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\new_vector_login.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_saklogo_cropped.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/saklogo_cropped.png"
     },
     {
         "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_baseline_location_on_24.xml.flat",
         "source": "com.codegrace.Saklo.app-main-76:/drawable/baseline_location_on_24.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/layout_fragment_register.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/layout/fragment_register.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_logout.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/logout.png"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_logo.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\logo.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/xml_data_extraction_rules.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\layout_activity_splash.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\activity_splash.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_rectangle_button1.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/rectangle_button1.xml"
+    },
+    {
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_new_vector_login.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/new_vector_login.png"
     },
     {
         "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_baseline_email_24.xml.flat",
         "source": "com.codegrace.Saklo.app-main-76:/drawable/baseline_email_24.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_saklogo.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\saklogo.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_drugs.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/drugs.png"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_vector_login_1.jpg.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\vector_login_1.jpg"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/layout_activity_remedies.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/layout/activity_remedies.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_herbal_btn.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\herbal_btn.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\layout_fragment_introduction.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\fragment_introduction.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_baseline_person_24.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/baseline_person_24.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\xml\\data_extraction_rules.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_rectangle_light_blu.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/rectangle_light_blu.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_drugs_btn.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\drugs_btn.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_rectangle_dark_blu.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/rectangle_dark_blu.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\layout_fragment_register.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\fragment_register.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_vector_login_2.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/vector_login_2.png"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_rectangle_button1.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\rectangle_button1.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_rectangle_dark_gr.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\rectangle_dark_gr.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/xml_activity_splash_scene.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/xml/activity_splash_scene.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_saklogo_cropped.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\saklogo_cropped.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_rectangle_dark_gr.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/rectangle_dark_gr.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_appointment_btn.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\appointment_btn.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/layout_fragment_login.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/layout/fragment_login.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/navigation_register_login_nav.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/navigation/register_login_nav.xml"
+    },
+    {
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_baseline_dehaze_24.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/baseline_dehaze_24.xml"
+    },
+    {
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/xml_backup_rules.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
         "merged": "com.codegrace.Saklo.app-merged_res-74:/layout_activity_appointment.xml.flat",
         "source": "com.codegrace.Saklo.app-main-76:/layout/activity_appointment.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_baseline_dehaze_24.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\baseline_dehaze_24.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\layout_activity_appointment.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\activity_appointment.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_rectangle_button.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\rectangle_button.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_edit_text_border.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/edit_text_border.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_rectangle_light_blu.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\rectangle_light_blu.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_herbal_btn.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/herbal_btn.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_rectangle.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\rectangle.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/layout_fragment_introduction.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/layout/fragment_introduction.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\layout_fragment_login.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\layout\\fragment_login.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_baseline_square_24.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/baseline_square_24.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_baseline_search_24.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\baseline_search_24.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_contact_btn.xml.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\contact_btn.xml"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/layout_fragment_accountoptions.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/layout/fragment_accountoptions.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_logout.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\logout.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_rectangle.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/rectangle.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-74:\\drawable_drugs.png.flat",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-76:\\drawable\\drugs.png"
+        "merged": "com.codegrace.Saklo.app-merged_res-74:/drawable_saklogo.png.flat",
+        "source": "com.codegrace.Saklo.app-main-76:/drawable/saklogo.png"
     }
 ]

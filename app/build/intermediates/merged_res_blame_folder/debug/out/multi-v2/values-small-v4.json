@@ -4,7 +4,7 @@
             "outputFile": "com.codegrace.Saklo.app-mergeDebugResources-72:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Romalyn Floranda\\.gradle\\caches\\transforms-3\\b2345dcf6bbba98e835132d0d833ae49\\transformed\\material-1.9.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\Wanjin\\.gradle\\caches\\transforms-3\\b2345dcf6bbba98e835132d0d833ae49\\transformed\\material-1.9.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
