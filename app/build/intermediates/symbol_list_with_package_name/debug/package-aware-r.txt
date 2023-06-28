@@ -3080,7 +3080,9 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable introduction_vector_art
+drawable introduction_vector_art_bg
 drawable login_vector_art
+drawable login_vector_art_bg
 drawable logo
 drawable m3_appbar_background
 drawable m3_avd_hide_password
@@ -3162,6 +3164,7 @@ drawable rectangle_button1
 drawable rectangle_dark_blu
 drawable rectangle_dark_gr
 drawable register_vector_art
+drawable register_vector_art_bg
 drawable saklogo
 drawable saklogo_cropped
 drawable slidetoact_animated_ic_check
@@ -3172,6 +3175,8 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable vector_login_1
 drawable vector_login_2
+font inter_b
+font inter_font
 id ALT
 id BOTTOM_END
 id BOTTOM_START

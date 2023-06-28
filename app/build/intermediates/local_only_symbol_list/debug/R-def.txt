@@ -28,7 +28,9 @@ drawable edit_text_border
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable introduction_vector_art
+drawable introduction_vector_art_bg
 drawable login_vector_art
+drawable login_vector_art_bg
 drawable logo
 drawable rect_btn_google
 drawable rect_rounded_all_corners
@@ -39,10 +41,13 @@ drawable rectangle_button1
 drawable rectangle_dark_blu
 drawable rectangle_dark_gr
 drawable register_vector_art
+drawable register_vector_art_bg
 drawable saklogo
 drawable saklogo_cropped
 drawable vector_login_1
 drawable vector_login_2
+font inter_b
+font inter_font
 id accountOptFragment
 id action_accountOptFragment_to_loginFragment
 id action_accountOptFragment_to_registerFragment
