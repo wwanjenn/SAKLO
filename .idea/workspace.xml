@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AndroidLayouts">
-    <shared>
-      <config />
-    </shared>
-  </component>
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="NONE" />
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="61b7448f-9f86-46c2-a9e4-48dfa5db224e" name="Changes" comment="Added onDoubleBackPressed function to exit RegisterLogin Activity if no fragment stack">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_appointment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_appointment.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="61b7448f-9f86-46c2-a9e4-48dfa5db224e" name="Changes" comment="Added onDoubleBackPressed function to exit RegisterLogin Activity if no fragment stack" />
+>>>>>>> main
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Romalyn Floranda\.android\avd\Pixel_3a_API_33_x86_64.avd]" />
+=======
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Wanjin\.android\avd\Pixel_6_Pro_API_33.avd]" />
+>>>>>>> main
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -63,6 +66,7 @@
       </state>
     </system>
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -359,6 +363,10 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+=======
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="RunManager">
+>>>>>>> main
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="Saklo.app.main" />
       <option name="DEPLOY" value="true" />
@@ -426,138 +434,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="61b7448f-9f86-46c2-a9e4-48dfa5db224e" name="Changes" comment="" />
-      <created>1686483748163</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1686483748163</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Connected App to Firebase - Added db dependencies">
-      <created>1687322148716</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1687322148716</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Initial implementation of firebase to app">
-      <created>1687325912154</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1687325912154</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added initial login &amp; signup implementation">
-      <created>1687338542434</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1687338542434</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added try-catch block for user input validation">
-      <created>1687344124544</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1687344124544</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Minor changes to files for excluding hprof files">
-      <created>1687345289160</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1687345289160</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Corrected navigation of AccountOptions">
-      <created>1687347042810</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1687347042810</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Added user input validation for registration text fields">
-      <created>1687350475490</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1687350475490</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Changed registration input fields and their error message handling">
-      <created>1687351467894</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1687351467894</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Changed toasts to error message in registration fields">
-      <created>1687352412912</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1687352412912</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Added feature: redirect user to MainActivity if currently logged in">
-      <created>1687354055498</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1687354055498</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Added signout option for unit testing. Working one-time sign-in feature">
-      <created>1687354911726</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1687354911726</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Added onDoubleBackPressed function to exit RegisterLogin Activity if no fragment stack">
-      <created>1687359876900</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1687359876900</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="accountManagement_BE" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Connected App to Firebase - Added db dependencies" />
-    <MESSAGE value="Initial implementation of firebase to app" />
-    <MESSAGE value="Added initial login &amp; signup implementation" />
-    <MESSAGE value="Added try-catch block for user input validation" />
-    <MESSAGE value="Minor changes to files for excluding hprof files" />
-    <MESSAGE value="Corrected navigation of AccountOptions" />
-    <MESSAGE value="Added user input validation for registration text fields" />
-    <MESSAGE value="Changed registration input fields and their error message handling" />
-    <MESSAGE value="Changed toasts to error message in registration fields" />
-    <MESSAGE value="Added feature: redirect user to MainActivity if currently logged in" />
-    <MESSAGE value="Added signout option for unit testing. Working one-time sign-in feature" />
-    <MESSAGE value="Added onDoubleBackPressed function to exit RegisterLogin Activity if no fragment stack" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added onDoubleBackPressed function to exit RegisterLogin Activity if no fragment stack" />
   </component>
 </project>

@@ -5,11 +5,17 @@
     android:layout_height="match_parent">
     <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/almost_wh"
         android:gravity="center"
         tools:context=".activities.RemediesActivity">
+=======
+        android:layout_height="452dp"
+        android:layout_gravity="center"
+        tools:ignore="SpeakableTextPresentCheck">
+>>>>>>> main
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -161,4 +167,10 @@
 
     </LinearLayout>
 
+<<<<<<< HEAD
 </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+    <include layout="@layout/activity_nav_bar"/>
+
+</LinearLayout>
+>>>>>>> main

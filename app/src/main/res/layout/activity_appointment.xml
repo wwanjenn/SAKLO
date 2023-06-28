@@ -259,4 +259,6 @@
 
     </LinearLayout>
 
+    <include layout="@layout/activity_nav_bar"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

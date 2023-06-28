@@ -9,10 +9,12 @@ import androidx.core.app.ActivityCompat.finishAffinity
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import com.codegrace.Saklo.R
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 
 class MainActivity : AppCompatActivity() {
+    lateinit var bottomNav : BottomNavigationView
     private var firebaseAuth: FirebaseAuth? = null
     var mAuthListener: FirebaseAuth.AuthStateListener? = null
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,18 +24,40 @@ class MainActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
+        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        bottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.btnHome -> {
+                    startActivity(Intent(this, MainActivity::class.java))
+                    true
+                }
+                R.id.btnAppoint -> {
+                    startActivity(Intent(this, AppointmentActivity::class.java))
+                    true
+                }
+                R.id.btnRemedies -> {
+                    startActivity(Intent(this, RemediesActivity::class.java))
+                    true
+                }
+
+                else -> throw AssertionError()
+            }
+        }
+
+        val btnHome = findViewById<Button>(R.id.btnHome)
+        btnHome.setOnClickListener {
+            val intentAppoint = Intent(this, MainActivity::class.java)
+            startActivity(intentAppoint)
+        }
+
         val btnAppoint = findViewById<Button>(R.id.btnAppoint)
         btnAppoint.setOnClickListener {
             val intentAppoint = Intent(this, AppointmentActivity::class.java)
             startActivity(intentAppoint)
         }
-        val btnDrugs = findViewById<Button>(R.id.btnDrugs)
-        btnDrugs.setOnClickListener {
-            val intentDrugs = Intent(this, RemediesActivity::class.java)
-            startActivity(intentDrugs)
-        }
-        val btnHerbal = findViewById<Button>(R.id.btnHerbal)
-        btnHerbal.setOnClickListener {
+
+        val btnRemedies = findViewById<Button>(R.id.btnRemedies)
+        btnRemedies.setOnClickListener {
             val intentHerbal = Intent(this, RemediesActivity::class.java)
             startActivity(intentHerbal)
         }
@@ -41,8 +65,9 @@ class MainActivity : AppCompatActivity() {
         val btnLogout = findViewById<Button>(R.id.btnSignout)
         btnLogout.setOnClickListener {
             firebaseAuth!!.signOut()
-            val intentLogout = Intent(this, RegisterLoginActivity::class.java)
-            startActivity(intentLogout)
+            val intent = Intent(this, RegisterLoginActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
         }
 
         mAuthListener = FirebaseAuth.AuthStateListener { firebaseAuth ->
