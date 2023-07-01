@@ -54,10 +54,12 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
                                     // Handle invalid user exception
                                     binding.logEmail.error = "Invalid email address. Account does not exist or is no longer valid"
                                     binding.logEmail.requestFocus()
+                                    binding.loginBtn.setCompleted(false,true)
                                 } catch (e: FirebaseAuthInvalidCredentialsException) {
                                     // Handle invalid credentials exception
                                     binding.logPassword.error = "Incorrect password"
                                     binding.logPassword.requestFocus()
+                                    binding.loginBtn.setCompleted(false, true)
                                 } catch (e: Exception) {
                                     // Handle other exceptions
                                     Toast.makeText(
@@ -65,15 +67,18 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
                                         "Authentication failed: " + e.message,
                                         Toast.LENGTH_SHORT
                                     ).show()
+                                    binding.loginBtn.setCompleted(false, true)
                                 }
                             }
                         }
                     }else{
                         binding.logEmail.error = "Invalid email format"
                         binding.logEmail.requestFocus()
+                        binding.loginBtn.setCompleted(false, true)
                     }
                 }else{
                     Toast.makeText(requireActivity(), "Empty fields are not allowed", Toast.LENGTH_LONG).show()
+                    binding.loginBtn.setCompleted(false, true)
                 }
             }
         }

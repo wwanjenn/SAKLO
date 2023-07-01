@@ -1,77 +1,77 @@
-com.codegrace.Saklo.app-navigation-common-ktx-2.7.0-beta01-0 C:\Users\Wanjin\.gradle\caches\transforms-3\0f58e86226d0d7698d7aa40f0e26b5e2\transformed\navigation-common-ktx-2.7.0-beta01\res
-com.codegrace.Saklo.app-jetified-lifecycle-viewmodel-savedstate-2.6.1-1 C:\Users\Wanjin\.gradle\caches\transforms-3\100a2a6503dfba9d14e4147eb3b501a2\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.1\res
-com.codegrace.Saklo.app-jetified-ui-tooling-1.3.0-2 C:\Users\Wanjin\.gradle\caches\transforms-3\109fb1c625edd3b055e51058bd39c7ea\transformed\jetified-ui-tooling-1.3.0\res
-com.codegrace.Saklo.app-jetified-material3-1.0.0-3 C:\Users\Wanjin\.gradle\caches\transforms-3\11f32e0af2ee364dc1216ae7154a5c00\transformed\jetified-material3-1.0.0\res
-com.codegrace.Saklo.app-navigation-common-2.7.0-beta01-4 C:\Users\Wanjin\.gradle\caches\transforms-3\14d6a7bc4458d9c1540687791f49d905\transformed\navigation-common-2.7.0-beta01\res
-com.codegrace.Saklo.app-jetified-animation-core-1.3.0-5 C:\Users\Wanjin\.gradle\caches\transforms-3\18dda17c4e05e26dc8315cdae9243b6b\transformed\jetified-animation-core-1.3.0\res
-com.codegrace.Saklo.app-jetified-ui-text-1.3.0-6 C:\Users\Wanjin\.gradle\caches\transforms-3\19b25abcafb75ed578b9e130f6f930f0\transformed\jetified-ui-text-1.3.0\res
-com.codegrace.Saklo.app-jetified-emoji2-1.2.0-7 C:\Users\Wanjin\.gradle\caches\transforms-3\1adf87e2b2b31e13495b72d2b651900c\transformed\jetified-emoji2-1.2.0\res
-com.codegrace.Saklo.app-jetified-customview-poolingcontainer-1.0.0-8 C:\Users\Wanjin\.gradle\caches\transforms-3\1ec9a2634b5479b172373c96ccf81784\transformed\jetified-customview-poolingcontainer-1.0.0\res
-com.codegrace.Saklo.app-jetified-activity-compose-1.7.2-9 C:\Users\Wanjin\.gradle\caches\transforms-3\21ca97580f4e669fe2cf4f88aa98bc98\transformed\jetified-activity-compose-1.7.2\res
-com.codegrace.Saklo.app-jetified-animation-1.3.0-10 C:\Users\Wanjin\.gradle\caches\transforms-3\241db87282005c1472dad5d4ccb3e6be\transformed\jetified-animation-1.3.0\res
-com.codegrace.Saklo.app-jetified-ui-graphics-1.3.0-11 C:\Users\Wanjin\.gradle\caches\transforms-3\3860271d42ca6314c9c165c4451756b8\transformed\jetified-ui-graphics-1.3.0\res
-com.codegrace.Saklo.app-slidingpanelayout-1.2.0-12 C:\Users\Wanjin\.gradle\caches\transforms-3\3efed94563ace13bb70996b4f15bda06\transformed\slidingpanelayout-1.2.0\res
-com.codegrace.Saklo.app-jetified-window-1.0.0-13 C:\Users\Wanjin\.gradle\caches\transforms-3\404ce10d63b576b3439c4d521d4d3d3a\transformed\jetified-window-1.0.0\res
-com.codegrace.Saklo.app-navigation-fragment-2.7.0-beta01-14 C:\Users\Wanjin\.gradle\caches\transforms-3\4621151c3cf40268ae557e0a876b2261\transformed\navigation-fragment-2.7.0-beta01\res
-com.codegrace.Saklo.app-jetified-material-ripple-1.3.0-15 C:\Users\Wanjin\.gradle\caches\transforms-3\48b44e06b12ccf53de21705c06e01fc2\transformed\jetified-material-ripple-1.3.0\res
-com.codegrace.Saklo.app-fragment-1.6.0-rc01-16 C:\Users\Wanjin\.gradle\caches\transforms-3\5046e66683d3db15937aca70e2e16125\transformed\fragment-1.6.0-rc01\res
-com.codegrace.Saklo.app-navigation-ui-ktx-2.7.0-beta01-17 C:\Users\Wanjin\.gradle\caches\transforms-3\556fc18ca98b3afe0b31f6aafa85f8fc\transformed\navigation-ui-ktx-2.7.0-beta01\res
-com.codegrace.Saklo.app-recyclerview-1.1.0-18 C:\Users\Wanjin\.gradle\caches\transforms-3\56563ca1b6df165388e44145670b646e\transformed\recyclerview-1.1.0\res
-com.codegrace.Saklo.app-core-1.10.1-19 C:\Users\Wanjin\.gradle\caches\transforms-3\58a3236211dd9a75a05b7c10475043ec\transformed\core-1.10.1\res
-com.codegrace.Saklo.app-jetified-viewpager2-1.0.0-20 C:\Users\Wanjin\.gradle\caches\transforms-3\5902ebe05d40441443a144adc0358a52\transformed\jetified-viewpager2-1.0.0\res
-com.codegrace.Saklo.app-jetified-ui-tooling-data-1.3.0-21 C:\Users\Wanjin\.gradle\caches\transforms-3\5a7f668eca6b64163a48543137d978ac\transformed\jetified-ui-tooling-data-1.3.0\res
-com.codegrace.Saklo.app-jetified-ui-tooling-preview-1.3.0-22 C:\Users\Wanjin\.gradle\caches\transforms-3\6086ffce77885e6b8fac8c55e4576457\transformed\jetified-ui-tooling-preview-1.3.0\res
-com.codegrace.Saklo.app-constraintlayout-2.1.4-23 C:\Users\Wanjin\.gradle\caches\transforms-3\60b99e790d7fd7a8ad8442b35d54235a\transformed\constraintlayout-2.1.4\res
-com.codegrace.Saklo.app-browser-1.4.0-24 C:\Users\Wanjin\.gradle\caches\transforms-3\63bb8f9b029145b7ed371e6399e4f172\transformed\browser-1.4.0\res
-com.codegrace.Saklo.app-jetified-ui-unit-1.3.0-25 C:\Users\Wanjin\.gradle\caches\transforms-3\66991eba5c87384a3980d68007332836\transformed\jetified-ui-unit-1.3.0\res
-com.codegrace.Saklo.app-jetified-play-services-base-18.1.0-26 C:\Users\Wanjin\.gradle\caches\transforms-3\68aaad20322574ecb89bd4ab9c775bca\transformed\jetified-play-services-base-18.1.0\res
-com.codegrace.Saklo.app-jetified-activity-ktx-1.7.2-27 C:\Users\Wanjin\.gradle\caches\transforms-3\6a7fc736d5e2aea7bf1ab1856fd2c291\transformed\jetified-activity-ktx-1.7.2\res
-com.codegrace.Saklo.app-lifecycle-runtime-2.6.1-28 C:\Users\Wanjin\.gradle\caches\transforms-3\73f96a5d07d961950613579b547382af\transformed\lifecycle-runtime-2.6.1\res
-com.codegrace.Saklo.app-jetified-ui-util-1.3.0-29 C:\Users\Wanjin\.gradle\caches\transforms-3\775f75f1ccf41769040200b4e5ea8974\transformed\jetified-ui-util-1.3.0\res
-com.codegrace.Saklo.app-jetified-startup-runtime-1.1.1-30 C:\Users\Wanjin\.gradle\caches\transforms-3\813054b56bf8b8e854fb8feab64f5e78\transformed\jetified-startup-runtime-1.1.1\res
-com.codegrace.Saklo.app-jetified-firebase-common-20.3.2-31 C:\Users\Wanjin\.gradle\caches\transforms-3\8868c5b959e8b4559d69423ed1f5daaa\transformed\jetified-firebase-common-20.3.2\res
-com.codegrace.Saklo.app-jetified-profileinstaller-1.3.0-32 C:\Users\Wanjin\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\res
-com.codegrace.Saklo.app-jetified-lifecycle-runtime-ktx-2.6.1-33 C:\Users\Wanjin\.gradle\caches\transforms-3\895cbe58890d7543973f259f553f6e0e\transformed\jetified-lifecycle-runtime-ktx-2.6.1\res
-com.codegrace.Saklo.app-jetified-core-ktx-1.10.1-34 C:\Users\Wanjin\.gradle\caches\transforms-3\8e426dea3da8c314098104f1aa9c6d75\transformed\jetified-core-ktx-1.10.1\res
-com.codegrace.Saklo.app-jetified-savedstate-1.2.1-35 C:\Users\Wanjin\.gradle\caches\transforms-3\90001bc00d480fc261113b311abed1bf\transformed\jetified-savedstate-1.2.1\res
-com.codegrace.Saklo.app-jetified-savedstate-ktx-1.2.1-36 C:\Users\Wanjin\.gradle\caches\transforms-3\9030da2292f5b6bb221a593fedcede00\transformed\jetified-savedstate-ktx-1.2.1\res
-com.codegrace.Saklo.app-navigation-runtime-2.7.0-beta01-37 C:\Users\Wanjin\.gradle\caches\transforms-3\95460c61c88f74b953065128602eae1b\transformed\navigation-runtime-2.7.0-beta01\res
-com.codegrace.Saklo.app-jetified-play-services-basement-18.1.0-38 C:\Users\Wanjin\.gradle\caches\transforms-3\968366fb43dca869224e484da981ffab\transformed\jetified-play-services-basement-18.1.0\res
-com.codegrace.Saklo.app-jetified-slidetoact-0.10.0-39 C:\Users\Wanjin\.gradle\caches\transforms-3\99985fa8c1d0c416ba2777911147bd06\transformed\jetified-slidetoact-0.10.0\res
-com.codegrace.Saklo.app-navigation-fragment-ktx-2.7.0-beta01-40 C:\Users\Wanjin\.gradle\caches\transforms-3\9c8af504956d149dc9aa122d477d59d1\transformed\navigation-fragment-ktx-2.7.0-beta01\res
-com.codegrace.Saklo.app-jetified-runtime-1.3.0-41 C:\Users\Wanjin\.gradle\caches\transforms-3\9d818841f4a200fc1b0eadf3ea6364b0\transformed\jetified-runtime-1.3.0\res
-com.codegrace.Saklo.app-jetified-emoji2-views-helper-1.2.0-42 C:\Users\Wanjin\.gradle\caches\transforms-3\a18035aa45d3ee00323c28167a3b74fc\transformed\jetified-emoji2-views-helper-1.2.0\res
-com.codegrace.Saklo.app-jetified-appcompat-resources-1.6.1-43 C:\Users\Wanjin\.gradle\caches\transforms-3\a1c0bba88d20bc884abc6a048754d6e9\transformed\jetified-appcompat-resources-1.6.1\res
-com.codegrace.Saklo.app-lifecycle-viewmodel-2.6.1-44 C:\Users\Wanjin\.gradle\caches\transforms-3\a36689b750a18c79b91bbafe82e41bb8\transformed\lifecycle-viewmodel-2.6.1\res
-com.codegrace.Saklo.app-drawerlayout-1.1.1-45 C:\Users\Wanjin\.gradle\caches\transforms-3\a66e991a3f49609a860666b8bc8a80cf\transformed\drawerlayout-1.1.1\res
-com.codegrace.Saklo.app-jetified-ui-geometry-1.3.0-46 C:\Users\Wanjin\.gradle\caches\transforms-3\a88fcc7cd2c8b3156a7661fc1f5f5a6e\transformed\jetified-ui-geometry-1.3.0\res
-com.codegrace.Saklo.app-appcompat-1.6.1-47 C:\Users\Wanjin\.gradle\caches\transforms-3\b14bbecb4e374e7fae985da6b376b60d\transformed\appcompat-1.6.1\res
-com.codegrace.Saklo.app-material-1.9.0-48 C:\Users\Wanjin\.gradle\caches\transforms-3\b2345dcf6bbba98e835132d0d833ae49\transformed\material-1.9.0\res
-com.codegrace.Saklo.app-cardview-1.0.0-49 C:\Users\Wanjin\.gradle\caches\transforms-3\b77eef7d809848570da295efedac1078\transformed\cardview-1.0.0\res
-com.codegrace.Saklo.app-jetified-fragment-ktx-1.6.0-rc01-50 C:\Users\Wanjin\.gradle\caches\transforms-3\ba4f6449e4609f6ef6554ebbb08c146e\transformed\jetified-fragment-ktx-1.6.0-rc01\res
-com.codegrace.Saklo.app-jetified-runtime-saveable-1.3.0-51 C:\Users\Wanjin\.gradle\caches\transforms-3\bfcd84f8655903452b3ee8eeb293b12f\transformed\jetified-runtime-saveable-1.3.0\res
-com.codegrace.Saklo.app-jetified-lifecycle-process-2.6.1-52 C:\Users\Wanjin\.gradle\caches\transforms-3\c0a4777edff19fbd92285cb8a9e8ebcc\transformed\jetified-lifecycle-process-2.6.1\res
-com.codegrace.Saklo.app-transition-1.4.1-53 C:\Users\Wanjin\.gradle\caches\transforms-3\d3c38631778138b4a006c2cdc767dd17\transformed\transition-1.4.1\res
-com.codegrace.Saklo.app-jetified-annotation-experimental-1.3.0-54 C:\Users\Wanjin\.gradle\caches\transforms-3\d43e4760d43fa35b84c54bc8fb5e5bc7\transformed\jetified-annotation-experimental-1.3.0\res
-com.codegrace.Saklo.app-jetified-foundation-1.3.0-55 C:\Users\Wanjin\.gradle\caches\transforms-3\d4e6b7f796ed37a491edb6a67d57bc03\transformed\jetified-foundation-1.3.0\res
-com.codegrace.Saklo.app-navigation-ui-2.7.0-beta01-56 C:\Users\Wanjin\.gradle\caches\transforms-3\d61992d651528b913d6818c9bc039be8\transformed\navigation-ui-2.7.0-beta01\res
-com.codegrace.Saklo.app-jetified-ui-1.3.0-57 C:\Users\Wanjin\.gradle\caches\transforms-3\d7dc6b6eba9ed2a58ca63fdaba057aa6\transformed\jetified-ui-1.3.0\res
-com.codegrace.Saklo.app-lifecycle-livedata-core-2.6.1-58 C:\Users\Wanjin\.gradle\caches\transforms-3\de854ec62c36422b696521d17452b020\transformed\lifecycle-livedata-core-2.6.1\res
-com.codegrace.Saklo.app-jetified-lifecycle-livedata-core-ktx-2.6.1-59 C:\Users\Wanjin\.gradle\caches\transforms-3\e19c13577735975c1ca98e74fb95815e\transformed\jetified-lifecycle-livedata-core-ktx-2.6.1\res
-com.codegrace.Saklo.app-jetified-foundation-layout-1.3.0-60 C:\Users\Wanjin\.gradle\caches\transforms-3\e6887eb1e4889e79afb9ee534510aca4\transformed\jetified-foundation-layout-1.3.0\res
-com.codegrace.Saklo.app-core-runtime-2.2.0-61 C:\Users\Wanjin\.gradle\caches\transforms-3\eab585001320e06a2729af3b8b35d8ab\transformed\core-runtime-2.2.0\res
-com.codegrace.Saklo.app-navigation-runtime-ktx-2.7.0-beta01-62 C:\Users\Wanjin\.gradle\caches\transforms-3\eb6eb0727923dfa9795504ac3b12d16c\transformed\navigation-runtime-ktx-2.7.0-beta01\res
-com.codegrace.Saklo.app-jetified-material-1.3.0-63 C:\Users\Wanjin\.gradle\caches\transforms-3\ef837bd4af4da67df92d1c61b7e7307b\transformed\jetified-material-1.3.0\res
-com.codegrace.Saklo.app-jetified-activity-1.7.2-64 C:\Users\Wanjin\.gradle\caches\transforms-3\f0d79b6c62dc18d10659c77bd9d63350\transformed\jetified-activity-1.7.2\res
-com.codegrace.Saklo.app-jetified-ui-test-manifest-1.3.0-65 C:\Users\Wanjin\.gradle\caches\transforms-3\f4e73deb4cd5c4ac27f48dd09b6334aa\transformed\jetified-ui-test-manifest-1.3.0\res
-com.codegrace.Saklo.app-jetified-material-icons-core-1.3.0-66 C:\Users\Wanjin\.gradle\caches\transforms-3\f76a66903907701bb815fd3d7eb809a8\transformed\jetified-material-icons-core-1.3.0\res
-com.codegrace.Saklo.app-jetified-lifecycle-viewmodel-ktx-2.6.1-67 C:\Users\Wanjin\.gradle\caches\transforms-3\f7d7947779be7f2b530d14f1fffa6e30\transformed\jetified-lifecycle-viewmodel-ktx-2.6.1\res
-com.codegrace.Saklo.app-lifecycle-livedata-2.6.1-68 C:\Users\Wanjin\.gradle\caches\transforms-3\f9a37cab63701875229f6b49360f5f1c\transformed\lifecycle-livedata-2.6.1\res
-com.codegrace.Saklo.app-coordinatorlayout-1.1.0-69 C:\Users\Wanjin\.gradle\caches\transforms-3\fe378894c1ca1a966dcee8037da4ce6f\transformed\coordinatorlayout-1.1.0\res
-com.codegrace.Saklo.app-google-services-70 C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\build\generated\res\google-services\debug
-com.codegrace.Saklo.app-resValues-71 C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\build\generated\res\resValues\debug
-com.codegrace.Saklo.app-packageDebugResources-72 C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.codegrace.Saklo.app-packageDebugResources-73 C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.codegrace.Saklo.app-merged_res-74 C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\build\intermediates\merged_res\debug
-com.codegrace.Saklo.app-debug-75 C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\debug\res
-com.codegrace.Saklo.app-main-76 C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\res
+com.codegrace.Saklo.app-navigation-common-ktx-2.7.0-beta01-0 C:\Users\jolyn\.gradle\caches\transforms-3\0f58e86226d0d7698d7aa40f0e26b5e2\transformed\navigation-common-ktx-2.7.0-beta01\res
+com.codegrace.Saklo.app-jetified-lifecycle-viewmodel-savedstate-2.6.1-1 C:\Users\jolyn\.gradle\caches\transforms-3\100a2a6503dfba9d14e4147eb3b501a2\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.1\res
+com.codegrace.Saklo.app-jetified-ui-tooling-1.3.0-2 C:\Users\jolyn\.gradle\caches\transforms-3\109fb1c625edd3b055e51058bd39c7ea\transformed\jetified-ui-tooling-1.3.0\res
+com.codegrace.Saklo.app-jetified-material3-1.0.0-3 C:\Users\jolyn\.gradle\caches\transforms-3\11f32e0af2ee364dc1216ae7154a5c00\transformed\jetified-material3-1.0.0\res
+com.codegrace.Saklo.app-navigation-common-2.7.0-beta01-4 C:\Users\jolyn\.gradle\caches\transforms-3\14d6a7bc4458d9c1540687791f49d905\transformed\navigation-common-2.7.0-beta01\res
+com.codegrace.Saklo.app-jetified-animation-core-1.3.0-5 C:\Users\jolyn\.gradle\caches\transforms-3\18dda17c4e05e26dc8315cdae9243b6b\transformed\jetified-animation-core-1.3.0\res
+com.codegrace.Saklo.app-jetified-ui-text-1.3.0-6 C:\Users\jolyn\.gradle\caches\transforms-3\19b25abcafb75ed578b9e130f6f930f0\transformed\jetified-ui-text-1.3.0\res
+com.codegrace.Saklo.app-jetified-emoji2-1.2.0-7 C:\Users\jolyn\.gradle\caches\transforms-3\1adf87e2b2b31e13495b72d2b651900c\transformed\jetified-emoji2-1.2.0\res
+com.codegrace.Saklo.app-jetified-customview-poolingcontainer-1.0.0-8 C:\Users\jolyn\.gradle\caches\transforms-3\1ec9a2634b5479b172373c96ccf81784\transformed\jetified-customview-poolingcontainer-1.0.0\res
+com.codegrace.Saklo.app-jetified-activity-compose-1.7.2-9 C:\Users\jolyn\.gradle\caches\transforms-3\21ca97580f4e669fe2cf4f88aa98bc98\transformed\jetified-activity-compose-1.7.2\res
+com.codegrace.Saklo.app-jetified-animation-1.3.0-10 C:\Users\jolyn\.gradle\caches\transforms-3\241db87282005c1472dad5d4ccb3e6be\transformed\jetified-animation-1.3.0\res
+com.codegrace.Saklo.app-jetified-ui-graphics-1.3.0-11 C:\Users\jolyn\.gradle\caches\transforms-3\3860271d42ca6314c9c165c4451756b8\transformed\jetified-ui-graphics-1.3.0\res
+com.codegrace.Saklo.app-slidingpanelayout-1.2.0-12 C:\Users\jolyn\.gradle\caches\transforms-3\3efed94563ace13bb70996b4f15bda06\transformed\slidingpanelayout-1.2.0\res
+com.codegrace.Saklo.app-jetified-window-1.0.0-13 C:\Users\jolyn\.gradle\caches\transforms-3\404ce10d63b576b3439c4d521d4d3d3a\transformed\jetified-window-1.0.0\res
+com.codegrace.Saklo.app-navigation-fragment-2.7.0-beta01-14 C:\Users\jolyn\.gradle\caches\transforms-3\4621151c3cf40268ae557e0a876b2261\transformed\navigation-fragment-2.7.0-beta01\res
+com.codegrace.Saklo.app-jetified-material-ripple-1.3.0-15 C:\Users\jolyn\.gradle\caches\transforms-3\48b44e06b12ccf53de21705c06e01fc2\transformed\jetified-material-ripple-1.3.0\res
+com.codegrace.Saklo.app-fragment-1.6.0-rc01-16 C:\Users\jolyn\.gradle\caches\transforms-3\5046e66683d3db15937aca70e2e16125\transformed\fragment-1.6.0-rc01\res
+com.codegrace.Saklo.app-navigation-ui-ktx-2.7.0-beta01-17 C:\Users\jolyn\.gradle\caches\transforms-3\556fc18ca98b3afe0b31f6aafa85f8fc\transformed\navigation-ui-ktx-2.7.0-beta01\res
+com.codegrace.Saklo.app-recyclerview-1.1.0-18 C:\Users\jolyn\.gradle\caches\transforms-3\56563ca1b6df165388e44145670b646e\transformed\recyclerview-1.1.0\res
+com.codegrace.Saklo.app-core-1.10.1-19 C:\Users\jolyn\.gradle\caches\transforms-3\58a3236211dd9a75a05b7c10475043ec\transformed\core-1.10.1\res
+com.codegrace.Saklo.app-jetified-viewpager2-1.0.0-20 C:\Users\jolyn\.gradle\caches\transforms-3\5902ebe05d40441443a144adc0358a52\transformed\jetified-viewpager2-1.0.0\res
+com.codegrace.Saklo.app-jetified-ui-tooling-data-1.3.0-21 C:\Users\jolyn\.gradle\caches\transforms-3\5a7f668eca6b64163a48543137d978ac\transformed\jetified-ui-tooling-data-1.3.0\res
+com.codegrace.Saklo.app-jetified-ui-tooling-preview-1.3.0-22 C:\Users\jolyn\.gradle\caches\transforms-3\6086ffce77885e6b8fac8c55e4576457\transformed\jetified-ui-tooling-preview-1.3.0\res
+com.codegrace.Saklo.app-constraintlayout-2.1.4-23 C:\Users\jolyn\.gradle\caches\transforms-3\60b99e790d7fd7a8ad8442b35d54235a\transformed\constraintlayout-2.1.4\res
+com.codegrace.Saklo.app-browser-1.4.0-24 C:\Users\jolyn\.gradle\caches\transforms-3\63bb8f9b029145b7ed371e6399e4f172\transformed\browser-1.4.0\res
+com.codegrace.Saklo.app-jetified-ui-unit-1.3.0-25 C:\Users\jolyn\.gradle\caches\transforms-3\66991eba5c87384a3980d68007332836\transformed\jetified-ui-unit-1.3.0\res
+com.codegrace.Saklo.app-jetified-play-services-base-18.1.0-26 C:\Users\jolyn\.gradle\caches\transforms-3\68aaad20322574ecb89bd4ab9c775bca\transformed\jetified-play-services-base-18.1.0\res
+com.codegrace.Saklo.app-jetified-activity-ktx-1.7.2-27 C:\Users\jolyn\.gradle\caches\transforms-3\6a7fc736d5e2aea7bf1ab1856fd2c291\transformed\jetified-activity-ktx-1.7.2\res
+com.codegrace.Saklo.app-lifecycle-runtime-2.6.1-28 C:\Users\jolyn\.gradle\caches\transforms-3\73f96a5d07d961950613579b547382af\transformed\lifecycle-runtime-2.6.1\res
+com.codegrace.Saklo.app-jetified-ui-util-1.3.0-29 C:\Users\jolyn\.gradle\caches\transforms-3\775f75f1ccf41769040200b4e5ea8974\transformed\jetified-ui-util-1.3.0\res
+com.codegrace.Saklo.app-jetified-startup-runtime-1.1.1-30 C:\Users\jolyn\.gradle\caches\transforms-3\813054b56bf8b8e854fb8feab64f5e78\transformed\jetified-startup-runtime-1.1.1\res
+com.codegrace.Saklo.app-jetified-firebase-common-20.3.2-31 C:\Users\jolyn\.gradle\caches\transforms-3\8868c5b959e8b4559d69423ed1f5daaa\transformed\jetified-firebase-common-20.3.2\res
+com.codegrace.Saklo.app-jetified-profileinstaller-1.3.0-32 C:\Users\jolyn\.gradle\caches\transforms-3\8944aa045d86ec2efe00b72f327acbc4\transformed\jetified-profileinstaller-1.3.0\res
+com.codegrace.Saklo.app-jetified-lifecycle-runtime-ktx-2.6.1-33 C:\Users\jolyn\.gradle\caches\transforms-3\895cbe58890d7543973f259f553f6e0e\transformed\jetified-lifecycle-runtime-ktx-2.6.1\res
+com.codegrace.Saklo.app-jetified-core-ktx-1.10.1-34 C:\Users\jolyn\.gradle\caches\transforms-3\8e426dea3da8c314098104f1aa9c6d75\transformed\jetified-core-ktx-1.10.1\res
+com.codegrace.Saklo.app-jetified-savedstate-1.2.1-35 C:\Users\jolyn\.gradle\caches\transforms-3\90001bc00d480fc261113b311abed1bf\transformed\jetified-savedstate-1.2.1\res
+com.codegrace.Saklo.app-jetified-savedstate-ktx-1.2.1-36 C:\Users\jolyn\.gradle\caches\transforms-3\9030da2292f5b6bb221a593fedcede00\transformed\jetified-savedstate-ktx-1.2.1\res
+com.codegrace.Saklo.app-navigation-runtime-2.7.0-beta01-37 C:\Users\jolyn\.gradle\caches\transforms-3\95460c61c88f74b953065128602eae1b\transformed\navigation-runtime-2.7.0-beta01\res
+com.codegrace.Saklo.app-jetified-play-services-basement-18.1.0-38 C:\Users\jolyn\.gradle\caches\transforms-3\968366fb43dca869224e484da981ffab\transformed\jetified-play-services-basement-18.1.0\res
+com.codegrace.Saklo.app-jetified-slidetoact-0.10.0-39 C:\Users\jolyn\.gradle\caches\transforms-3\99985fa8c1d0c416ba2777911147bd06\transformed\jetified-slidetoact-0.10.0\res
+com.codegrace.Saklo.app-navigation-fragment-ktx-2.7.0-beta01-40 C:\Users\jolyn\.gradle\caches\transforms-3\9c8af504956d149dc9aa122d477d59d1\transformed\navigation-fragment-ktx-2.7.0-beta01\res
+com.codegrace.Saklo.app-jetified-runtime-1.3.0-41 C:\Users\jolyn\.gradle\caches\transforms-3\9d818841f4a200fc1b0eadf3ea6364b0\transformed\jetified-runtime-1.3.0\res
+com.codegrace.Saklo.app-jetified-emoji2-views-helper-1.2.0-42 C:\Users\jolyn\.gradle\caches\transforms-3\a18035aa45d3ee00323c28167a3b74fc\transformed\jetified-emoji2-views-helper-1.2.0\res
+com.codegrace.Saklo.app-jetified-appcompat-resources-1.6.1-43 C:\Users\jolyn\.gradle\caches\transforms-3\a1c0bba88d20bc884abc6a048754d6e9\transformed\jetified-appcompat-resources-1.6.1\res
+com.codegrace.Saklo.app-lifecycle-viewmodel-2.6.1-44 C:\Users\jolyn\.gradle\caches\transforms-3\a36689b750a18c79b91bbafe82e41bb8\transformed\lifecycle-viewmodel-2.6.1\res
+com.codegrace.Saklo.app-drawerlayout-1.1.1-45 C:\Users\jolyn\.gradle\caches\transforms-3\a66e991a3f49609a860666b8bc8a80cf\transformed\drawerlayout-1.1.1\res
+com.codegrace.Saklo.app-jetified-ui-geometry-1.3.0-46 C:\Users\jolyn\.gradle\caches\transforms-3\a88fcc7cd2c8b3156a7661fc1f5f5a6e\transformed\jetified-ui-geometry-1.3.0\res
+com.codegrace.Saklo.app-appcompat-1.6.1-47 C:\Users\jolyn\.gradle\caches\transforms-3\b14bbecb4e374e7fae985da6b376b60d\transformed\appcompat-1.6.1\res
+com.codegrace.Saklo.app-material-1.9.0-48 C:\Users\jolyn\.gradle\caches\transforms-3\b2345dcf6bbba98e835132d0d833ae49\transformed\material-1.9.0\res
+com.codegrace.Saklo.app-cardview-1.0.0-49 C:\Users\jolyn\.gradle\caches\transforms-3\b77eef7d809848570da295efedac1078\transformed\cardview-1.0.0\res
+com.codegrace.Saklo.app-jetified-fragment-ktx-1.6.0-rc01-50 C:\Users\jolyn\.gradle\caches\transforms-3\ba4f6449e4609f6ef6554ebbb08c146e\transformed\jetified-fragment-ktx-1.6.0-rc01\res
+com.codegrace.Saklo.app-jetified-runtime-saveable-1.3.0-51 C:\Users\jolyn\.gradle\caches\transforms-3\bfcd84f8655903452b3ee8eeb293b12f\transformed\jetified-runtime-saveable-1.3.0\res
+com.codegrace.Saklo.app-jetified-lifecycle-process-2.6.1-52 C:\Users\jolyn\.gradle\caches\transforms-3\c0a4777edff19fbd92285cb8a9e8ebcc\transformed\jetified-lifecycle-process-2.6.1\res
+com.codegrace.Saklo.app-transition-1.4.1-53 C:\Users\jolyn\.gradle\caches\transforms-3\d3c38631778138b4a006c2cdc767dd17\transformed\transition-1.4.1\res
+com.codegrace.Saklo.app-jetified-annotation-experimental-1.3.0-54 C:\Users\jolyn\.gradle\caches\transforms-3\d43e4760d43fa35b84c54bc8fb5e5bc7\transformed\jetified-annotation-experimental-1.3.0\res
+com.codegrace.Saklo.app-jetified-foundation-1.3.0-55 C:\Users\jolyn\.gradle\caches\transforms-3\d4e6b7f796ed37a491edb6a67d57bc03\transformed\jetified-foundation-1.3.0\res
+com.codegrace.Saklo.app-navigation-ui-2.7.0-beta01-56 C:\Users\jolyn\.gradle\caches\transforms-3\d61992d651528b913d6818c9bc039be8\transformed\navigation-ui-2.7.0-beta01\res
+com.codegrace.Saklo.app-jetified-ui-1.3.0-57 C:\Users\jolyn\.gradle\caches\transforms-3\d7dc6b6eba9ed2a58ca63fdaba057aa6\transformed\jetified-ui-1.3.0\res
+com.codegrace.Saklo.app-lifecycle-livedata-core-2.6.1-58 C:\Users\jolyn\.gradle\caches\transforms-3\de854ec62c36422b696521d17452b020\transformed\lifecycle-livedata-core-2.6.1\res
+com.codegrace.Saklo.app-jetified-lifecycle-livedata-core-ktx-2.6.1-59 C:\Users\jolyn\.gradle\caches\transforms-3\e19c13577735975c1ca98e74fb95815e\transformed\jetified-lifecycle-livedata-core-ktx-2.6.1\res
+com.codegrace.Saklo.app-jetified-foundation-layout-1.3.0-60 C:\Users\jolyn\.gradle\caches\transforms-3\e6887eb1e4889e79afb9ee534510aca4\transformed\jetified-foundation-layout-1.3.0\res
+com.codegrace.Saklo.app-core-runtime-2.2.0-61 C:\Users\jolyn\.gradle\caches\transforms-3\eab585001320e06a2729af3b8b35d8ab\transformed\core-runtime-2.2.0\res
+com.codegrace.Saklo.app-navigation-runtime-ktx-2.7.0-beta01-62 C:\Users\jolyn\.gradle\caches\transforms-3\eb6eb0727923dfa9795504ac3b12d16c\transformed\navigation-runtime-ktx-2.7.0-beta01\res
+com.codegrace.Saklo.app-jetified-material-1.3.0-63 C:\Users\jolyn\.gradle\caches\transforms-3\ef837bd4af4da67df92d1c61b7e7307b\transformed\jetified-material-1.3.0\res
+com.codegrace.Saklo.app-jetified-activity-1.7.2-64 C:\Users\jolyn\.gradle\caches\transforms-3\f0d79b6c62dc18d10659c77bd9d63350\transformed\jetified-activity-1.7.2\res
+com.codegrace.Saklo.app-jetified-ui-test-manifest-1.3.0-65 C:\Users\jolyn\.gradle\caches\transforms-3\f4e73deb4cd5c4ac27f48dd09b6334aa\transformed\jetified-ui-test-manifest-1.3.0\res
+com.codegrace.Saklo.app-jetified-material-icons-core-1.3.0-66 C:\Users\jolyn\.gradle\caches\transforms-3\f76a66903907701bb815fd3d7eb809a8\transformed\jetified-material-icons-core-1.3.0\res
+com.codegrace.Saklo.app-jetified-lifecycle-viewmodel-ktx-2.6.1-67 C:\Users\jolyn\.gradle\caches\transforms-3\f7d7947779be7f2b530d14f1fffa6e30\transformed\jetified-lifecycle-viewmodel-ktx-2.6.1\res
+com.codegrace.Saklo.app-lifecycle-livedata-2.6.1-68 C:\Users\jolyn\.gradle\caches\transforms-3\f9a37cab63701875229f6b49360f5f1c\transformed\lifecycle-livedata-2.6.1\res
+com.codegrace.Saklo.app-coordinatorlayout-1.1.0-69 C:\Users\jolyn\.gradle\caches\transforms-3\fe378894c1ca1a966dcee8037da4ce6f\transformed\coordinatorlayout-1.1.0\res
+com.codegrace.Saklo.app-google-services-70 D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\build\generated\res\google-services\debug
+com.codegrace.Saklo.app-resValues-71 D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\build\generated\res\resValues\debug
+com.codegrace.Saklo.app-packageDebugResources-72 D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.codegrace.Saklo.app-packageDebugResources-73 D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.codegrace.Saklo.app-merged_res-74 D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\build\intermediates\merged_res\debug
+com.codegrace.Saklo.app-debug-75 D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\debug\res
+com.codegrace.Saklo.app-main-76 D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\res

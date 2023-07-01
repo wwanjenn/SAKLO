@@ -53,85 +53,51 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
                                     }
                                     findNavController().navigate(R.id.action_registerFragment_to_mainActivity)
                                 } else {
-                                    if(proceed){
-                                        proceed = !proceed
-                                    }
                                     Toast.makeText(
                                         requireActivity(),
                                         "Registration Failed",
                                         Toast.LENGTH_SHORT
                                     ).show()
+                                    binding.registerBtn.setCompleted(false, true)
                                 }
                             }
                     } else {
-                        if(proceed){
-                            proceed = !proceed
-                        }
                         binding.regConpassword.error =
                             "Passwords are not identical. Please try again"
                         binding.regConpassword.requestFocus()
+                        binding.registerBtn.setCompleted(false, true)
                     }
                 }
-            }
-        }
-        
-        binding.registerBtn.onSlideToActAnimationEventListener = object :SlideToActView.OnSlideToActAnimationEventListener {
-            override fun onSlideCompleteAnimationEnded(view: SlideToActView) {
-                if(!proceed) {
-                    binding.registerBtn.resetSlider()
-                }
-            }
-
-            override fun onSlideCompleteAnimationStarted(view: SlideToActView, threshold: Float) {
-                //
-            }
-
-            override fun onSlideResetAnimationEnded(view: SlideToActView) {
-                //
-            }
-
-            override fun onSlideResetAnimationStarted(view: SlideToActView) {
-                //
-            }
         }
 
-        binding.tvLoginHere.setOnClickListener {
-            findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
-        }
-    }
-
-    private fun isRegistrationInputValid(email: String, password: String): Boolean {
-        if (email.isEmpty() || password.isEmpty()) {
-            Toast.makeText(requireActivity(), "Empty fields are not allowed", Toast.LENGTH_LONG).show()
-            if(proceed){
-                proceed = !proceed
+        private fun isRegistrationInputValid(email: String, password: String): Boolean {
+            if (email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(requireActivity(), "Empty fields are not allowed", Toast.LENGTH_LONG).show()
+                binding.registerBtn.setCompleted(false, true)
+                return false
             }
-            return false
-        }
 
-        if (!isValidEmail(email)) {
-            binding.regEmail.error = "Invalid email format"
-            binding.regEmail.requestFocus()
-            if(proceed){
-                proceed = !proceed
+            if (!isValidEmail(email)) {
+                binding.regEmail.error = "Invalid email format"
+                binding.regEmail.requestFocus()
+                binding.registerBtn.setCompleted(false, true)
+                return false
             }
-            return false
-        }
 
-        if (password.length < 6) {
-            binding.regPassword.error = "Password should be at least 6 characters"
-            binding.regPassword.requestFocus()
-            if(proceed){
-                proceed = !proceed
+            if (password.length < 8) {
+                binding.regPassword.error = "Password should be at least 8 characters"
+                binding.regPassword.requestFocus()
+                binding.registerBtn.setCompleted(false, true)
+                return false
             }
-            return false
-        }
 
         return true
-    }
+        }
 
-    private fun isValidEmail(email: String): Boolean {
-        val emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"
-        return email.matches(emailPattern.toRegex())
+        private fun isValidEmail(email: String): Boolean {
+            val emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"
+            return email.matches(emailPattern.toRegex())
+        }
     }
+}
 }
