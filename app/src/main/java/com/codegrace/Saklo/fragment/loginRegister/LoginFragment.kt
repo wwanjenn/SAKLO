@@ -56,6 +56,7 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
                                 ).show()
                                 findNavController().navigate(R.id.action_loginFragment_to_mainActivity)
                             } else {
+                                binding.loginBtn.completeIcon = errorIcon
                                 try {
                                     throw it.exception!!
                                 } catch (e: FirebaseAuthInvalidUserException) {
@@ -80,11 +81,13 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
                             }
                         }
                     }else{
+                        binding.loginBtn.completeIcon = errorIcon
                         binding.logEmail.error = "Invalid email format"
                         binding.logEmail.requestFocus()
                         binding.loginBtn.setCompleted(false, true)
                     }
                 }else{
+                    binding.loginBtn.completeIcon = errorIcon
                     Toast.makeText(requireActivity(), "Empty fields are not allowed", Toast.LENGTH_LONG).show()
                     binding.loginBtn.setCompleted(false, true)
                 }

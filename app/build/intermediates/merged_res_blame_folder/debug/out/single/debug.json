@@ -48,6 +48,10 @@
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-77:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-75:\\drawable_baseline_check_24.xml.flat",
+        "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-77:\\drawable\\baseline_check_24.xml"
+    },
+    {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-75:\\drawable_contact_btn.xml.flat",
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-77:\\drawable\\contact_btn.xml"
     },
@@ -168,10 +172,6 @@
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-77:\\animator\\fade_in.xml"
     },
     {
-        "merged": "com.codegrace.Saklo.app-merged_res-75:/drawable_baseline_check_24.xml.flat",
-        "source": "com.codegrace.Saklo.app-main-77:/drawable/baseline_check_24.xml"
-    },
-    {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-75:\\layout_fragment_accountoptions.xml.flat",
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-77:\\layout\\fragment_accountoptions.xml"
     },
@@ -182,6 +182,10 @@
     {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-75:\\drawable_saklogo_cropped.png.flat",
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-77:\\drawable\\saklogo_cropped.png"
+    },
+    {
+        "merged": "com.codegrace.Saklo.app-merged_res-75:/drawable_baseline_circle_24.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-77:/drawable/baseline_circle_24.xml"
     },
     {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-75:\\drawable_rect_rounded_all_corners.xml.flat",

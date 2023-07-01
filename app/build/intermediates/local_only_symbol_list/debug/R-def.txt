@@ -17,6 +17,7 @@ color white
 drawable appointment_btn
 drawable baseline_check_24
 drawable baseline_check_circle_24
+drawable baseline_circle_24
 drawable baseline_dehaze_24
 drawable baseline_email_24
 drawable baseline_healing_24
