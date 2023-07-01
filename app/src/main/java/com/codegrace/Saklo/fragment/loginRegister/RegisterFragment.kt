@@ -31,6 +31,8 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
         super.onViewCreated(view, savedInstanceState)
 
         firebaseAuth = FirebaseAuth.getInstance()
+        val errorIcon = R.drawable.baseline_slide_error_24
+        binding.registerBtn.completeIcon = errorIcon
 
         binding.registerBtn.onSlideCompleteListener = object : SlideToActView.OnSlideCompleteListener {
             override fun onSlideComplete(view: SlideToActView) {
@@ -43,14 +45,12 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
                         firebaseAuth.createUserWithEmailAndPassword(email, password)
                             .addOnCompleteListener {
                                 if (it.isSuccessful) {
+                                    binding.registerBtn.completeIcon = R.drawable.baseline_check_24
                                     Toast.makeText(
                                         requireActivity(),
                                         "Successfully Registered!",
                                         Toast.LENGTH_SHORT
                                     ).show()
-                                    if(!proceed){
-                                        proceed = !proceed
-                                    }
                                     findNavController().navigate(R.id.action_registerFragment_to_mainActivity)
                                 } else {
                                     Toast.makeText(

@@ -1,5 +1,6 @@
 package com.codegrace.Saklo.fragment.loginRegister
 
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -18,6 +19,7 @@ import com.ncorti.slidetoact.SlideToActView
 class LoginFragment: Fragment(R.layout.fragment_login) {
     private lateinit var binding: FragmentLoginBinding
     private lateinit var firebaseAuth: FirebaseAuth
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -32,6 +34,9 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
+        val errorIcon = R.drawable.baseline_slide_error_24
+        binding.loginBtn.completeIcon = errorIcon
+
         binding.loginBtn.onSlideCompleteListener = object : SlideToActView.OnSlideCompleteListener {
             override fun onSlideComplete(view: SlideToActView) {
                 val email = binding.logEmail.editText?.text.toString()
@@ -39,8 +44,11 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
 
                 if(email.isNotEmpty() && password.isNotEmpty()){
                     if(isValidEmail(email)) {
+                        binding.logEmail.helperText = null
+                        binding.logPassword.helperText = null
                         firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener {
                             if (it.isSuccessful) {
+                                binding.loginBtn.completeIcon = R.drawable.baseline_check_24
                                 Toast.makeText(
                                     requireActivity(),
                                     "Successfully Logged In!",

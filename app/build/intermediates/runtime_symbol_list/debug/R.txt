@@ -3014,6 +3014,8 @@ int drawable abc_vector_test 0x7f070077
 int drawable appointment_btn 0x7f070078
 int drawable avd_hide_password 0x7f070079
 int drawable avd_show_password 0x7f07007a
+int drawable baseline_check_24 0x7f070129
+int drawable baseline_check_circle_24 0x7f070128
 int drawable baseline_dehaze_24 0x7f07007b
 int drawable baseline_email_24 0x7f07007c
 int drawable baseline_healing_24 0x7f07007d
