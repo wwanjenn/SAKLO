@@ -1,5 +1,6 @@
 package com.codegrace.Saklo.fragment.loginRegister
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.codegrace.Saklo.R
+import com.codegrace.Saklo.activities.MainActivity
 import com.codegrace.Saklo.databinding.FragmentRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.ncorti.slidetoact.SlideToActView
@@ -51,7 +53,9 @@ class RegisterFragment: Fragment(R.layout.fragment_register) {
                                         "Successfully Registered!",
                                         Toast.LENGTH_SHORT
                                     ).show()
-                                    findNavController().navigate(R.id.action_registerFragment_to_mainActivity)
+                                    //Redirect to MainActivity
+                                    val intent = Intent(this@RegisterFragment.requireContext(), MainActivity::class.java)
+                                    startActivity(intent)
                                 } else {
                                     Toast.makeText(
                                         requireActivity(),

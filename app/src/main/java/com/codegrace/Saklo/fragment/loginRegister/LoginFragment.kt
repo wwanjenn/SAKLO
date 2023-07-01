@@ -1,5 +1,6 @@
 package com.codegrace.Saklo.fragment.loginRegister
 
+import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.codegrace.Saklo.R
+import com.codegrace.Saklo.activities.MainActivity
 import com.codegrace.Saklo.databinding.FragmentLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
@@ -54,7 +56,9 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
                                     "Successfully Logged In!",
                                     Toast.LENGTH_SHORT
                                 ).show()
-                                findNavController().navigate(R.id.action_loginFragment_to_mainActivity)
+                                //Redirect to MainActivity
+                                val intent = Intent(this@LoginFragment.requireContext(), MainActivity::class.java)
+                                startActivity(intent)
                             } else {
                                 binding.loginBtn.completeIcon = errorIcon
                                 try {

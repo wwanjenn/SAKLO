@@ -20,12 +20,12 @@ public final class ActivityRegisterLoginBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final FragmentContainerView fragmentContainerView;
+  public final FragmentContainerView navHostFragment;
 
   private ActivityRegisterLoginBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FragmentContainerView fragmentContainerView) {
+      @NonNull FragmentContainerView navHostFragment) {
     this.rootView = rootView;
-    this.fragmentContainerView = fragmentContainerView;
+    this.navHostFragment = navHostFragment;
   }
 
   @Override
@@ -55,13 +55,13 @@ public final class ActivityRegisterLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.fragmentContainerView;
-      FragmentContainerView fragmentContainerView = ViewBindings.findChildViewById(rootView, id);
-      if (fragmentContainerView == null) {
+      id = R.id.nav_host_fragment;
+      FragmentContainerView navHostFragment = ViewBindings.findChildViewById(rootView, id);
+      if (navHostFragment == null) {
         break missingId;
       }
 
-      return new ActivityRegisterLoginBinding((ConstraintLayout) rootView, fragmentContainerView);
+      return new ActivityRegisterLoginBinding((ConstraintLayout) rootView, navHostFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

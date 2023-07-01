@@ -68,10 +68,8 @@ id accountOptFragment
 id action_accountOptFragment_to_loginFragment
 id action_accountOptFragment_to_registerFragment
 id action_introductionFragment_to_accountOptFragment
-id action_loginFragment_to_mainActivity
 id action_loginFragment_to_registerFragment
 id action_registerFragment_to_loginFragment
-id action_registerFragment_to_mainActivity
 id backgroundLayout
 id bottomNav
 id btnAppoint
@@ -87,7 +85,6 @@ id container_1
 id container_2
 id divider_accopt
 id end
-id fragmentContainerView
 id guideline_intro1
 id guideline_intro2
 id hr_searchbar
@@ -103,8 +100,8 @@ id log_password
 id loginBtn
 id loginFragment
 id logo
-id mainActivity
 id motionLayout
+id nav_host_fragment
 id profile
 id reg_conpassword
 id reg_email

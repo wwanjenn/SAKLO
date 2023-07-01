@@ -3259,7 +3259,6 @@ id action_context_bar
 id action_divider
 id action_image
 id action_introductionFragment_to_accountOptFragment
-id action_loginFragment_to_mainActivity
 id action_loginFragment_to_registerFragment
 id action_menu_divider
 id action_menu_presenter
@@ -3267,7 +3266,6 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_registerFragment_to_loginFragment
-id action_registerFragment_to_mainActivity
 id action_text
 id actions
 id activity_chooser_view_content
@@ -3423,7 +3421,6 @@ id fixed
 id flip
 id floating
 id forever
-id fragmentContainerView
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3490,7 +3487,6 @@ id loginFragment
 id logo
 id ltr
 id m3_side_sheet
-id mainActivity
 id marquee
 id masked
 id match_constraint
@@ -3552,6 +3548,7 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
+id nav_host_fragment
 id nav_host_fragment_container
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
