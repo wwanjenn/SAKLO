@@ -41,10 +41,34 @@
         <item name="colorPrimaryVariant">@color/light_blu</item>
         <item name="colorOnPrimary">@color/black</item>
         
-        <item name="colorSecondary">@color/dark_blu</item>
-        <item name="colorSecondaryVariant">@color/light_blu</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/dark_gr</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/almost_wh</item>
         
-        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/dark_blu</item>
         
+    </style><style name="GeneralTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/white</item>
+        <item name="android:windowBackground">@color/almost_wh</item>
+    </style><style name="tertiaryBtn" parent="primaryBtn">
+        <item name="backgroundTint">@color/dark_blu</item>
+    </style><style name="secondaryBtn" parent="primaryBtn">
+        <item name="backgroundTint">#57A7BF</item>
+        <item name="android:textColor">#4D4D4D</item>
+    </style><style name="login_Theme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/light_blu</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/black</item>
+    </style><style name="Base.Theme.Saklo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    </style><style name="primaryBtn" parent="Theme.Saklo">
+        <item name="backgroundTint">@color/dark_blu</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">17dp</item>
+    </style><style name="Theme.Saklo" parent="Base.Theme.Saklo">
+        <item name="android:textSize">18sp</item>
+    </style><style name="SplashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/dark_blu</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/light_blu</item>
+    </style><style name="AccOptBtns" parent="primaryBtn">
+        <item name="cornerRadius">5dp</item>
+        <item name="android:padding">10dp</item>
     </style></file><file name="activity_splash_scene" path="C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\res\xml\activity_splash_scene.xml" qualifiers="" type="xml"/><file name="backup_rules" path="C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\res\xml\backup_rules.xml" qualifiers="" type="xml"/><file name="data_extraction_rules" path="C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\main\res\xml\data_extraction_rules.xml" qualifiers="" type="xml"/></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\build\generated\res\resValues\debug"/><source path="C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\build\generated\res\google-services\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\build\generated\res\resValues\debug"/><source path="C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\build\generated\res\google-services\debug"><file path="C:\Users\Wanjin\OneDrive\Documents\Projects\Software Dev\SAKLO\app\build\generated\res\google-services\debug\values\values.xml" qualifiers=""><string name="default_web_client_id" translatable="false">535894297261-vvgkk82n3355u8k43vrivjrl1a2jjd6v.apps.googleusercontent.com</string><string name="gcm_defaultSenderId" translatable="false">535894297261</string><string name="google_api_key" translatable="false">AIzaSyBTHZp0XJW0WbgD_roHFiOJrXjbvJKe-zs</string><string name="google_app_id" translatable="false">1:535894297261:android:9be7feb7ce6e91e8955424</string><string name="google_crash_reporting_api_key" translatable="false">AIzaSyBTHZp0XJW0WbgD_roHFiOJrXjbvJKe-zs</string><string name="google_storage_bucket" translatable="false">saklo-a4e3a.appspot.com</string><string name="project_id" translatable="false">saklo-a4e3a</string></file></source></dataSet><mergedItems/></merger>
