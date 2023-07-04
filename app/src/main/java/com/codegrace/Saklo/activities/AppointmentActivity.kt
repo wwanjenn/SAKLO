@@ -16,7 +16,7 @@ class AppointmentActivity : AppCompatActivity() {
         setContentView(R.layout.activity_appointment)
         changeStatusBarTextColor()
 
-        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.btnHome -> {

@@ -9,11 +9,11 @@ import androidx.core.view.WindowInsetsControllerCompat
 import com.codegrace.Saklo.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class RemediesActivity : AppCompatActivity() {
+class DrugsActivity : AppCompatActivity() {
     lateinit var bottomNav : BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_remedies)
+        setContentView(R.layout.activity_drugs)
         changeStatusBarTextColor()
 
         bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
@@ -35,6 +35,7 @@ class RemediesActivity : AppCompatActivity() {
                 else -> throw AssertionError()
             }
         }
+
     }
 
     private fun changeStatusBarTextColor() {
