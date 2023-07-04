@@ -10,7 +10,7 @@
         android:orientation="vertical"
         android:background="@color/almost_wh"
         android:gravity="center"
-        tools:context=".activities.RemediesActivity">
+        tools:context=".activities.DrugsActivity">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -60,7 +60,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="HOME REMEDIES"
+            android:text="MEDICATION AND DRUGS"
             android:textColor="@color/dark_blu"
             android:textSize="20dp"
             android:textAlignment="center"

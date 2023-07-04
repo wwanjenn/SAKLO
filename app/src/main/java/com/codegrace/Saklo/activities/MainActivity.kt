@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnDrugs = findViewById<Button>(R.id.btnDrugs)
         btnDrugs.setOnClickListener {
-            val intentHerbal = Intent(this, RemediesActivity::class.java)
+            val intentHerbal = Intent(this, DrugsActivity::class.java)
             startActivity(intentHerbal)
         }
 

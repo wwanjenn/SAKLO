@@ -125,6 +125,7 @@ id tv_loginIndicator
 id tv_registerHere
 id tv_registerIndicator
 layout activity_appointment
+layout activity_drugs
 layout activity_main
 layout activity_nav_bar
 layout activity_register_login

@@ -3888,6 +3888,7 @@ int layout abc_search_view 0x7f0c0019
 int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
 int layout activity_appointment 0x7f0c001c
+int layout activity_drugs 0x7f0c0075
 int layout activity_main 0x7f0c001d
 int layout activity_nav_bar 0x7f0c001e
 int layout activity_register_login 0x7f0c001f
