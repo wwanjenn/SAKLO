@@ -45,6 +45,11 @@
             android:exported="true"
             android:theme="@style/GeneralTheme">
         </activity>
+        <activity
+            android:name=".activities.DrugsActivity"
+            android:exported="true"
+            android:theme="@style/GeneralTheme">
+        </activity>
     </application>
 
 </manifest>

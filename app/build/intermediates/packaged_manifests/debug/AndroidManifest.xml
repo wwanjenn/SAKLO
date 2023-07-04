@@ -68,6 +68,11 @@
             android:theme="@style/GeneralTheme" >
         </activity>
         <activity
+            android:name="com.codegrace.Saklo.activities.DrugsActivity"
+            android:exported="true"
+            android:theme="@style/GeneralTheme" >
+        </activity>
+        <activity
             android:name="androidx.compose.ui.tooling.PreviewActivity"
             android:exported="true" />
         <activity
