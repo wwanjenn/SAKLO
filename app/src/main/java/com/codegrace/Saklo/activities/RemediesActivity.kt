@@ -6,19 +6,30 @@ import android.os.Bundle
 import android.view.View
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsControllerCompat
-import com.codegrace.Saklo.Graph
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.codegrace.Saklo.R
-import com.codegrace.Saklo.data.room.RemediesDatabase
+import com.codegrace.Saklo.RemediesSQLiteHelper
+import com.codegrace.Saklo.remediesAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class RemediesActivity : AppCompatActivity() {
     lateinit var bottomNav : BottomNavigationView
-    private lateinit var remeDb: RemediesDatabase
+    private lateinit var recyclerView: RecyclerView
+    private var adapter: remediesAdapter? = null
+    lateinit var sqLiteHelper: RemediesSQLiteHelper
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Graph.provide(this)
         setContentView(R.layout.activity_remedies)
         changeStatusBarTextColor()
+        initView()
+        initRecyclerView()
+
+        sqLiteHelper = RemediesSQLiteHelper(this)
+
+        getStudent()
+
 
         bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
         bottomNav.setOnItemSelectedListener {
@@ -41,6 +52,11 @@ class RemediesActivity : AppCompatActivity() {
         }
     }
 
+    private fun getStudent(){
+        val remediesList = sqLiteHelper.getAllRemedies()
+        adapter?.addItems(remediesList)
+    }
+
     private fun changeStatusBarTextColor() {
         val decorView: View = window.decorView
         WindowCompat.setDecorFitsSystemWindows(window, true)
@@ -50,4 +66,14 @@ class RemediesActivity : AppCompatActivity() {
             systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
         }
     }
+
+    private fun initRecyclerView(){
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        adapter = remediesAdapter()
+        recyclerView.adapter = adapter
+    }
+    private fun initView() {
+        recyclerView = findViewById(R.id.recyclerView)
+    }
+
 }
