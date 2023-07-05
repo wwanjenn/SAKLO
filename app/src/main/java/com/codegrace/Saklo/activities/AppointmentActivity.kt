@@ -3,8 +3,8 @@ package com.codegrace.Saklo.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
+import androidx.appcompat.widget.SearchView
 import android.widget.Toast
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsControllerCompat
@@ -19,6 +19,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import java.util.Locale
 
 class AppointmentActivity : AppCompatActivity() {
     lateinit var bottomNav : BottomNavigationView
@@ -28,12 +29,15 @@ class AppointmentActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var dataList: MutableList<HealthFacilityData>
     private lateinit var adapter: FacilityAdapter
+    private lateinit var searchView:SearchView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_appointment)
 
         recyclerView = findViewById(R.id.recyclerViewHF)
+        searchView = findViewById(R.id.searchView)
+        searchView.clearFocus()
 
         val gridLayoutManager = GridLayoutManager(this, 1)
         recyclerView.layoutManager = gridLayoutManager
@@ -61,6 +65,18 @@ class AppointmentActivity : AppCompatActivity() {
             }
 
         }
+
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String): Boolean {
+                searchList(newText)
+                return true
+            }
+        })
+
         databaseReference.addValueEventListener(eventListener)
 
         changeStatusBarTextColor()
@@ -87,6 +103,15 @@ class AppointmentActivity : AppCompatActivity() {
 
     }
 
+    private fun searchList(text: String) {
+        val searchList = ArrayList<HealthFacilityData>()
+        for (dataClass in dataList) {
+            if (dataClass.faciName?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
+                searchList.add(dataClass)
+            }
+        }
+        adapter.searchDataList(searchList)
+    }
     private fun changeStatusBarTextColor() {
         val decorView: View = window.decorView
         WindowCompat.setDecorFitsSystemWindows(window, true)

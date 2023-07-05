@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide
 
 class FacilityAdapter(
     private val context: Context,
-    private val healthFacilityDataList: List<HealthFacilityData>
+    private var healthFacilityDataList: List<HealthFacilityData>
 ) : RecyclerView.Adapter<FacilityAdapter.MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -32,6 +32,12 @@ class FacilityAdapter(
     override fun getItemCount(): Int {
         return healthFacilityDataList.size
     }
+
+    fun searchDataList(searchList: ArrayList<HealthFacilityData>) {
+        healthFacilityDataList = searchList
+        notifyDataSetChanged()
+    }
+
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 //        val recyclerImage: ImageView = itemView.findViewById(R.id.recyclerImage)
