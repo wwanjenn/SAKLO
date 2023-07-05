@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.List;
 
 public class HFAdapter extends RecyclerView.Adapter<MyViewHolder> {
@@ -32,7 +34,10 @@ public class HFAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-
+        Glide.with(context).load(healthFacilityDataList.get(position).getFaciImage()).into(holder.recyclerImage);
+        holder.recyclerName.setText(healthFacilityDataList.get(position).getFaciName());
+        holder.recyclerType.setText(healthFacilityDataList.get(position).getFaciType());
+        holder.recyclerLocation.setText(healthFacilityDataList.get(position).getFaciAddress());
     }
 
     @Override

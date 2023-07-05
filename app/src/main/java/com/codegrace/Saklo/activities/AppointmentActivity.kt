@@ -6,14 +6,29 @@ import android.os.Bundle
 import android.view.View
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import androidx.recyclerview.widget.RecyclerView
+import com.codegrace.Saklo.HFAdapter
+import com.codegrace.Saklo.HealthFacilityData
 import com.codegrace.Saklo.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ValueEventListener
 
 class AppointmentActivity : AppCompatActivity() {
     lateinit var bottomNav : BottomNavigationView
+
+    private lateinit var databaseReference: DatabaseReference
+    private lateinit var eventListener: ValueEventListener
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var dataList: MutableList<HealthFacilityData>
+    private lateinit var adapter: HFAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_appointment)
+
+        recyclerView = findViewById(R.id.)
+
         changeStatusBarTextColor()
 
         bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
