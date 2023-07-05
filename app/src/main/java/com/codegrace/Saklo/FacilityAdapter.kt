@@ -25,6 +25,7 @@ class FacilityAdapter(
         Glide.with(context).load(healthFacilityDataList[position].faciImage).into(holder.recyclerImage)
         holder.recyclerName.text = healthFacilityDataList[position].faciName
         holder.recyclerType.text = healthFacilityDataList[position].faciType
+        holder.recyclerClassif.text = healthFacilityDataList[position].faciClass
         holder.recyclerLocation.text = healthFacilityDataList[position].faciAddress
     }
 
@@ -38,5 +39,6 @@ class FacilityAdapter(
         val recyclerType: TextView = itemView.findViewById(R.id.recyclerType)
         val recyclerLocation: TextView = itemView.findViewById(R.id.recyclerLocation)
         val recyclerCard: CardView = itemView.findViewById(R.id.recyclerCard)
+        val recyclerClassif:TextView = itemView.findViewById(R.id.recyclerClassif)
     }
 }

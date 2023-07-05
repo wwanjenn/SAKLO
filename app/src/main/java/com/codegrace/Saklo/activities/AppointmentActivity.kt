@@ -54,7 +54,6 @@ class AppointmentActivity : AppCompatActivity() {
                 }
                 adapter.notifyDataSetChanged()
 
-                Log.d("RecyclerView", "Data list size: ${dataList.size}")
             }
 
             override fun onCancelled(error: DatabaseError) {
