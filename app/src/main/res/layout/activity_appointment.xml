@@ -65,12 +65,13 @@
             android:textAlignment="center"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"/>
-
-        <ScrollView
+            
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
-            tools:ignore="SpeakableTextPresentCheck">
+            android:id="@+id/recyclerViewHF"
+            android:scrollbars="vertical" />
+
 
 <!--            <LinearLayout-->
 <!--                android:layout_width="match_parent"-->
@@ -252,9 +253,6 @@
 <!--                </LinearLayout>-->
 
 <!--            </LinearLayout>-->
-
-
-        </ScrollView>
 
 
     </LinearLayout>

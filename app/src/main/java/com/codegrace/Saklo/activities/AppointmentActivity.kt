@@ -3,15 +3,21 @@ package com.codegrace.Saklo.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.codegrace.Saklo.HFAdapter
+import com.codegrace.Saklo.FacilityAdapter
 import com.codegrace.Saklo.HealthFacilityData
 import com.codegrace.Saklo.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
 class AppointmentActivity : AppCompatActivity() {
@@ -21,13 +27,42 @@ class AppointmentActivity : AppCompatActivity() {
     private lateinit var eventListener: ValueEventListener
     private lateinit var recyclerView: RecyclerView
     private lateinit var dataList: MutableList<HealthFacilityData>
-    private lateinit var adapter: HFAdapter
+    private lateinit var adapter: FacilityAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_appointment)
 
-        recyclerView = findViewById(R.id.)
+        recyclerView = findViewById(R.id.recyclerViewHF)
+
+        val gridLayoutManager = GridLayoutManager(this, 1)
+        recyclerView.layoutManager = gridLayoutManager
+
+        dataList = ArrayList()
+        adapter = FacilityAdapter(this, dataList)
+        recyclerView.adapter = adapter
+
+        databaseReference = FirebaseDatabase.getInstance("https://saklo-a4e3a-default-rtdb.asia-southeast1.firebasedatabase.app").getReference("SakloApp")
+
+        eventListener = object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                dataList.clear()
+                for (itemSnapshot in snapshot.children) {
+                    val dataClass = itemSnapshot.getValue(HealthFacilityData::class.java)
+                    dataClass?.key = itemSnapshot.key
+                    dataClass?.let { dataList.add(it) }
+                }
+                adapter.notifyDataSetChanged()
+
+                Log.d("RecyclerView", "Data list size: ${dataList.size}")
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(this@AppointmentActivity, "$error", Toast.LENGTH_SHORT).show()
+            }
+
+        }
+        databaseReference.addValueEventListener(eventListener)
 
         changeStatusBarTextColor()
 
