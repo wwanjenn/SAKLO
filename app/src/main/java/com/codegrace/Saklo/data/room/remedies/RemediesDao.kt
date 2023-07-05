@@ -1,4 +1,4 @@
-package com.codegrace.Saklo
+package com.codegrace.Saklo.data.room.remedies
 
 import androidx.room.Dao
 import androidx.room.Delete

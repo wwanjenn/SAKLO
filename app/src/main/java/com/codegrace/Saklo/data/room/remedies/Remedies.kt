@@ -1,4 +1,4 @@
-package com.codegrace.Saklo
+package com.codegrace.Saklo.data.room.remedies
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
