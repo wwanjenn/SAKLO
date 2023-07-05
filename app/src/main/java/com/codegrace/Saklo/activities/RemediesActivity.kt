@@ -6,13 +6,17 @@ import android.os.Bundle
 import android.view.View
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import com.codegrace.Saklo.Graph
 import com.codegrace.Saklo.R
+import com.codegrace.Saklo.data.room.RemediesDatabase
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class RemediesActivity : AppCompatActivity() {
     lateinit var bottomNav : BottomNavigationView
+    private lateinit var remeDb: RemediesDatabase
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Graph.provide(this)
         setContentView(R.layout.activity_remedies)
         changeStatusBarTextColor()
 
