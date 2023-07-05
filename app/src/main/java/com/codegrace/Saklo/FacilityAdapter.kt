@@ -22,7 +22,7 @@ class FacilityAdapter(
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        Glide.with(context).load(healthFacilityDataList[position].faciImage).into(holder.recyclerImage)
+//        Glide.with(context).load(healthFacilityDataList[position].faciImage).into(holder.recyclerImage)
         holder.recyclerName.text = healthFacilityDataList[position].faciName
         holder.recyclerType.text = healthFacilityDataList[position].faciType
         holder.recyclerClassif.text = healthFacilityDataList[position].faciClass
@@ -34,7 +34,7 @@ class FacilityAdapter(
     }
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val recyclerImage: ImageView = itemView.findViewById(R.id.recyclerImage)
+//        val recyclerImage: ImageView = itemView.findViewById(R.id.recyclerImage)
         val recyclerName: TextView = itemView.findViewById(R.id.recyclerName)
         val recyclerType: TextView = itemView.findViewById(R.id.recyclerType)
         val recyclerLocation: TextView = itemView.findViewById(R.id.recyclerLocation)
