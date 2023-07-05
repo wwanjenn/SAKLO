@@ -125,7 +125,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:text="PHONE NUMBER"
+                        android:text="LANDLINE NUMBER"
                         android:drawableLeft="@drawable/baseline_phone_24"
                         android:textAlignment="center"
                         android:textSize="20sp"
