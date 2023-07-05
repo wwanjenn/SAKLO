@@ -16,6 +16,12 @@ interface RemediesDao {
     @Delete
     fun deleteEntry(remedies: Remedies)
 
+    @Query("SELECT * FROM remedies")
+    fun getAll(): Flow<List<Remedies>>
+
+    @Query("SELECT * FROM remedies WHERE nameCommon LIKE :common OR nameScientific LIKE :scientific LIMIT 1")
+    fun findByName(common: String, scientific: String): Remedies
+
     @Query("SELECT * FROM remedies ORDER BY nameCommon ASC")
     fun getEntryOrderedByNameCommon(): Flow<List<Remedies>>
 
