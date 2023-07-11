@@ -3444,7 +3444,6 @@ int id home 0x7f0900f5
 int id homeAsUp 0x7f0900f6
 int id honorRequest 0x7f0900f7
 int id horizontal_only 0x7f0900f8
-int id hr_searchbar 0x7f0900f9
 int id icon 0x7f0900fa
 int id icon_group 0x7f0900fb
 int id icon_only 0x7f0900fc

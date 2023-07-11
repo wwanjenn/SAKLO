@@ -3445,7 +3445,6 @@ id home
 id homeAsUp
 id honorRequest
 id horizontal_only
-id hr_searchbar
 id icon
 id icon_group
 id icon_only

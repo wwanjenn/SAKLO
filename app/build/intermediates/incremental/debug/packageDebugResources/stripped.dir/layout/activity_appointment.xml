@@ -50,7 +50,7 @@
             android:id="@+id/searchView"
             app:iconifiedByDefault="false"
             app:searchHintIcon="@null"
-            app:queryHint="Search..."
+            app:queryHint="SEARCH"
             android:focusable="false"
             app:closeIcon="@drawable/baseline_close_24"
             app:searchIcon="@drawable/baseline_search_24"

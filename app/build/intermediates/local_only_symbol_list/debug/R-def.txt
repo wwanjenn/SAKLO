@@ -90,7 +90,6 @@ id divider_accopt
 id end
 id guideline_intro1
 id guideline_intro2
-id hr_searchbar
 id imageView
 id imageView2
 id introductionFragment

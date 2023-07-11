@@ -4,10 +4,10 @@ package com.codegrace.Saklo.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
@@ -22,19 +22,19 @@ public final class ActivityRemediesBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final EditText hrSearchbar;
+  public final AppCompatButton profile;
 
   @NonNull
-  public final AppCompatButton profile;
+  public final SearchView searchView;
 
   @NonNull
   public final Toolbar toolbar;
 
-  private ActivityRemediesBinding(@NonNull ConstraintLayout rootView, @NonNull EditText hrSearchbar,
-      @NonNull AppCompatButton profile, @NonNull Toolbar toolbar) {
+  private ActivityRemediesBinding(@NonNull ConstraintLayout rootView,
+      @NonNull AppCompatButton profile, @NonNull SearchView searchView, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
-    this.hrSearchbar = hrSearchbar;
     this.profile = profile;
+    this.searchView = searchView;
     this.toolbar = toolbar;
   }
 
@@ -65,15 +65,15 @@ public final class ActivityRemediesBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.hr_searchbar;
-      EditText hrSearchbar = ViewBindings.findChildViewById(rootView, id);
-      if (hrSearchbar == null) {
-        break missingId;
-      }
-
       id = R.id.profile;
       AppCompatButton profile = ViewBindings.findChildViewById(rootView, id);
       if (profile == null) {
+        break missingId;
+      }
+
+      id = R.id.searchView;
+      SearchView searchView = ViewBindings.findChildViewById(rootView, id);
+      if (searchView == null) {
         break missingId;
       }
 
@@ -83,8 +83,7 @@ public final class ActivityRemediesBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityRemediesBinding((ConstraintLayout) rootView, hrSearchbar, profile,
-          toolbar);
+      return new ActivityRemediesBinding((ConstraintLayout) rootView, profile, searchView, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
