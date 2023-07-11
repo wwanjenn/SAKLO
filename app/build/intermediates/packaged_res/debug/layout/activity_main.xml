@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/almost_wh"
+        android:background="?attr/colorOnSecondary"
         android:gravity="center"
         tools:context=".activities.MainActivity">
 
@@ -15,7 +15,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/white"
+            android:background="?attr/colorSecondaryVariant"
             android:textColor="@color/white">
 
             <LinearLayout
@@ -26,10 +26,10 @@
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnHome"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/baseline_person_24" />
+                    android:background="@drawable/baseline_home_24" />
 
                 <ImageView
                     android:layout_width="300dp"

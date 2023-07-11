@@ -22,7 +22,7 @@ public final class ActivityDrugsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final AppCompatButton profile;
+  public final AppCompatButton btnHome;
 
   @NonNull
   public final SearchView searchView;
@@ -30,10 +30,10 @@ public final class ActivityDrugsBinding implements ViewBinding {
   @NonNull
   public final Toolbar toolbar;
 
-  private ActivityDrugsBinding(@NonNull ConstraintLayout rootView, @NonNull AppCompatButton profile,
+  private ActivityDrugsBinding(@NonNull ConstraintLayout rootView, @NonNull AppCompatButton btnHome,
       @NonNull SearchView searchView, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
-    this.profile = profile;
+    this.btnHome = btnHome;
     this.searchView = searchView;
     this.toolbar = toolbar;
   }
@@ -65,9 +65,9 @@ public final class ActivityDrugsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.profile;
-      AppCompatButton profile = ViewBindings.findChildViewById(rootView, id);
-      if (profile == null) {
+      id = R.id.btnHome;
+      AppCompatButton btnHome = ViewBindings.findChildViewById(rootView, id);
+      if (btnHome == null) {
         break missingId;
       }
 
@@ -83,7 +83,7 @@ public final class ActivityDrugsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDrugsBinding((ConstraintLayout) rootView, profile, searchView, toolbar);
+      return new ActivityDrugsBinding((ConstraintLayout) rootView, btnHome, searchView, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

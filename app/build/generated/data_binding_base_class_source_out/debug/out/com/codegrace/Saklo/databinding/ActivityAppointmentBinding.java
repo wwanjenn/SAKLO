@@ -23,7 +23,7 @@ public final class ActivityAppointmentBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final AppCompatButton profile;
+  public final AppCompatButton btnHome;
 
   @NonNull
   public final RecyclerView recyclerViewHF;
@@ -35,10 +35,10 @@ public final class ActivityAppointmentBinding implements ViewBinding {
   public final Toolbar toolbar;
 
   private ActivityAppointmentBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppCompatButton profile, @NonNull RecyclerView recyclerViewHF,
+      @NonNull AppCompatButton btnHome, @NonNull RecyclerView recyclerViewHF,
       @NonNull SearchView searchView, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
-    this.profile = profile;
+    this.btnHome = btnHome;
     this.recyclerViewHF = recyclerViewHF;
     this.searchView = searchView;
     this.toolbar = toolbar;
@@ -71,9 +71,9 @@ public final class ActivityAppointmentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.profile;
-      AppCompatButton profile = ViewBindings.findChildViewById(rootView, id);
-      if (profile == null) {
+      id = R.id.btnHome;
+      AppCompatButton btnHome = ViewBindings.findChildViewById(rootView, id);
+      if (btnHome == null) {
         break missingId;
       }
 
@@ -95,7 +95,7 @@ public final class ActivityAppointmentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityAppointmentBinding((ConstraintLayout) rootView, profile, recyclerViewHF,
+      return new ActivityAppointmentBinding((ConstraintLayout) rootView, btnHome, recyclerViewHF,
           searchView, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);

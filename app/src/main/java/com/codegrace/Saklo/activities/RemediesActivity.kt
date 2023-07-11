@@ -31,10 +31,21 @@ class RemediesActivity : AppCompatActivity() {
                     startActivity(Intent(this, RemediesActivity::class.java))
                     true
                 }
+                R.id.btnDrugs -> {
+                    startActivity(Intent(this, DrugsActivity::class.java))
+                    true
+                }
 
                 else -> throw AssertionError()
             }
         }
+        val themeColor = if (resources.configuration.isNightModeActive)
+            R.color.black
+        else
+            R.color.white
+
+        bottomNav.setBackgroundResource(themeColor)
+
     }
 
     private fun changeStatusBarTextColor() {

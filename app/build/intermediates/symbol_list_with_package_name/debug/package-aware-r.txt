@@ -1406,6 +1406,7 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color almost_bl
 color almost_wh
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
@@ -3027,6 +3028,7 @@ drawable baseline_local_hospital_24
 drawable baseline_location_on_24
 drawable baseline_lock_24
 drawable baseline_medical_services_24
+drawable baseline_medication_24
 drawable baseline_person_24
 drawable baseline_phone_24
 drawable baseline_search_24
@@ -3595,7 +3597,6 @@ id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
-id profile
 id progress_circular
 id progress_horizontal
 id radio

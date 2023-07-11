@@ -2,6 +2,7 @@ R_DEF: Internal format may change without notice
 local
 animator fade_in
 animator fade_out
+color almost_bl
 color almost_wh
 color black
 color dark_blu
@@ -27,6 +28,7 @@ drawable baseline_local_hospital_24
 drawable baseline_location_on_24
 drawable baseline_lock_24
 drawable baseline_medical_services_24
+drawable baseline_medication_24
 drawable baseline_person_24
 drawable baseline_phone_24
 drawable baseline_search_24
@@ -106,7 +108,6 @@ id loginFragment
 id logo
 id motionLayout
 id nav_host_fragment
-id profile
 id recyclerCard
 id recyclerClassif
 id recyclerImage

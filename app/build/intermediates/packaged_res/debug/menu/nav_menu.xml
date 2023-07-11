@@ -9,6 +9,10 @@
         android:title="Remedies"
         android:icon="@drawable/baseline_healing_24"/>
     <item
+        android:id="@id/btnDrugs"
+        android:title="Drugs"
+        android:icon="@drawable/baseline_medication_24"/>
+    <item
         android:id="@id/btnAppoint"
         android:title="Appointment"
         android:icon="@drawable/baseline_medical_services_24"/>

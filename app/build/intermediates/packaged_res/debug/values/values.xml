@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="almost_bl">#121212</color>
     <color name="almost_wh">#F6F6FF</color>
     <color name="black">#FF000000</color>
     <color name="dark_blu">#5171FF</color>
