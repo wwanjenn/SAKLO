@@ -96,10 +96,20 @@ class AppointmentActivity : AppCompatActivity() {
                     startActivity(Intent(this, RemediesActivity::class.java))
                     true
                 }
+                R.id.btnDrugs -> {
+                    startActivity(Intent(this, DrugsActivity::class.java))
+                    true
+                }
 
                 else -> throw AssertionError()
             }
         }
+        val themeColor = if (resources.configuration.isNightModeActive)
+            R.color.black
+        else
+            R.color.white
+
+        bottomNav.setBackgroundResource(themeColor)
 
     }
 
@@ -115,10 +125,8 @@ class AppointmentActivity : AppCompatActivity() {
     private fun changeStatusBarTextColor() {
         val decorView: View = window.decorView
         WindowCompat.setDecorFitsSystemWindows(window, true)
-        WindowInsetsControllerCompat(window, decorView).run {
-            isAppearanceLightStatusBars = true
-            isAppearanceLightNavigationBars = true
-            systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
-        }
+        val windowInsetsController = WindowInsetsControllerCompat(window, decorView)
+        windowInsetsController.isAppearanceLightStatusBars =
+            resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK != android.content.res.Configuration.UI_MODE_NIGHT_YES
     }
 }
