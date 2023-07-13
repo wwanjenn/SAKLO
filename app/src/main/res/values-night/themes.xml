@@ -17,7 +17,6 @@
         <item name="android:statusBarColor" tools:targetApi="l">@color/dark_blu</item>
     </style>
 
-
     <style name="primaryBtn" parent="Theme.Saklo">
         <item name="backgroundTint">@color/dark_blu</item>
         <item name="android:textColor">@color/white</item>
@@ -48,14 +47,14 @@
     </style>
 
     <style name="GeneralTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
         <item name="android:windowBackground">@color/almost_wh</item>
         <item name="colorPrimary">@color/dark_blu</item>
         <item name="colorPrimaryVariant">@color/light_blu</item>
         <item name="colorOnPrimary">@color/black</item>
         <item name="colorSecondary">@color/dark_gr</item>
-        <item name="colorSecondaryVariant">@color/white</item>
-        <item name="colorOnSecondary">@color/almost_wh</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/almost_bl</item>
     </style>
 
 </resources>

@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/almost_wh"
+        android:background="?attr/colorOnSecondary"
         android:gravity="center"
         tools:context=".activities.RemediesActivity">
 
@@ -16,7 +16,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/white"
+            android:background="?attr/colorSecondaryVariant"
             android:textColor="@color/white">
 
             <LinearLayout
@@ -26,11 +26,11 @@
                 android:layout_gravity="center">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/profile"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:id="@+id/btnHome"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/baseline_person_24" />
+                    android:background="@drawable/baseline_home_24" />
 
                 <ImageView
                     android:layout_width="300dp"
@@ -42,20 +42,20 @@
 
         </androidx.appcompat.widget.Toolbar>
 
-        <EditText
+        <androidx.appcompat.widget.SearchView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:id="@+id/hr_searchbar"
-            android:background="@drawable/rectangle"
-            android:layout_marginTop="20dp"
-            android:padding="8dp"
-            android:hint="SEARCH"
-            android:textColorHint="@color/dark_gr"
-            android:drawableLeft="@drawable/baseline_search_24"
-            android:textColor="@color/dark_gr"
-            android:drawablePadding="8dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/searchView"
+            app:iconifiedByDefault="false"
+            app:searchHintIcon="@null"
+            app:queryHint="SEARCH"
+            android:focusable="false"
+            app:closeIcon="@drawable/baseline_close_24"
+            app:searchIcon="@drawable/baseline_search_24"
+            android:background="@drawable/search_bar_design"/>
 
         <TextView
             android:layout_width="match_parent"

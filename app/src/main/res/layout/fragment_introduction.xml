@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/almost_wh">
+    android:background="?attr/colorOnSecondary">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_intro1"
