@@ -5,6 +5,7 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.WindowCompat
@@ -18,8 +19,13 @@ import com.codegrace.Saklo.RemediesModel
 import com.codegrace.Saklo.RemediesSQLiteHelper
 import com.codegrace.Saklo.remediesAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ValueEventListener
+import java.util.Locale
 
 class RemediesActivity : AppCompatActivity() {
+    private lateinit var eventListener: ValueEventListener
     lateinit var bottomNav : BottomNavigationView
     private lateinit var recyclerView: RecyclerView
     private var adapter: remediesAdapter? = null
@@ -49,6 +55,16 @@ class RemediesActivity : AppCompatActivity() {
 
         getStudent()
 
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String): Boolean {
+                searchList(newText)
+                return true
+            }
+        })
 
         bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
         bottomNav.setOnItemSelectedListener {
@@ -85,6 +101,16 @@ class RemediesActivity : AppCompatActivity() {
     private fun getStudent(){
         val remediesList = sqLiteHelper.getAllRemedies()
         adapter?.addItems(remediesList)
+    }
+
+    private fun searchList(text: String) {
+        val searchList = ArrayList<RemediesModel>()
+        for (dataClass in dataList) {
+            if (dataClass.nameCommon?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
+                searchList.add(dataClass)
+            }
+        }
+        adapter?.searchDataList(searchList)
     }
 
     private fun changeStatusBarTextColor() {
