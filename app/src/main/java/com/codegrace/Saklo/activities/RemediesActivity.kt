@@ -25,7 +25,7 @@ import com.google.firebase.database.ValueEventListener
 import java.util.Locale
 
 class RemediesActivity : AppCompatActivity() {
-    private lateinit var eventListener: ValueEventListener
+
     lateinit var bottomNav : BottomNavigationView
     private lateinit var recyclerView: RecyclerView
     private var adapter: remediesAdapter? = null
@@ -38,7 +38,7 @@ class RemediesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_remedies)
 
-        recyclerView = findViewById(R.id.recyclerViewHF)
+        recyclerView = findViewById(R.id.recyclerViewReme)
         searchView = findViewById(R.id.searchView)
         searchView.clearFocus()
 
