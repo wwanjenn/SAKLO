@@ -1,5 +1,6 @@
 package com.codegrace.Saklo
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,8 +9,11 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 
-class remediesAdapter: RecyclerView.Adapter<remediesAdapter.remediesViewHolder>() {
-    private var remediesList: ArrayList<RemediesModel> = ArrayList()
+class remediesAdapter(
+    private val context: Context,
+    private var remediesList: List<RemediesModel>
+    ): RecyclerView.Adapter<remediesAdapter.remediesViewHolder>() {
+
 
     fun addItems(items: ArrayList<RemediesModel>){
         this.remediesList = items
