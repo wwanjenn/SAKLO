@@ -105,13 +105,18 @@ class RemediesActivity : AppCompatActivity() {
     }
 
     private fun searchList(text: String) {
-        val searchList = ArrayList<RemediesModel>()
-        for (dataClass in dataList) {
-            if (dataClass.nameCommon?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
-                searchList.add(dataClass)
-            }
-        }
-        adapter?.searchDataList(searchList)
+        val searchList = sqLiteHelper.getRemedies(text)
+        adapter?.addItems(searchList)
+
+//        val searchList =
+//
+//            ArrayList<RemediesModel>()
+//        for (dataClass in dataList) {
+//            if (dataClass.nameCommon?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
+//                searchList.add(dataClass)
+//            }
+//       }
+//       adapter?.searchDataList(searchList)
     }
 
     private fun changeStatusBarTextColor() {
