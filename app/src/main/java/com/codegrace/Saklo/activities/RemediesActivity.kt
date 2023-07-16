@@ -46,6 +46,7 @@ class RemediesActivity : AppCompatActivity() {
         recyclerView.layoutManager = gridLayoutManager
 
         dataList = ArrayList()
+
         adapter = remediesAdapter(this, dataList)
         recyclerView.adapter = adapter
 

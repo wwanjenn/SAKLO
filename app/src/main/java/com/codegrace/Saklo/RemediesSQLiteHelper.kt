@@ -65,6 +65,40 @@ class RemediesSQLiteHelper(val context: Context) : SQLiteOpenHelper(context, DAT
         // Nothing to do
     }
 
+    fun getRemedies(searchQuery: String?): ArrayList<RemediesModel> {
+        val remediesList: ArrayList<RemediesModel> = ArrayList()
+        val selectQuery = "SELECT * FROM remedies WHERE nameCommon LIKE '$searchQuery%' or nameScientific '$searchQuery%'"
+        val db = this.readableDatabase
+
+        val cursor: Cursor?
+
+        try {
+            cursor = db.rawQuery(selectQuery, null)
+        } catch (e: Exception) {
+            e.printStackTrace()
+            db.execSQL(selectQuery)
+            return ArrayList()
+        }
+
+        var id: Int
+        var nameCommon: String
+        var nameScientific: String
+
+        if(cursor.moveToFirst()){
+            do {
+                id = cursor.getInt(cursor.getColumnIndexOrThrow("id"))
+                nameCommon = cursor.getString(cursor.getColumnIndexOrThrow("nameCommon"))
+                nameScientific = cursor.getString(cursor.getColumnIndexOrThrow("nameScientific"))
+
+                val remedies = RemediesModel(id = id, nameCommon = nameCommon, nameScientific = nameScientific)
+                remediesList.add(remedies)
+            } while(cursor.moveToNext())
+        }
+
+        return remediesList
+
+    }
+
     fun getAllRemedies(): ArrayList<RemediesModel> {
         val remediesList: ArrayList<RemediesModel> = ArrayList()
         val selectQuery = "SELECT * FROM remedies"
@@ -101,7 +135,7 @@ class RemediesSQLiteHelper(val context: Context) : SQLiteOpenHelper(context, DAT
 
     companion object {
         const val ASSETS_PATH = "database"
-        const val DATABASE_NAME = "remedies"
+        const val DATABASE_NAME = "remedies1"
         const val DATABASE_VERSION = 1
     }
 
