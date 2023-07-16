@@ -31,10 +31,9 @@ class RemediesActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private var adapter: remediesAdapter? = null
     lateinit var sqLiteHelper: RemediesSQLiteHelper
-    private lateinit var dataList: MutableList<RemediesModel>
+    private lateinit var remediesList: MutableList<RemediesModel>
     private lateinit var searchView: SearchView
 
-    @RequiresApi(Build.VERSION_CODES.R)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_remedies)
@@ -46,25 +45,23 @@ class RemediesActivity : AppCompatActivity() {
         val gridLayoutManager = GridLayoutManager(this, 1)
         recyclerView.layoutManager = gridLayoutManager
 
-        dataList = ArrayList()
+        remediesList = ArrayList<RemediesModel>()
 
-        adapter = remediesAdapter(this, dataList)
+        adapter = remediesAdapter(this, remediesList)
         recyclerView.adapter = adapter
 
         changeStatusBarTextColor()
 
         sqLiteHelper = RemediesSQLiteHelper(this)
 
-        getStudent()
+        getRemedies()
 
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
-                searchList(query)
-                return true
+                return false
             }
 
             override fun onQueryTextChange(newText: String): Boolean {
-                getStudent()
                 searchList(newText)
                 return true
             }
@@ -102,16 +99,24 @@ class RemediesActivity : AppCompatActivity() {
 
     }
 
-    private fun getStudent(){
+    private fun getRemedies(): ArrayList<RemediesModel> {
         val selectQuery = "SELECT * FROM remedies"
-        val remediesList = sqLiteHelper.getRemedies(selectQuery)
+        val remediesList = sqLiteHelper.getRemedies()
         adapter?.addItems(remediesList)
+        return remediesList
     }
 
     private fun searchList(text: String) {
-        val selectQuery =
-            "SELECT * FROM remedies WHERE (nameCommon LIKE '$text%' or nameScientific LIKE '$text%')"
-        val searchList = sqLiteHelper.getRemedies(selectQuery)
+//        val selectQuery = "SELECT * FROM remedies WHERE nameCommon LIKE '$text%'"
+//        val searchList = sqLiteHelper.getRemedies(selectQuery)
+//        adapter?.addItems(searchList)
+        val remediesList = sqLiteHelper.getRemedies()
+        val searchList = ArrayList<RemediesModel>()
+        for (dataClass in remediesList) {
+            if (dataClass.nameCommon?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
+                searchList.add(dataClass)
+            }
+        }
         adapter?.addItems(searchList)
 
 //        val searchList =

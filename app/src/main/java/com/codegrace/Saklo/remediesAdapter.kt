@@ -18,6 +18,7 @@ class remediesAdapter(
 
     fun addItems(items: ArrayList<RemediesModel>){
         this.remediesList = items
+        notifyDataSetChanged()
     }
 
 
