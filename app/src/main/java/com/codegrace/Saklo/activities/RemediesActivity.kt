@@ -62,7 +62,8 @@ class RemediesActivity : AppCompatActivity() {
             }
 
             override fun onQueryTextChange(newText: String): Boolean {
-                searchList(newText)
+                var sendText = "$newText%"
+                searchList(sendText)
                 return true
             }
         })
@@ -106,7 +107,7 @@ class RemediesActivity : AppCompatActivity() {
     }
 
     private fun searchList(text: String) {
-        val selectQuery = "SELECT * FROM remedies WHERE nameCommon LIKE '$text%' or nameScientific '$text%'"
+        val selectQuery = "SELECT * FROM remedies WHERE nameCommon LIKE $text or nameScientific $text"
         val searchList = sqLiteHelper.getRemedies(selectQuery)
         adapter?.addItems(searchList)
 
