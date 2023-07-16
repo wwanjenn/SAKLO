@@ -100,12 +100,14 @@ class RemediesActivity : AppCompatActivity() {
     }
 
     private fun getStudent(){
-        val remediesList = sqLiteHelper.getAllRemedies()
+        val selectQuery = "SELECT * FROM remedies"
+        val remediesList = sqLiteHelper.getRemedies(selectQuery)
         adapter?.addItems(remediesList)
     }
 
     private fun searchList(text: String) {
-        val searchList = sqLiteHelper.getRemedies(text)
+        val selectQuery = "SELECT * FROM remedies WHERE nameCommon LIKE '$text%' or nameScientific '$text%'"
+        val searchList = sqLiteHelper.getRemedies(selectQuery)
         adapter?.addItems(searchList)
 
 //        val searchList =
