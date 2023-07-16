@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
@@ -58,12 +59,13 @@ class RemediesActivity : AppCompatActivity() {
 
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
-                return false
+                searchList(query)
+                return true
             }
 
             override fun onQueryTextChange(newText: String): Boolean {
-                var sendText = "$newText%"
-                searchList(sendText)
+                getStudent()
+                searchList(newText)
                 return true
             }
         })
@@ -107,7 +109,8 @@ class RemediesActivity : AppCompatActivity() {
     }
 
     private fun searchList(text: String) {
-        val selectQuery = "SELECT * FROM remedies WHERE nameCommon LIKE $text or nameScientific $text"
+        val selectQuery =
+            "SELECT * FROM remedies WHERE (nameCommon LIKE '$text%' or nameScientific LIKE '$text%')"
         val searchList = sqLiteHelper.getRemedies(selectQuery)
         adapter?.addItems(searchList)
 
