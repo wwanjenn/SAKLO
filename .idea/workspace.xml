@@ -9,16 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49c0b7ef-cebd-43f1-986a-e757f6877ea6" name="Changes" comment="Work in progress: onBackPress between Fragments">
-      <change afterPath="$PROJECT_DIR$/app/build/generated/res/google-services/debug/values/values.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/database/remedies1.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/database/remedies.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/RemediesModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/RemediesModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/RemediesSQLiteHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/RemediesSQLiteHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/activities/RemediesActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/activities/RemediesActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/remediesAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/remediesAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_items_remedies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_items_remedies.xml" afterDir="false" />
-    </list>
+    <list default="true" id="49c0b7ef-cebd-43f1-986a-e757f6877ea6" name="Changes" comment="Work in progress: onBackPress between Fragments" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

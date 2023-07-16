@@ -135,7 +135,7 @@ class RemediesSQLiteHelper(val context: Context) : SQLiteOpenHelper(context, DAT
 
     companion object {
         const val ASSETS_PATH = "database"
-        const val DATABASE_NAME = "remedies1"
+        const val DATABASE_NAME = "remedies2"
         const val DATABASE_VERSION = 1
     }
 
