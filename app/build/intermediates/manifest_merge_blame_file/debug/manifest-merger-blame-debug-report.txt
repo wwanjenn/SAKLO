@@ -1,0 +1,431 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.codegrace.Saklo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:25:5-67
+11-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:25:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:26:5-79
+12-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:26:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\c15f3364895622a15b07eb6e2ed52369\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:24:5-68
+13-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\c15f3364895622a15b07eb6e2ed52369\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:24:22-65
+14    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+14-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\c15f3364895622a15b07eb6e2ed52369\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:25:5-79
+14-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\c15f3364895622a15b07eb6e2ed52369\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:25:22-76
+15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+15-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b1963c3bba7420f02ccda5a0531b08cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:5-110
+15-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b1963c3bba7420f02ccda5a0531b08cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:22-107
+16
+17    <permission
+17-->[androidx.core:core:1.10.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\7a0801cc8bd69e8e45f64a1e1bbf7914\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+18        android:name="com.codegrace.Saklo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.10.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\7a0801cc8bd69e8e45f64a1e1bbf7914\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.10.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\7a0801cc8bd69e8e45f64a1e1bbf7914\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.codegrace.Saklo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.10.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\7a0801cc8bd69e8e45f64a1e1bbf7914\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.10.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\7a0801cc8bd69e8e45f64a1e1bbf7914\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+22
+23    <application
+23-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:5:5-53:19
+24        android:allowBackup="true"
+24-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:6:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.10.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\7a0801cc8bd69e8e45f64a1e1bbf7914\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+26        android:dataExtractionRules="@xml/data_extraction_rules"
+26-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:7:9-65
+27        android:debuggable="true"
+28        android:fullBackupContent="@xml/backup_rules"
+28-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:8:9-54
+29        android:icon="@drawable/logo"
+29-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:9:9-38
+30        android:label="@string/app_name"
+30-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:10:9-41
+31        android:roundIcon="@drawable/logo"
+31-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:11:9-43
+32        android:supportsRtl="true"
+32-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:12:9-35
+33        android:testOnly="true"
+34        android:theme="@style/Theme.Saklo" >
+34-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:13:9-43
+35        <activity
+35-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:15:9-23:20
+36            android:name="com.codegrace.Saklo.activities.SplashActivity"
+36-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:16:13-54
+37            android:exported="true"
+37-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:17:13-36
+38            android:theme="@style/SplashTheme" >
+38-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:18:13-47
+39            <intent-filter>
+39-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:19:13-22:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:20:17-69
+40-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:20:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:21:17-77
+42-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:21:27-74
+43            </intent-filter>
+44        </activity>
+45        <activity
+45-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:24:9-32:20
+46            android:name="com.codegrace.Saklo.activities.RegisterLoginActivity"
+46-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:25:13-61
+47            android:exported="true"
+47-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:26:13-36
+48            android:theme="@style/login_Theme" >
+48-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:27:13-47
+49            <intent-filter>
+49-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:28:13-31:29
+50                <action android:name="android.intent.action.VIEW" />
+50-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:29:17-69
+50-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:29:25-66
+51
+52                <category android:name="android.intent.category.DEFAULT" />
+52-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:30:17-76
+52-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:30:27-73
+53            </intent-filter>
+54        </activity>
+55        <activity
+55-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:33:9-37:20
+56            android:name="com.codegrace.Saklo.activities.MainActivity"
+56-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:34:13-52
+57            android:exported="true"
+57-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:35:13-36
+58            android:theme="@style/GeneralTheme" >
+58-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:36:13-48
+59        </activity>
+60        <activity
+60-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:38:9-42:20
+61            android:name="com.codegrace.Saklo.activities.AppointmentActivity"
+61-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:39:13-59
+62            android:exported="true"
+62-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:40:13-36
+63            android:theme="@style/GeneralTheme" >
+63-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:41:13-48
+64        </activity>
+65        <activity
+65-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:43:9-47:20
+66            android:name="com.codegrace.Saklo.activities.RemediesActivity"
+66-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:44:13-56
+67            android:exported="true"
+67-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:45:13-36
+68            android:theme="@style/GeneralTheme" >
+68-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:46:13-48
+69        </activity>
+70        <activity
+70-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:48:9-52:20
+71            android:name="com.codegrace.Saklo.activities.DrugsActivity"
+71-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:49:13-53
+72            android:exported="true"
+72-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:50:13-36
+73            android:theme="@style/GeneralTheme" >
+73-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:51:13-48
+74        </activity>
+75        <activity
+75-->[androidx.compose.ui:ui-tooling:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\c9ab8e98bf29ac95a98dadd3583e3b37\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:23:9-25:39
+76            android:name="androidx.compose.ui.tooling.PreviewActivity"
+76-->[androidx.compose.ui:ui-tooling:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\c9ab8e98bf29ac95a98dadd3583e3b37\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:24:13-71
+77            android:exported="true" />
+77-->[androidx.compose.ui:ui-tooling:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\c9ab8e98bf29ac95a98dadd3583e3b37\transformed\jetified-ui-tooling-1.3.0\AndroidManifest.xml:25:13-36
+78        <activity
+78-->[androidx.compose.ui:ui-test-manifest:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\9835080c674300ff064905c196c83ee7\transformed\jetified-ui-test-manifest-1.3.0\AndroidManifest.xml:23:9-25:39
+79            android:name="androidx.activity.ComponentActivity"
+79-->[androidx.compose.ui:ui-test-manifest:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\9835080c674300ff064905c196c83ee7\transformed\jetified-ui-test-manifest-1.3.0\AndroidManifest.xml:24:13-63
+80            android:exported="true" />
+80-->[androidx.compose.ui:ui-test-manifest:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\9835080c674300ff064905c196c83ee7\transformed\jetified-ui-test-manifest-1.3.0\AndroidManifest.xml:25:13-36
+81
+82        <service
+82-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\436a659209adb69ca850614a387cfcea\transformed\jetified-firebase-auth-ktx-22.0.0\AndroidManifest.xml:8:9-14:19
+83            android:name="com.google.firebase.components.ComponentDiscoveryService"
+83-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\436a659209adb69ca850614a387cfcea\transformed\jetified-firebase-auth-ktx-22.0.0\AndroidManifest.xml:9:13-84
+84            android:directBootAware="true"
+84-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\531e51dfdb1a74ebac52d109c0efa816\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+85            android:exported="false" >
+85-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\436a659209adb69ca850614a387cfcea\transformed\jetified-firebase-auth-ktx-22.0.0\AndroidManifest.xml:10:13-37
+86            <meta-data
+86-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\436a659209adb69ca850614a387cfcea\transformed\jetified-firebase-auth-ktx-22.0.0\AndroidManifest.xml:11:13-13:85
+87                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+87-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\436a659209adb69ca850614a387cfcea\transformed\jetified-firebase-auth-ktx-22.0.0\AndroidManifest.xml:12:17-116
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\436a659209adb69ca850614a387cfcea\transformed\jetified-firebase-auth-ktx-22.0.0\AndroidManifest.xml:13:17-82
+89            <meta-data
+89-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:69:13-71:85
+90                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+90-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:70:17-109
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:71:17-82
+92            <meta-data
+92-->[com.google.firebase:firebase-database-ktx:20.2.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\df1ef2f10c3ef4d815d55e4fca094e20\transformed\jetified-firebase-database-ktx-20.2.2\AndroidManifest.xml:14:13-16:85
+93                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+93-->[com.google.firebase:firebase-database-ktx:20.2.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\df1ef2f10c3ef4d815d55e4fca094e20\transformed\jetified-firebase-database-ktx-20.2.2\AndroidManifest.xml:15:17-124
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-database-ktx:20.2.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\df1ef2f10c3ef4d815d55e4fca094e20\transformed\jetified-firebase-database-ktx-20.2.2\AndroidManifest.xml:16:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\ae61699449f2a0ec5dd14cbd0e6a268a\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:31:13-33:85
+96                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+96-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\ae61699449f2a0ec5dd14cbd0e6a268a\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:32:17-109
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\ae61699449f2a0ec5dd14cbd0e6a268a\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:33:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-storage-ktx:20.2.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\e17e83c7f2dc6f632ab7144bb66f1e7e\transformed\jetified-firebase-storage-ktx-20.2.1\AndroidManifest.xml:14:13-16:85
+99                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
+99-->[com.google.firebase:firebase-storage-ktx:20.2.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\e17e83c7f2dc6f632ab7144bb66f1e7e\transformed\jetified-firebase-storage-ktx-20.2.1\AndroidManifest.xml:15:17-122
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-storage-ktx:20.2.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\e17e83c7f2dc6f632ab7144bb66f1e7e\transformed\jetified-firebase-storage-ktx-20.2.1\AndroidManifest.xml:16:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-storage:20.2.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\f1ac4555fca3ee34bbc34948fcdbd3a7\transformed\jetified-firebase-storage-20.2.1\AndroidManifest.xml:32:13-34:85
+102                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+102-->[com.google.firebase:firebase-storage:20.2.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\f1ac4555fca3ee34bbc34948fcdbd3a7\transformed\jetified-firebase-storage-20.2.1\AndroidManifest.xml:33:17-107
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-storage:20.2.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\f1ac4555fca3ee34bbc34948fcdbd3a7\transformed\jetified-firebase-storage-20.2.1\AndroidManifest.xml:34:17-82
+104            <meta-data
+104-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\c15f3364895622a15b07eb6e2ed52369\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:31:13-33:85
+105                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+105-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\c15f3364895622a15b07eb6e2ed52369\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:32:17-139
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\c15f3364895622a15b07eb6e2ed52369\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:33:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\bc5d9a9cc580771d8c580cf95d61e2af\transformed\jetified-firebase-common-ktx-20.3.2\AndroidManifest.xml:14:13-16:85
+108                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+108-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\bc5d9a9cc580771d8c580cf95d61e2af\transformed\jetified-firebase-common-ktx-20.3.2\AndroidManifest.xml:15:17-113
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\bc5d9a9cc580771d8c580cf95d61e2af\transformed\jetified-firebase-common-ktx-20.3.2\AndroidManifest.xml:16:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\56739792b7fd50144ec2a0ff7179a772\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+111                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+111-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\56739792b7fd50144ec2a0ff7179a772\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\56739792b7fd50144ec2a0ff7179a772\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+113        </service>
+114
+115        <activity
+115-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:29:9-46:20
+116            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+116-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:30:13-80
+117            android:excludeFromRecents="true"
+117-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:31:13-46
+118            android:exported="true"
+118-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:32:13-36
+119            android:launchMode="singleTask"
+119-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:33:13-44
+120            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+120-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:34:13-72
+121            <intent-filter>
+121-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:35:13-45:29
+122                <action android:name="android.intent.action.VIEW" />
+122-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:29:17-69
+122-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:29:25-66
+123
+124                <category android:name="android.intent.category.DEFAULT" />
+124-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:30:17-76
+124-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:30:27-73
+125                <category android:name="android.intent.category.BROWSABLE" />
+125-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
+125-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
+126
+127                <data
+127-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
+128                    android:host="firebase.auth"
+128-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
+129                    android:path="/"
+129-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
+130                    android:scheme="genericidp" />
+130-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
+131            </intent-filter>
+132        </activity>
+133        <activity
+133-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:47:9-64:20
+134            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+134-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:48:13-79
+135            android:excludeFromRecents="true"
+135-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:49:13-46
+136            android:exported="true"
+136-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:50:13-36
+137            android:launchMode="singleTask"
+137-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:51:13-44
+138            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+138-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:52:13-72
+139            <intent-filter>
+139-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:53:13-63:29
+140                <action android:name="android.intent.action.VIEW" />
+140-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:29:17-69
+140-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:29:25-66
+141
+142                <category android:name="android.intent.category.DEFAULT" />
+142-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:30:17-76
+142-->C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\AndroidManifest.xml:30:27-73
+143                <category android:name="android.intent.category.BROWSABLE" />
+143-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
+143-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
+144
+145                <data
+145-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
+146                    android:host="firebase.auth"
+146-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
+147                    android:path="/"
+147-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
+148                    android:scheme="recaptcha" />
+148-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\923dcfded8a03959d48becf646ad0c4c\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
+149            </intent-filter>
+150        </activity>
+151
+152        <provider
+152-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\531e51dfdb1a74ebac52d109c0efa816\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+153            android:name="com.google.firebase.provider.FirebaseInitProvider"
+153-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\531e51dfdb1a74ebac52d109c0efa816\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+154            android:authorities="com.codegrace.Saklo.firebaseinitprovider"
+154-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\531e51dfdb1a74ebac52d109c0efa816\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+155            android:directBootAware="true"
+155-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\531e51dfdb1a74ebac52d109c0efa816\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+156            android:exported="false"
+156-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\531e51dfdb1a74ebac52d109c0efa816\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+157            android:initOrder="100" />
+157-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\531e51dfdb1a74ebac52d109c0efa816\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+158
+159        <activity
+159-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\2a6874b4851810f2620b0e587994dfe2\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+160            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+160-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\2a6874b4851810f2620b0e587994dfe2\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+161            android:exported="false"
+161-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\2a6874b4851810f2620b0e587994dfe2\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+162            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+162-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\2a6874b4851810f2620b0e587994dfe2\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+163
+164        <receiver
+164-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b1963c3bba7420f02ccda5a0531b08cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:29:9-33:20
+165            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+165-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b1963c3bba7420f02ccda5a0531b08cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:30:13-85
+166            android:enabled="true"
+166-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b1963c3bba7420f02ccda5a0531b08cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:31:13-35
+167            android:exported="false" >
+167-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b1963c3bba7420f02ccda5a0531b08cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:32:13-37
+168        </receiver>
+169
+170        <service
+170-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b1963c3bba7420f02ccda5a0531b08cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:35:9-38:40
+171            android:name="com.google.android.gms.measurement.AppMeasurementService"
+171-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b1963c3bba7420f02ccda5a0531b08cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:36:13-84
+172            android:enabled="true"
+172-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b1963c3bba7420f02ccda5a0531b08cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:37:13-35
+173            android:exported="false" />
+173-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b1963c3bba7420f02ccda5a0531b08cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:38:13-37
+174        <service
+174-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b1963c3bba7420f02ccda5a0531b08cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:39:9-43:72
+175            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+175-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b1963c3bba7420f02ccda5a0531b08cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:40:13-87
+176            android:enabled="true"
+176-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b1963c3bba7420f02ccda5a0531b08cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:41:13-35
+177            android:exported="false"
+177-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b1963c3bba7420f02ccda5a0531b08cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:42:13-37
+178            android:permission="android.permission.BIND_JOB_SERVICE" />
+178-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b1963c3bba7420f02ccda5a0531b08cb\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:43:13-69
+179
+180        <meta-data
+180-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\a5b846f1d4e044f2c77571d35cbbb39d\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+181            android:name="com.google.android.gms.version"
+181-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\a5b846f1d4e044f2c77571d35cbbb39d\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+182            android:value="@integer/google_play_services_version" />
+182-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\a5b846f1d4e044f2c77571d35cbbb39d\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+183
+184        <provider
+184-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\d2c7d90e013d07af5c80ae1ca00363bb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+185            android:name="androidx.startup.InitializationProvider"
+185-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\d2c7d90e013d07af5c80ae1ca00363bb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+186            android:authorities="com.codegrace.Saklo.androidx-startup"
+186-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\d2c7d90e013d07af5c80ae1ca00363bb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+187            android:exported="false" >
+187-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\d2c7d90e013d07af5c80ae1ca00363bb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+188            <meta-data
+188-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\d2c7d90e013d07af5c80ae1ca00363bb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+189                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+189-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\d2c7d90e013d07af5c80ae1ca00363bb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+190                android:value="androidx.startup" />
+190-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\d2c7d90e013d07af5c80ae1ca00363bb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+191            <meta-data
+191-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b96ad62f9220e1b5ab643f57bb99142f\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+192                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+192-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b96ad62f9220e1b5ab643f57bb99142f\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+193                android:value="androidx.startup" />
+193-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b96ad62f9220e1b5ab643f57bb99142f\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+194            <meta-data
+194-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+195                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+195-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+196                android:value="androidx.startup" />
+196-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+197        </provider>
+198
+199        <uses-library
+199-->[androidx.window:window:1.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\09003d84059aef2849e5271847229e61\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+200            android:name="androidx.window.extensions"
+200-->[androidx.window:window:1.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\09003d84059aef2849e5271847229e61\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+201            android:required="false" />
+201-->[androidx.window:window:1.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\09003d84059aef2849e5271847229e61\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+202        <uses-library
+202-->[androidx.window:window:1.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\09003d84059aef2849e5271847229e61\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+203            android:name="androidx.window.sidecar"
+203-->[androidx.window:window:1.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\09003d84059aef2849e5271847229e61\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+204            android:required="false" />
+204-->[androidx.window:window:1.0.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\09003d84059aef2849e5271847229e61\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+205
+206        <service
+206-->[androidx.room:room-runtime:2.5.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b2b077ee81d06679efcfd80eee3e19ea\transformed\room-runtime-2.5.2\AndroidManifest.xml:24:9-28:63
+207            android:name="androidx.room.MultiInstanceInvalidationService"
+207-->[androidx.room:room-runtime:2.5.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b2b077ee81d06679efcfd80eee3e19ea\transformed\room-runtime-2.5.2\AndroidManifest.xml:25:13-74
+208            android:directBootAware="true"
+208-->[androidx.room:room-runtime:2.5.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b2b077ee81d06679efcfd80eee3e19ea\transformed\room-runtime-2.5.2\AndroidManifest.xml:26:13-43
+209            android:exported="false" />
+209-->[androidx.room:room-runtime:2.5.2] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\b2b077ee81d06679efcfd80eee3e19ea\transformed\room-runtime-2.5.2\AndroidManifest.xml:27:13-37
+210
+211        <receiver
+211-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+212            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+212-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+213            android:directBootAware="false"
+213-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+214            android:enabled="true"
+214-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+215            android:exported="true"
+215-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+216            android:permission="android.permission.DUMP" >
+216-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+217            <intent-filter>
+217-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+218                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+218-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+218-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+219            </intent-filter>
+220            <intent-filter>
+220-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+221                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+221-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+221-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+222            </intent-filter>
+223            <intent-filter>
+223-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+224                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+224-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+224-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+225            </intent-filter>
+226            <intent-filter>
+226-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+227                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+227-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+227-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Romalyn Floranda\.gradle\caches\transforms-3\046f1c4b593e31ab0a3b49ef9f45d6b5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+228            </intent-filter>
+229        </receiver>
+230    </application>
+231
+232</manifest>

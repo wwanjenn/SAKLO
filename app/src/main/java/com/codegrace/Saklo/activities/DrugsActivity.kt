@@ -1,9 +1,11 @@
 package com.codegrace.Saklo.activities
 
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import com.codegrace.Saklo.R
@@ -15,6 +17,12 @@ class DrugsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drugs)
         changeStatusBarTextColor()
+
+        val btnHome = findViewById<Button>(R.id.btnHome)
+        btnHome.setOnClickListener {
+            val intentAppoint = Intent(this, MainActivity::class.java)
+            startActivity(intentAppoint)
+        }
 
         bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
         bottomNav.setOnItemSelectedListener {
@@ -39,12 +47,16 @@ class DrugsActivity : AppCompatActivity() {
                 else -> throw AssertionError()
             }
         }
-        val themeColor = if (resources.configuration.isNightModeActive)
-            R.color.black
-        else
-            R.color.white
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            val isNightModeActive = resources.configuration.isNightModeActive
+            val themeColor = if (isNightModeActive) {
+                R.color.black
+            } else {
+                R.color.white
+            }
 
-        bottomNav.setBackgroundResource(themeColor)
+            bottomNav.setBackgroundResource(themeColor)
+        }
 
     }
 
