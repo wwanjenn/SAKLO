@@ -4,23 +4,30 @@ package com.codegrace.Saklo.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.codegrace.Saklo.R;
+import com.google.android.material.imageview.ShapeableImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class CardItemsRemediesBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final CardView rootView;
+
+  @NonNull
+  public final CardView recyclerCard;
 
   @NonNull
   public final TextView recyclerId;
+
+  @NonNull
+  public final ShapeableImageView recyclerImage;
 
   @NonNull
   public final TextView recyclerNameCommon;
@@ -28,17 +35,20 @@ public final class CardItemsRemediesBinding implements ViewBinding {
   @NonNull
   public final TextView recyclerNameScientific;
 
-  private CardItemsRemediesBinding(@NonNull LinearLayout rootView, @NonNull TextView recyclerId,
+  private CardItemsRemediesBinding(@NonNull CardView rootView, @NonNull CardView recyclerCard,
+      @NonNull TextView recyclerId, @NonNull ShapeableImageView recyclerImage,
       @NonNull TextView recyclerNameCommon, @NonNull TextView recyclerNameScientific) {
     this.rootView = rootView;
+    this.recyclerCard = recyclerCard;
     this.recyclerId = recyclerId;
+    this.recyclerImage = recyclerImage;
     this.recyclerNameCommon = recyclerNameCommon;
     this.recyclerNameScientific = recyclerNameScientific;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public CardView getRoot() {
     return rootView;
   }
 
@@ -63,9 +73,17 @@ public final class CardItemsRemediesBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      CardView recyclerCard = (CardView) rootView;
+
       id = R.id.recyclerId;
       TextView recyclerId = ViewBindings.findChildViewById(rootView, id);
       if (recyclerId == null) {
+        break missingId;
+      }
+
+      id = R.id.recyclerImage;
+      ShapeableImageView recyclerImage = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerImage == null) {
         break missingId;
       }
 
@@ -81,8 +99,8 @@ public final class CardItemsRemediesBinding implements ViewBinding {
         break missingId;
       }
 
-      return new CardItemsRemediesBinding((LinearLayout) rootView, recyclerId, recyclerNameCommon,
-          recyclerNameScientific);
+      return new CardItemsRemediesBinding((CardView) rootView, recyclerCard, recyclerId,
+          recyclerImage, recyclerNameCommon, recyclerNameScientific);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
