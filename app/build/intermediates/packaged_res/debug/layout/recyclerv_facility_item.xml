@@ -22,6 +22,7 @@
             android:layout_height="120dp"
             android:src="@drawable/baseline_local_hospital_24"
             android:tint="@color/dark_blu"
+            android:background="@drawable/rectangle_light_blu"
             android:padding="5dp"
             android:scaleType="centerCrop"
             android:id="@+id/recyclerImage"/>

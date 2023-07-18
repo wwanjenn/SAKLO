@@ -8,10 +8,6 @@
         "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.codegrace.Saklo.app-merged_res-81:/layout_activity_remedies.xml.flat",
-        "source": "com.codegrace.Saklo.app-main-83:/layout/activity_remedies.xml"
-    },
-    {
         "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-81:\\drawable_baseline_check_circle_24.xml.flat",
         "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\drawable\\baseline_check_circle_24.xml"
     },
@@ -106,6 +102,10 @@
     {
         "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-81:\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "com.codegrace.Saklo.app-merged_res-81:/drawable_rectangle_light_blu.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-83:/drawable/rectangle_light_blu.xml"
     },
     {
         "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-81:\\drawable_login_vector_art_bg.png.flat",
@@ -350,5 +350,9 @@
     {
         "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-81:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "com.codegrace.Saklo.app-merged_res-81:/layout_recyclerv_facility_item.xml.flat",
+        "source": "com.codegrace.Saklo.app-main-83:/layout/recyclerv_facility_item.xml"
     }
 ]

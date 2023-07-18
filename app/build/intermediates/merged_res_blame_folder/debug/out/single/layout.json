@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\layout\\fragment_login.xml"
     },
     {
-        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-80:\\layout\\activity_register_login.xml",
-        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\layout\\activity_register_login.xml"
+        "merged": "com.codegrace.Saklo.app-mergeDebugResources-80:/layout/recyclerv_facility_item.xml",
+        "source": "com.codegrace.Saklo.app-main-83:/layout/recyclerv_facility_item.xml"
     },
     {
-        "merged": "com.codegrace.Saklo.app-mergeDebugResources-80:/layout/activity_remedies.xml",
-        "source": "com.codegrace.Saklo.app-main-83:/layout/activity_remedies.xml"
+        "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-80:\\layout\\activity_register_login.xml",
+        "source": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\layout\\activity_register_login.xml"
     },
     {
         "merged": "C:\\Users\\Romalyn Floranda\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-80:\\layout\\activity_nav_bar.xml",
