@@ -1,5 +1,6 @@
 package com.codegrace.Saklo
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
 import android.database.Cursor
@@ -65,7 +66,8 @@ class RemediesSQLiteHelper(val context: Context) : SQLiteOpenHelper(context, DAT
         // Nothing to do
     }
 
-    fun getAllRemedies(): ArrayList<RemediesModel> {
+
+    fun getRemedies(): ArrayList<RemediesModel> {
         val remediesList: ArrayList<RemediesModel> = ArrayList()
         val selectQuery = "SELECT * FROM remedies"
         val db = this.readableDatabase
@@ -93,15 +95,15 @@ class RemediesSQLiteHelper(val context: Context) : SQLiteOpenHelper(context, DAT
                 val remedies = RemediesModel(id = id, nameCommon = nameCommon, nameScientific = nameScientific)
                 remediesList.add(remedies)
             } while(cursor.moveToNext())
-        }
 
+        }
         return remediesList
 
     }
 
     companion object {
         const val ASSETS_PATH = "database"
-        const val DATABASE_NAME = "remedies"
+        const val DATABASE_NAME = "remedies2"
         const val DATABASE_VERSION = 1
     }
 

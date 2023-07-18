@@ -4,7 +4,9 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.WindowCompat
@@ -18,37 +20,52 @@ import com.codegrace.Saklo.RemediesModel
 import com.codegrace.Saklo.RemediesSQLiteHelper
 import com.codegrace.Saklo.remediesAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ValueEventListener
+import java.util.Locale
 
 class RemediesActivity : AppCompatActivity() {
+
     lateinit var bottomNav : BottomNavigationView
     private lateinit var recyclerView: RecyclerView
     private var adapter: remediesAdapter? = null
     lateinit var sqLiteHelper: RemediesSQLiteHelper
-    private lateinit var dataList: MutableList<RemediesModel>
+    private lateinit var remediesList: MutableList<RemediesModel>
     private lateinit var searchView: SearchView
 
-    @RequiresApi(Build.VERSION_CODES.R)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_remedies)
 
-        recyclerView = findViewById(R.id.recyclerViewHF)
+        recyclerView = findViewById(R.id.recyclerViewReme)
         searchView = findViewById(R.id.searchView)
         searchView.clearFocus()
 
         val gridLayoutManager = GridLayoutManager(this, 1)
         recyclerView.layoutManager = gridLayoutManager
 
-        dataList = ArrayList()
-        adapter = remediesAdapter(this, dataList)
+        remediesList = ArrayList<RemediesModel>()
+
+        adapter = remediesAdapter(this, remediesList)
         recyclerView.adapter = adapter
 
         changeStatusBarTextColor()
 
         sqLiteHelper = RemediesSQLiteHelper(this)
 
-        getStudent()
+        getRemedies()
 
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String): Boolean {
+                searchList(newText)
+                return true
+            }
+        })
 
         bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
         bottomNav.setOnItemSelectedListener {
@@ -82,9 +99,23 @@ class RemediesActivity : AppCompatActivity() {
 
     }
 
-    private fun getStudent(){
-        val remediesList = sqLiteHelper.getAllRemedies()
+    private fun getRemedies(): ArrayList<RemediesModel> {
+        val remediesList = sqLiteHelper.getRemedies()
         adapter?.addItems(remediesList)
+        return remediesList
+    }
+
+    private fun searchList(text: String) {
+
+        val remediesList = sqLiteHelper.getRemedies()
+        val searchList = ArrayList<RemediesModel>()
+        for (dataClass in remediesList) {
+            if (dataClass.nameCommon?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
+                searchList.add(dataClass)
+            }
+        }
+        adapter?.addItems(searchList)
+
     }
 
     private fun changeStatusBarTextColor() {

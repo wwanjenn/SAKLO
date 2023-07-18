@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AbsListView.RecyclerListener
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
 
@@ -17,32 +18,32 @@ class remediesAdapter(
 
     fun addItems(items: ArrayList<RemediesModel>){
         this.remediesList = items
+        notifyDataSetChanged()
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = remediesViewHolder(
-        LayoutInflater.from(parent.context).inflate(R.layout.card_items_remedies, parent, false)
-    )
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): remediesAdapter.remediesViewHolder {
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.card_items_remedies, parent, false)
+
+        return remediesViewHolder(view)
+    }
 
     override fun getItemCount(): Int {
         return remediesList.size
     }
 
     override fun onBindViewHolder(holder: remediesViewHolder, position: Int) {
-        val remedies = remediesList[position]
-        holder.bindView(remedies)
+//        Glide.with(context).load(healthFacilityDataList[position].faciImage).into(holder.recyclerImage)
+        holder.id.text = remediesList[position].id.toString()
+        holder.nameCommon.text = remediesList[position].nameCommon
+        holder.nameScientific.text = remediesList[position].nameScientific
     }
 
     class remediesViewHolder(var view: View): RecyclerView.ViewHolder(view){
-        private var id = view.findViewById<TextView>(R.id.tvId)
-        private var nameCommon = view.findViewById<TextView>(R.id.tvNameCommon)
-        private var nameScientific = view.findViewById<TextView>(R.id.tvNameScientific)
-
-
-        fun bindView(remedies: RemediesModel){
-            id.text = remedies.id.toString()
-            nameCommon.text = remedies.nameCommon
-            nameScientific.text = remedies.nameScientific
-        }
+        var id = view.findViewById<TextView>(R.id.recyclerId)
+        var nameCommon = view.findViewById<TextView>(R.id.recyclerNameCommon)
+        var nameScientific = view.findViewById<TextView>(R.id.recyclerNameScientific)
     }
 
 
