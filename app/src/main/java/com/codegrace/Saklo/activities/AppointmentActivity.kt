@@ -1,6 +1,7 @@
 package com.codegrace.Saklo.activities
 
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -103,6 +104,7 @@ class AppointmentActivity : AppCompatActivity() {
                     startActivity(Intent(this, RemediesActivity::class.java))
                     true
                 }
+
                 R.id.btnDrugs -> {
                     startActivity(Intent(this, DrugsActivity::class.java))
                     true
@@ -111,13 +113,18 @@ class AppointmentActivity : AppCompatActivity() {
                 else -> throw AssertionError()
             }
         }
-        val themeColor = if (resources.configuration.isNightModeActive)
-            R.color.black
-        else
-            R.color.white
 
-        bottomNav.setBackgroundResource(themeColor)
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            val isNightModeActive = resources.configuration.isNightModeActive
+            val themeColor = if (isNightModeActive) {
+                R.color.black
+            } else {
+                R.color.white
+            }
+
+            bottomNav.setBackgroundResource(themeColor)
+        }
     }
 
     private fun searchList(text: String) {
