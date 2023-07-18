@@ -22,12 +22,6 @@ class RegisterLoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register_login)
         changeStatusBarTextColor()
 
-        val btnHome = findViewById<Button>(R.id.btnHome)
-        btnHome.setOnClickListener {
-            val intentAppoint = Intent(this, MainActivity::class.java)
-            startActivity(intentAppoint)
-        }
-
     }
 
     override fun onBackPressed() {
