@@ -40,12 +40,6 @@ class remediesAdapter(
         holder.nameScientific.text = remediesList[position].nameScientific
     }
 
-
-    fun searchDataList(searchList: ArrayList<RemediesModel>) {
-        remediesList = searchList
-        notifyDataSetChanged()
-    }
-
     class remediesViewHolder(var view: View): RecyclerView.ViewHolder(view){
         var id = view.findViewById<TextView>(R.id.recyclerId)
         var nameCommon = view.findViewById<TextView>(R.id.recyclerNameCommon)

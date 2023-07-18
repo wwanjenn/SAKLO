@@ -100,16 +100,13 @@ class RemediesActivity : AppCompatActivity() {
     }
 
     private fun getRemedies(): ArrayList<RemediesModel> {
-        val selectQuery = "SELECT * FROM remedies"
         val remediesList = sqLiteHelper.getRemedies()
         adapter?.addItems(remediesList)
         return remediesList
     }
 
     private fun searchList(text: String) {
-//        val selectQuery = "SELECT * FROM remedies WHERE nameCommon LIKE '$text%'"
-//        val searchList = sqLiteHelper.getRemedies(selectQuery)
-//        adapter?.addItems(searchList)
+
         val remediesList = sqLiteHelper.getRemedies()
         val searchList = ArrayList<RemediesModel>()
         for (dataClass in remediesList) {
@@ -119,15 +116,6 @@ class RemediesActivity : AppCompatActivity() {
         }
         adapter?.addItems(searchList)
 
-//        val searchList =
-//
-//            ArrayList<RemediesModel>()
-//        for (dataClass in dataList) {
-//            if (dataClass.nameCommon?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
-//                searchList.add(dataClass)
-//            }
-//       }
-//       adapter?.searchDataList(searchList)
     }
 
     private fun changeStatusBarTextColor() {
