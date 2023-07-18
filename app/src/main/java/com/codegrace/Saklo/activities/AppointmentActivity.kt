@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import androidx.appcompat.widget.SearchView
 import android.widget.Toast
 import androidx.core.view.WindowCompat
@@ -80,6 +81,12 @@ class AppointmentActivity : AppCompatActivity() {
         databaseReference.addValueEventListener(eventListener)
 
         changeStatusBarTextColor()
+
+        val btnHome = findViewById<Button>(R.id.btnHome)
+        btnHome.setOnClickListener {
+            val intentAppoint = Intent(this, MainActivity::class.java)
+            startActivity(intentAppoint)
+        }
 
         bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
         bottomNav.setOnItemSelectedListener {
