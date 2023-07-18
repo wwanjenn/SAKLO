@@ -5,6 +5,7 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.WindowCompat
@@ -44,6 +45,11 @@ class RemediesActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
 
         changeStatusBarTextColor()
+        val btnHome = findViewById<Button>(R.id.btnHome)
+        btnHome.setOnClickListener {
+            val intentAppoint = Intent(this, MainActivity::class.java)
+            startActivity(intentAppoint)
+        }
 
         sqLiteHelper = RemediesSQLiteHelper(this)
 
