@@ -27,16 +27,10 @@
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnHome"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/baseline_home_24" />
-
-                <ImageView
-                    android:layout_width="300dp"
+                    android:layout_width="112dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:src="@drawable/saklogo_cropped" />
+                    android:background="@drawable/saklogo_cropped2" />
 
             </LinearLayout>
 
