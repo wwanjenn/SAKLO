@@ -100,7 +100,13 @@ class DrugsActivity : AppCompatActivity() {
         val drugsList = getDrugs()
         val searchList = ArrayList<DrugsModel>()
         for (dataClass in drugsList) {
-            if (dataClass.nameCommon?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
+            if (dataClass.nameBrand?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
+                searchList.add(dataClass)
+            }
+            if (dataClass.nameScientific?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
+                searchList.add(dataClass)
+            }
+            if (dataClass.category?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
                 searchList.add(dataClass)
             }
         }

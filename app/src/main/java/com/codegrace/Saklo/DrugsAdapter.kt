@@ -24,7 +24,7 @@ class DrugsAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DrugsAdapter.DrugsViewHolder {
         val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.card_items_remedies, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.card_items_drugs, parent, false)
 
         return DrugsViewHolder(view)
     }
@@ -36,14 +36,17 @@ class DrugsAdapter(
     override fun onBindViewHolder(holder: DrugsViewHolder, position: Int) {
 //        Glide.with(context).load(healthFacilityDataList[position].faciImage).into(holder.recyclerImage)
         holder.id.text = drugsList[position].id.toString()
-        holder.nameCommon.text = drugsList[position].nameCommon
         holder.nameScientific.text = drugsList[position].nameScientific
+        holder.nameBrand.text = drugsList[position].nameBrand
+        holder.category.text = drugsList[position].category
+
     }
 
     class DrugsViewHolder(var view: View): RecyclerView.ViewHolder(view){
+        var category = view.findViewById<TextView>(R.id.recyclerCategory)
         var id = view.findViewById<TextView>(R.id.recyclerId)
-        var nameCommon = view.findViewById<TextView>(R.id.recyclerNameCommon)
         var nameScientific = view.findViewById<TextView>(R.id.recyclerNameScientific)
+        var nameBrand = view.findViewById<TextView>(R.id.recyclerNameBrand)
     }
 
 

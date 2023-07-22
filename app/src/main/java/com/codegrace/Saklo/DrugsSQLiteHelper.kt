@@ -83,16 +83,18 @@ class DrugsSQLiteHelper(val context: Context) : SQLiteOpenHelper(context, DATABA
         }
 
         var id: Int
-        var nameCommon: String
+        var nameBrand: String
         var nameScientific: String
+        var category: String
 
         if(cursor.moveToFirst()){
             do {
                 id = cursor.getInt(cursor.getColumnIndexOrThrow("id"))
-                nameCommon = cursor.getString(cursor.getColumnIndexOrThrow("nameCommon"))
+                nameBrand = cursor.getString(cursor.getColumnIndexOrThrow("nameBrand"))
                 nameScientific = cursor.getString(cursor.getColumnIndexOrThrow("nameScientific"))
+                category = cursor.getString(cursor.getColumnIndexOrThrow("category"))
 
-                val drugs = DrugsModel(id = id, nameCommon = nameCommon, nameScientific = nameScientific)
+                val drugs = DrugsModel(id = id, nameBrand = nameBrand, nameScientific = nameScientific, category = category)
                 drugsList.add(drugs)
             } while(cursor.moveToNext())
 
