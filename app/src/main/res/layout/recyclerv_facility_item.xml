@@ -18,7 +18,7 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="120dp"
-                     android:layout_marginStart="7dp"
+            android:layout_marginStart="4dp"
             android:layout_height="120dp"
             android:src="@drawable/baseline_local_hospital_24"
             android:tint="@color/dark_blu"
@@ -32,17 +32,17 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/recyclerImage"
             android:orientation="vertical"
-            android:layout_marginStart="3dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="3dp">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="Facility Name"
                 android:id="@+id/recyclerName"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
                 android:gravity="start|center"
-                android:textSize="19sp"
-                android:textStyle="bold"/>
+                android:text="Facility Name"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -51,9 +51,9 @@
                 <ImageView
                     android:foregroundGravity="center"
                     android:layout_width="20dp"
-                    android:layout_height="22dp"
+                    android:layout_height="20dp"
                     android:id="@+id/iv_phone_rec"
-                    android:src="@drawable/baseline_phone_24"/>
+                    android:src="@drawable/baseline_medical_services_24"/>
 
                 <TextView
                     android:id="@+id/recyclerType"
@@ -63,7 +63,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_toEndOf="@id/iv_phone_rec"
                     android:text="Facility Type"
-                    android:textSize="16.5sp"/>
+                    android:textSize="12.5sp"/>
 
                 <TextView
                     android:id="@+id/recyclerClassif"
@@ -74,7 +74,7 @@
                     android:layout_marginStart="10dp"
                     android:textColor="@color/dark_blu"
                     android:text="Classification"
-                    android:textSize="16.5sp"/>
+                    android:textSize="12.5sp"/>
 
             </RelativeLayout>
 
@@ -84,22 +84,38 @@
 
                 <ImageView
                     android:foregroundGravity="center"
-                    android:layout_marginTop="5dp"
+                    android:layout_centerVertical="true"
                     android:layout_width="20dp"
                     android:layout_height="22dp"
                     android:id="@+id/iv_locate_rec"
                     android:src="@drawable/baseline_location_on_24"/>
 
-                <TextView
-                    android:id="@+id/recyclerLocation"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:gravity="start|top"
-                    android:layout_marginStart="5dp"
-                    android:text="Location"
-                    android:layout_toEndOf="@id/iv_locate_rec"
-                    android:layout_marginTop="3dp"
-                    android:textSize="16.5sp"/>
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/iv_locate_rec">
+
+                    <TextView
+                        android:id="@+id/recyclerLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|top"
+                        android:layout_marginStart="5dp"
+                        android:text="Loc 1"
+                        android:layout_marginTop="3dp"
+                        android:textSize="12.5sp"/>
+
+                    <TextView
+                        android:id="@+id/recyclerLocation2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|top"
+                        android:layout_marginStart="5dp"
+                        android:layout_below="@id/recyclerLocation"
+                        android:text="Loc 2"
+                        android:layout_marginTop="3dp"
+                        android:textSize="12.5sp"/>
+                </RelativeLayout>
             </RelativeLayout>
         </LinearLayout>
 
