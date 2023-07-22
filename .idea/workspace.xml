@@ -10,12 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49c0b7ef-cebd-43f1-986a-e757f6877ea6" name="Changes" comment="Work in progress: onBackPress between Fragments">
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/build/generated/res/google-services/debug/values/values.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/DrugsAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/DrugsModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/DrugsSQLiteHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SAKLO.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/activities/DrugsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/activities/DrugsActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/activities/RemediesActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/activities/RemediesActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/remediesAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/remediesAdapter.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +93,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="remediesDir" />
+        <entry key="$PROJECT_DIR$" value="RemediesFilter" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -427,5 +435,16 @@
     <MESSAGE value="Added fade animation transitions between fragments" />
     <MESSAGE value="Work in progress: onBackPress between Fragments" />
     <option name="LAST_COMMIT_MESSAGE" value="Work in progress: onBackPress between Fragments" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/codegrace/Saklo/DrugsSQLiteHelper.kt</url>
+          <line>92</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
