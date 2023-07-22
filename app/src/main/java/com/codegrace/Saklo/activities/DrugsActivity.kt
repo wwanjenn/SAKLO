@@ -52,7 +52,6 @@ class DrugsActivity : AppCompatActivity() {
             }
 
             override fun onQueryTextChange(newText: String): Boolean {
-                drugsList.clear()
                 searchList(newText)
                 return true
             }
@@ -103,12 +102,15 @@ class DrugsActivity : AppCompatActivity() {
         for (dataClass in drugsList) {
             if (dataClass.nameBrand?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
                 searchList.add(dataClass)
+                continue
             }
             if (dataClass.nameScientific?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
                 searchList.add(dataClass)
+                continue
             }
             if (dataClass.category?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
                 searchList.add(dataClass)
+                continue
             }
         }
         adapter?.addItems(searchList)
