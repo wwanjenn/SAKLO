@@ -28,7 +28,7 @@ class DrugsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_drugs)
         changeStatusBarTextColor()
 
-        recyclerView = findViewById(R.id.recyclerViewReme)
+        recyclerView = findViewById(R.id.recyclerViewDrugs)
         searchView = findViewById(R.id.searchView)
         searchView.clearFocus()
 
@@ -52,6 +52,7 @@ class DrugsActivity : AppCompatActivity() {
             }
 
             override fun onQueryTextChange(newText: String): Boolean {
+                drugsList.clear()
                 searchList(newText)
                 return true
             }

@@ -70,7 +70,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewReme"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="445dp"
             android:layout_gravity="center"
             tools:ignore="SpeakableTextPresentCheck">
         </androidx.recyclerview.widget.RecyclerView>
