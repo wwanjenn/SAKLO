@@ -26,16 +26,10 @@
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnHome"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/baseline_home_24" />
-
-                <ImageView
-                    android:layout_width="300dp"
+                    android:layout_width="112dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:src="@drawable/saklogo_cropped" />
+                    android:background="@drawable/saklogo_cropped2" />
 
             </LinearLayout>
 
@@ -55,7 +49,7 @@
                 android:layout_marginRight="25dp">
 
                 <LinearLayout
-                    android:layout_width="339dp"
+                    android:layout_width="330dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:orientation="horizontal">
@@ -77,7 +71,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="339dp"
+                    android:layout_width="330dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:orientation="horizontal">

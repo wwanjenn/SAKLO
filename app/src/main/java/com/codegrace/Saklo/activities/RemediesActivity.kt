@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.SearchView
@@ -52,6 +53,12 @@ class RemediesActivity : AppCompatActivity() {
 
         changeStatusBarTextColor()
 
+        val btnHome = findViewById<Button>(R.id.btnHome)
+        btnHome.setOnClickListener {
+            val intentAppoint = Intent(this, MainActivity::class.java)
+            startActivity(intentAppoint)
+        }
+
         sqLiteHelper = RemediesSQLiteHelper(this)
 
         getRemedies()
@@ -90,12 +97,16 @@ class RemediesActivity : AppCompatActivity() {
                 else -> throw AssertionError()
             }
         }
-        val themeColor = if (resources.configuration.isNightModeActive)
-            R.color.black
-        else
-            R.color.white
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            val isNightModeActive = resources.configuration.isNightModeActive
+            val themeColor = if (isNightModeActive) {
+                R.color.black
+            } else {
+                R.color.white
+            }
 
-        bottomNav.setBackgroundResource(themeColor)
+            bottomNav.setBackgroundResource(themeColor)
+        }
 
     }
 
