@@ -17,6 +17,7 @@ class FacilityAdapter(
 ) : RecyclerView.Adapter<FacilityAdapter.MyViewHolder>() {
 
     private var expandedPosition: Int = -1
+    private var onItemClickListener: ((Int) -> Unit)? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view =
             LayoutInflater.from(parent.context).inflate(R.layout.recyclerv_facility_item, parent, false)
@@ -38,7 +39,7 @@ class FacilityAdapter(
 
         // Set click listener on the card to toggle the expanded position
         holder.recyclerCard.setOnClickListener {
-            expandedPosition = if (isExpanded) -1 else position
+            expandedPosition = if (isExpanded) -1 else holder.adapterPosition
             notifyDataSetChanged()
         }
     }
@@ -54,6 +55,10 @@ class FacilityAdapter(
     }
 
 
+    fun setOnItemClickListener(listener: (Int) -> Unit) {
+        onItemClickListener = listener
+    }
+
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 //        val recyclerImage: ImageView = itemView.findViewById(R.id.recyclerImage)
         val recyclerName: TextView = itemView.findViewById(R.id.recyclerName)
@@ -63,5 +68,14 @@ class FacilityAdapter(
         val recyclerCard: CardView = itemView.findViewById(R.id.recyclerCard)
         val recyclerClassif:TextView = itemView.findViewById(R.id.recyclerClassif)
         val lowerCard: RelativeLayout = itemView.findViewById(R.id.lower_card)
+
+        init {
+            itemView.setOnClickListener {
+                val position = adapterPosition
+                if (position != RecyclerView.NO_POSITION) {
+                    onItemClickListener?.invoke(position)
+                }
+            }
+        }
     }
 }

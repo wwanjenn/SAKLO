@@ -4,7 +4,11 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.transition.Slide
+import android.transition.Transition
+import android.transition.TransitionManager
 import android.util.Log
+import android.view.Gravity
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.widget.SearchView
@@ -34,6 +38,8 @@ class AppointmentActivity : AppCompatActivity() {
     private lateinit var adapter: FacilityAdapter
     private lateinit var searchView:SearchView
 
+    private var expandedPosition = -1
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_appointment)
@@ -47,9 +53,15 @@ class AppointmentActivity : AppCompatActivity() {
 
         dataList = ArrayList()
         adapter = FacilityAdapter(this, dataList)
-        recyclerView.adapter = adapter
 
         databaseReference = FirebaseDatabase.getInstance("https://saklo-a4e3a-default-rtdb.asia-southeast1.firebasedatabase.app").getReference("Health Facilities")
+
+        adapter.setOnItemClickListener { position ->
+            expandedPosition = if (expandedPosition == position) -1 else position
+            adapter.notifyDataSetChanged()
+        }
+
+        recyclerView.adapter = adapter
 
         eventListener = object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -60,12 +72,6 @@ class AppointmentActivity : AppCompatActivity() {
                     dataClass?.let { dataList.add(it) }
                 }
                 adapter.notifyDataSetChanged()
-
-                Log.d("DataList", "DataList size: ${dataList.size}")
-                // Print dataList to the console
-                dataList.forEach {
-                    Log.d("DataList", it.toString())
-                }
 
             }
 
@@ -132,6 +138,20 @@ class AppointmentActivity : AppCompatActivity() {
 
             bottomNav.setBackgroundResource(themeColor)
         }
+
+
+        adapter.setOnItemClickListener { position ->
+            if (expandedPosition == position) {
+                expandedPosition = -1
+            } else {
+                val oldExpandedPosition = expandedPosition
+                expandedPosition = position
+                if (oldExpandedPosition != -1) {
+                    adapter.notifyItemChanged(oldExpandedPosition)
+                }
+            }
+            adapter.notifyItemChanged(position)
+        }
     }
 
     private fun searchList(text: String) {
@@ -150,4 +170,5 @@ class AppointmentActivity : AppCompatActivity() {
         windowInsetsController.isAppearanceLightStatusBars =
             resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK != android.content.res.Configuration.UI_MODE_NIGHT_YES
     }
+
 }
