@@ -4,12 +4,11 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
+import com.google.android.material.button.MaterialButton
 
 class FacilityAdapter(
     private val context: Context,
@@ -54,6 +53,16 @@ class FacilityAdapter(
         holder.specificAdd.text = formatString(specificAddText)
 
 
+        // Disable the btn_contacthf based on landlineNumber
+        holder.btnContact.isEnabled = !(healthFacilityDataList[position].landlineNumber.isNullOrEmpty() ||
+                healthFacilityDataList[position].landlineNumber.equals("None", ignoreCase = true) ||
+                healthFacilityDataList[position].landlineNumber.equals(" ", ignoreCase = true))
+
+        // Disable the btn_emailhf based on emailAddress
+        holder.btnEmail.isEnabled = !(healthFacilityDataList[position].emailAddress.isNullOrEmpty() ||
+                healthFacilityDataList[position].emailAddress.equals("None", ignoreCase = true) ||
+                healthFacilityDataList[position].emailAddress.equals(" ", ignoreCase = true))
+
         // Set click listener on the card to toggle the expanded position
         holder.recyclerCard.setOnClickListener {
             expandedPosition = if (isExpanded) -1 else holder.adapterPosition
@@ -93,6 +102,8 @@ class FacilityAdapter(
         val mailAdd:TextView = itemView.findViewById(R.id.desc_email)
         val lowerCard: RelativeLayout = itemView.findViewById(R.id.lower_card)
 
+        val btnContact: MaterialButton = itemView.findViewById(R.id.btn_contacthf)
+        val btnEmail: MaterialButton = itemView.findViewById(R.id.btn_emailhf)
         init {
             itemView.setOnClickListener {
                 val position = adapterPosition

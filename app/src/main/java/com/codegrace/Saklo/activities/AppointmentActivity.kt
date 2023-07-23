@@ -44,6 +44,7 @@ class AppointmentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_appointment)
 
+
         recyclerView = findViewById(R.id.recyclerViewHF)
         searchView = findViewById(R.id.searchView)
         searchView.clearFocus()
