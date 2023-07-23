@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.widget.SearchView
@@ -48,7 +49,7 @@ class AppointmentActivity : AppCompatActivity() {
         adapter = FacilityAdapter(this, dataList)
         recyclerView.adapter = adapter
 
-        databaseReference = FirebaseDatabase.getInstance("https://saklo-a4e3a-default-rtdb.asia-southeast1.firebasedatabase.app").getReference("SakloApp")
+        databaseReference = FirebaseDatabase.getInstance("https://saklo-a4e3a-default-rtdb.asia-southeast1.firebasedatabase.app").getReference("Health Facilities")
 
         eventListener = object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -59,6 +60,12 @@ class AppointmentActivity : AppCompatActivity() {
                     dataClass?.let { dataList.add(it) }
                 }
                 adapter.notifyDataSetChanged()
+
+                Log.d("DataList", "DataList size: ${dataList.size}")
+                // Print dataList to the console
+                dataList.forEach {
+                    Log.d("DataList", it.toString())
+                }
 
             }
 
@@ -130,7 +137,7 @@ class AppointmentActivity : AppCompatActivity() {
     private fun searchList(text: String) {
         val searchList = ArrayList<HealthFacilityData>()
         for (dataClass in dataList) {
-            if (dataClass.faciName?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
+            if (dataClass.facilityName?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
                 searchList.add(dataClass)
             }
         }
