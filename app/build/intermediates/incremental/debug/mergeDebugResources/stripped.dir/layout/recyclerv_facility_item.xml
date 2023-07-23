@@ -13,36 +13,36 @@
     app:cardCornerRadius="15dp"
     android:elevation="8dp">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
+            android:id="@+id/upper_card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="3dp"
-            android:id="@+id/upper_card">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/recyclerImage"
                 android:layout_width="120dp"
-                android:layout_marginStart="4dp"
                 android:layout_height="120dp"
-                android:src="@drawable/baseline_local_hospital_24"
-                android:tint="@color/dark_blu"
+                android:layout_marginStart="4dp"
                 android:background="@drawable/rectangle_light_blu"
                 android:padding="5dp"
                 android:scaleType="centerCrop"
-                android:id="@+id/recyclerImage"/>
+                android:src="@drawable/baseline_local_hospital_24"
+                android:tint="@color/dark_blu" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@+id/recyclerImage"
-                android:orientation="vertical"
                 android:layout_marginStart="5dp"
-                android:layout_marginTop="3dp">
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@+id/recyclerImage"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/recyclerName"
@@ -58,32 +58,32 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:foregroundGravity="center"
+                        android:id="@+id/iv_phone_rec"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:id="@+id/iv_phone_rec"
-                        android:src="@drawable/baseline_medical_services_24"/>
+                        android:foregroundGravity="center"
+                        android:src="@drawable/baseline_medical_services_24" />
 
                     <TextView
                         android:id="@+id/recyclerType"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="start|top"
                         android:layout_marginStart="5dp"
                         android:layout_toEndOf="@id/iv_phone_rec"
+                        android:gravity="start|top"
                         android:text="Facility Type"
-                        android:textSize="12.5sp"/>
+                        android:textSize="12.5sp" />
 
                     <TextView
                         android:id="@+id/recyclerClassif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="start|top"
-                        android:layout_toEndOf="@id/recyclerType"
                         android:layout_marginStart="10dp"
-                        android:textColor="@color/dark_blu"
+                        android:layout_toEndOf="@id/recyclerType"
+                        android:gravity="start|top"
                         android:text="Classification"
-                        android:textSize="12.5sp"/>
+                        android:textColor="@color/dark_blu"
+                        android:textSize="12.5sp" />
 
                 </RelativeLayout>
 
@@ -92,12 +92,12 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:foregroundGravity="center"
-                        android:layout_centerVertical="true"
+                        android:id="@+id/iv_locate_rec"
                         android:layout_width="20dp"
                         android:layout_height="22dp"
-                        android:id="@+id/iv_locate_rec"
-                        android:src="@drawable/baseline_location_on_24"/>
+                        android:layout_centerVertical="true"
+                        android:foregroundGravity="center"
+                        android:src="@drawable/baseline_location_on_24" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -108,22 +108,22 @@
                             android:id="@+id/recyclerLocation"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="start|top"
                             android:layout_marginStart="5dp"
-                            android:text="Loc 1"
                             android:layout_marginTop="3dp"
-                            android:textSize="12.5sp"/>
+                            android:gravity="start|top"
+                            android:text="Loc 1"
+                            android:textSize="12.5sp" />
 
                         <TextView
                             android:id="@+id/recyclerLocation2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="start|top"
-                            android:layout_marginStart="5dp"
                             android:layout_below="@id/recyclerLocation"
-                            android:text="Loc 2"
+                            android:layout_marginStart="5dp"
                             android:layout_marginTop="3dp"
-                            android:textSize="12.5sp"/>
+                            android:gravity="start|top"
+                            android:text="Loc 2"
+                            android:textSize="12.5sp" />
                     </RelativeLayout>
                 </RelativeLayout>
             </LinearLayout>
@@ -135,6 +135,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/lower_card"
+            app:layout_constraintTop_toBottomOf="@+id/upper_card"
             android:visibility="gone">
 
             <TextView
@@ -465,7 +466,7 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </RelativeLayout>
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

@@ -8,12 +8,12 @@
         "source": "com.codegrace.Saklo.app-main-83:/layout/recyclerv_facility_item.xml"
     },
     {
-        "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-80:\\layout\\activity_drugs.xml",
-        "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\layout\\activity_drugs.xml"
-    },
-    {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-80:\\layout\\activity_main.xml",
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-80:\\layout\\activity_drugs.xml",
+        "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\layout\\activity_drugs.xml"
     },
     {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-mergeDebugResources-80:\\layout\\activity_nav_bar.xml",

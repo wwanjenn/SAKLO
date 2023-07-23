@@ -24,18 +24,35 @@ class FacilityAdapter(
         return MyViewHolder(view)
     }
 
+    private fun formatString(str: String?): String {
+        return if (str.isNullOrEmpty() || str.equals("None", ignoreCase = true) || str.equals(" ", ignoreCase = true)) {
+            "N/A"
+        } else {
+            str
+        }
+    }
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val isExpanded = position == expandedPosition
+        val specificAddText = "${healthFacilityDataList[position].streetName}, ${healthFacilityDataList[position].barangayName}"
 
         // Handle the visibility of the lower_card layout
         holder.lowerCard.visibility = if (isExpanded) View.VISIBLE else View.GONE
 
         // Bind data to other views as usual
-        holder.recyclerName.text = healthFacilityDataList[position].facilityName
-        holder.recyclerType.text = healthFacilityDataList[position].healthFacilityType
-        holder.recyclerClassif.text = healthFacilityDataList[position].ownershipMajorClassification
-        holder.recyclerLocation.text = healthFacilityDataList[position].cityMunicipalityName
-        holder.recyclerLocation2.text = healthFacilityDataList[position].provinceName
+        holder.recyclerName.text = formatString(healthFacilityDataList[position].facilityName)
+        holder.recyclerType.text = formatString(healthFacilityDataList[position].healthFacilityType)
+        holder.recyclerClassif.text = formatString(healthFacilityDataList[position].ownershipMajorClassification)
+        holder.recyclerLocation.text = formatString(healthFacilityDataList[position].cityMunicipalityName)
+        holder.recyclerLocation2.text = formatString(healthFacilityDataList[position].provinceName)
+
+        holder.bedCap.text = formatString(healthFacilityDataList[position].bedCapacity)
+        holder.offWeb.text = formatString(healthFacilityDataList[position].officialWebsite)
+        holder.serviceCap.text = formatString(healthFacilityDataList[position].serviceCapabilities)
+        holder.hfCode.text = formatString(healthFacilityDataList[position].healthFacilityCode)
+        holder.landlineNum.text = formatString(healthFacilityDataList[position].landlineNumber)
+        holder.mailAdd.text = formatString(healthFacilityDataList[position].emailAddress)
+        holder.specificAdd.text = formatString(specificAddText)
+
 
         // Set click listener on the card to toggle the expanded position
         holder.recyclerCard.setOnClickListener {
@@ -67,6 +84,13 @@ class FacilityAdapter(
         val recyclerLocation2: TextView = itemView.findViewById(R.id.recyclerLocation2)
         val recyclerCard: CardView = itemView.findViewById(R.id.recyclerCard)
         val recyclerClassif:TextView = itemView.findViewById(R.id.recyclerClassif)
+        val specificAdd:TextView = itemView.findViewById(R.id.desc_addspec)
+        val bedCap:TextView = itemView.findViewById(R.id.desc_bedcap)
+        val serviceCap:TextView = itemView.findViewById(R.id.desc_servcap)
+        val offWeb:TextView = itemView.findViewById(R.id.desc_offweb)
+        val hfCode:TextView = itemView.findViewById(R.id.desc_codesh)
+        val landlineNum:TextView = itemView.findViewById(R.id.desc_landl)
+        val mailAdd:TextView = itemView.findViewById(R.id.desc_email)
         val lowerCard: RelativeLayout = itemView.findViewById(R.id.lower_card)
 
         init {

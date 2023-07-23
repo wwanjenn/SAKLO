@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-81:\\drawable_baseline_location_on_24.xml.flat",
-        "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\drawable\\baseline_location_on_24.xml"
-    },
-    {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-81:\\drawable_logo.png.flat",
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-81:\\drawable_baseline_location_on_24.xml.flat",
+        "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\drawable\\baseline_location_on_24.xml"
     },
     {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-81:\\drawable_baseline_close_24.xml.flat",
@@ -28,12 +28,12 @@
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\drawable\\baseline_home_24.xml"
     },
     {
-        "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-81:\\layout_activity_appointment.xml.flat",
-        "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\layout\\activity_appointment.xml"
-    },
-    {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-81:\\drawable_baseline_lock_24.xml.flat",
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\drawable\\baseline_lock_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-81:\\layout_activity_appointment.xml.flat",
+        "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\layout\\activity_appointment.xml"
     },
     {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-81:\\drawable_drugs.png.flat",
@@ -68,12 +68,12 @@
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\drawable\\rect_btn_google.xml"
     },
     {
-        "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-81:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-81:\\drawable_baseline_check_24.xml.flat",
         "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\drawable\\baseline_check_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-81:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-main-83:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\jolyn\\.gradle\\daemon\\8.0\\com.codegrace.Saklo.app-merged_res-81:\\layout_activity_main.xml.flat",
