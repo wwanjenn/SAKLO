@@ -21,7 +21,6 @@ android:elevation="8dp">
         android:layout_marginStart="7dp"
         android:layout_height="120dp"
         android:src="@drawable/card_remedies"
-        android:tint="@color/dark_blu"
         android:background="@drawable/rectangle_light_blu"
         android:padding="5dp"
         android:scaleType="centerCrop"
@@ -51,14 +50,16 @@ android:elevation="8dp">
             android:layout_height="wrap_content"
             android:id="@+id/recyclerNameCommon"
             android:textSize="16sp"
-            android:text="Common Name"/>
+            android:text="Common Name"
+            android:fontFamily="@font/inter_font"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/recyclerNameScientific"
             android:textSize="16sp"
-            android:text="Scientific Name"/>
+            android:text="Scientific Name"
+            android:fontFamily="@font/inter_font"/>
 
     </LinearLayout>
 </RelativeLayout>

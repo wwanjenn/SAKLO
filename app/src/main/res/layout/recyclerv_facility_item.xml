@@ -21,7 +21,6 @@
                      android:layout_marginStart="7dp"
             android:layout_height="120dp"
             android:src="@drawable/card_facilities"
-            android:tint="@color/dark_blu"
             android:background="@drawable/rectangle_light_blu"
             android:padding="5dp"
             android:scaleType="centerCrop"

@@ -3042,6 +3042,9 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable card_drugs
+drawable card_facilities
+drawable card_remedies
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -3609,7 +3612,9 @@ id recyclerId
 id recyclerImage
 id recyclerLocation
 id recyclerName
+id recyclerNameBrand
 id recyclerNameCommon
+id recyclerNameGeneric
 id recyclerNameScientific
 id recyclerType
 id recyclerViewHF
@@ -3916,6 +3921,7 @@ layout activity_remedies
 layout activity_splash
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout card_items_drugs
 layout card_items_remedies
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3934,9 +3940,11 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_accountoptions
+layout fragment_drugs_deets
 layout fragment_introduction
 layout fragment_login
 layout fragment_register
+layout fragment_remedies_deets
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

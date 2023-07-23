@@ -34,6 +34,9 @@ drawable baseline_phone_24
 drawable baseline_search_24
 drawable baseline_slide_error_24
 drawable baseline_square_24
+drawable card_drugs
+drawable card_facilities
+drawable card_remedies
 drawable contact
 drawable contact_btn
 drawable drugs
@@ -115,7 +118,9 @@ id recyclerId
 id recyclerImage
 id recyclerLocation
 id recyclerName
+id recyclerNameBrand
 id recyclerNameCommon
+id recyclerNameGeneric
 id recyclerNameScientific
 id recyclerType
 id recyclerViewHF
@@ -149,11 +154,14 @@ layout activity_nav_bar
 layout activity_register_login
 layout activity_remedies
 layout activity_splash
+layout card_items_drugs
 layout card_items_remedies
 layout fragment_accountoptions
+layout fragment_drugs_deets
 layout fragment_introduction
 layout fragment_login
 layout fragment_register
+layout fragment_remedies_deets
 layout recyclerv_facility_item
 menu nav_menu
 mipmap ic_launcher
