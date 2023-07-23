@@ -101,22 +101,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "PROJECT_TRUSTED_KEY": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "android-custom-viewC:/Users/jolyn/.gradle/caches/modules-2/files-2.1/com.ncorti/slidetoact/0.10.0/961c464e8fc82cd0439d4bf56fb4c4117e8a84e2/slidetoact-0.10.0-sources.jar!/com/ncorti/slidetoact/SlideToActView.kt_SELECTED": "SlideToActView",
-    "cidr.known.project.marker": "true",
-    "com.google.services.firebase.aqiPopupShown": "true",
-    "last_directory_selection": "C:/Users/Romalyn Floranda/AndroidStudioProjects/SAKLO/app/src/main/res/drawable",
-    "last_opened_file_path": "C:/Users/Romalyn Floranda/AndroidStudioProjects/SAKLO/app/src/main/res/drawable",
-    "settings.editor.selected.configurable": "experimental"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;PROJECT_TRUSTED_KEY&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;android-custom-viewC:/Users/jolyn/.gradle/caches/modules-2/files-2.1/com.ncorti/slidetoact/0.10.0/961c464e8fc82cd0439d4bf56fb4c4117e8a84e2/slidetoact-0.10.0-sources.jar!/com/ncorti/slidetoact/SlideToActView.kt_SELECTED&quot;: &quot;SlideToActView&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Romalyn Floranda/AndroidStudioProjects/SAKLO/app/src/main/res/drawable&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Romalyn Floranda/AndroidStudioProjects/SAKLO/app/src/main/res/drawable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;experimental&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Romalyn Floranda\AndroidStudioProjects\SAKLO\app\src\main\res\drawable" />
@@ -266,6 +266,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Android App.AppointmentActivity" />
         <item itemvalue="Android App.AppointmentActivity" />
       </list>
     </recent_temporary>

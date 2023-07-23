@@ -38,26 +38,16 @@ android:elevation="8dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/recyclerId"
-            android:gravity="start|center"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textAllCaps="true"
-            android:layout_marginBottom="4dp"
-            android:text="Id"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/recyclerNameCommon"
-            android:textSize="16sp"
+            android:textSize="30sp"
+            android:textStyle="bold"
             android:text="Common Name"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/recyclerNameScientific"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:text="Scientific Name"/>
 
     </LinearLayout>
