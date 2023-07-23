@@ -1,4 +1,4 @@
-package com.codegrace.Saklo.activities
+ package com.codegrace.Saklo.activities
 
 import android.content.Intent
 import android.os.Build
