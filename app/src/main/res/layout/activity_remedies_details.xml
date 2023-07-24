@@ -15,6 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="COMMON NAME"
+            android:textAlignment="center"
             android:textColor="@color/dark_blu"
             android:fontFamily="@font/inter_font"
             android:layout_centerHorizontal="true"  />
@@ -24,6 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SCIENTIFIC NAME"
+            android:textAlignment="center"
             android:textStyle="italic"
             android:fontFamily="@font/inter_font"
             android:layout_below="@id/textView1"
