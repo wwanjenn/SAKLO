@@ -36,7 +36,6 @@ class remediesAdapter(
     }
 
     override fun onBindViewHolder(holder: remediesViewHolder, position: Int) {
-//        Glide.with(context).load(healthFacilityDataList[position].faciImage).into(holder.recyclerImage)
         holder.nameCommon.text = remediesList[position].nameCommon
         holder.nameScientific.text = remediesList[position].nameScientific
     }
