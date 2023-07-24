@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.codegrace.Saklo.HealthFacilityData
 import com.codegrace.Saklo.R
 import com.codegrace.Saklo.RemediesModel
+import com.codegrace.Saklo.RemediesRecyclerViewInterface
 import com.codegrace.Saklo.RemediesSQLiteHelper
 import com.codegrace.Saklo.remediesAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -26,7 +27,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import java.util.Locale
 
-class RemediesActivity : AppCompatActivity() {
+class RemediesActivity  : AppCompatActivity(), remediesAdapter.OnItemClickListener{
 
     lateinit var bottomNav : BottomNavigationView
     private lateinit var recyclerView: RecyclerView
@@ -48,7 +49,7 @@ class RemediesActivity : AppCompatActivity() {
 
         remediesList = ArrayList<RemediesModel>()
 
-        adapter = remediesAdapter(this, remediesList)
+        adapter = remediesAdapter(this, remediesList, this)
         recyclerView.adapter = adapter
 
         changeStatusBarTextColor()
@@ -129,6 +130,8 @@ class RemediesActivity : AppCompatActivity() {
 
     }
 
+
+
     private fun changeStatusBarTextColor() {
         val decorView: View = window.decorView
         WindowCompat.setDecorFitsSystemWindows(window, true)
@@ -137,7 +140,9 @@ class RemediesActivity : AppCompatActivity() {
             resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK != android.content.res.Configuration.UI_MODE_NIGHT_YES
     }
 
-
+    override fun onItemClick(position: Int) {
+        TODO("Not yet implemented")
+    }
 
 
 }
