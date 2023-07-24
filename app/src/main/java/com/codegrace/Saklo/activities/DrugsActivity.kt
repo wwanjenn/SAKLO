@@ -18,7 +18,7 @@ import com.codegrace.Saklo.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.util.Locale
 
-class DrugsActivity : AppCompatActivity() {
+class DrugsActivity : AppCompatActivity(), DrugsAdapter.OnItemClickListener {
     lateinit var bottomNav : BottomNavigationView
     private lateinit var recyclerView: RecyclerView
     private var adapter: DrugsAdapter? = null
@@ -45,7 +45,7 @@ class DrugsActivity : AppCompatActivity() {
 
         drugsList = ArrayList<DrugsModel>()
 
-        adapter = DrugsAdapter(this, drugsList)
+        adapter = DrugsAdapter(this, drugsList, this)
         recyclerView.adapter = adapter
 
         changeStatusBarTextColor()
@@ -135,5 +135,17 @@ class DrugsActivity : AppCompatActivity() {
         val windowInsetsController = WindowInsetsControllerCompat(window, decorView)
         windowInsetsController.isAppearanceLightStatusBars =
             resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK != android.content.res.Configuration.UI_MODE_NIGHT_YES
+    }
+
+    override fun onItemClick(position: Int) {
+        val drugsList = sqLiteHelper.getDrugs()
+        val intent = Intent(this, DrugsDetailsActivity::class.java)
+        intent.putExtra("nameGeneric", drugsList[position].nameScientific)
+        intent.putExtra("nameBrand", drugsList[position].nameBrand)
+        intent.putExtra("category", drugsList[position].category)
+        intent.putExtra("descPara", drugsList[position].descPara)
+        intent.putExtra("warnPara", drugsList[position].warnPara)
+        startActivity(intent)
+
     }
 }

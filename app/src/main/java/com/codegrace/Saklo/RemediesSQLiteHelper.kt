@@ -85,14 +85,18 @@ class RemediesSQLiteHelper(val context: Context) : SQLiteOpenHelper(context, DAT
         var id: Int
         var nameCommon: String
         var nameScientific: String
+        var detailsPara: String
+        var warningsPara: String
 
         if(cursor.moveToFirst()){
             do {
                 id = cursor.getInt(cursor.getColumnIndexOrThrow("id"))
                 nameCommon = cursor.getString(cursor.getColumnIndexOrThrow("nameCommon"))
                 nameScientific = cursor.getString(cursor.getColumnIndexOrThrow("nameScientific"))
+                detailsPara  = cursor.getString(cursor.getColumnIndexOrThrow("detailsPara"))
+                warningsPara = cursor.getString(cursor.getColumnIndexOrThrow("warningsPara"))
 
-                val remedies = RemediesModel(id = id, nameCommon = nameCommon, nameScientific = nameScientific)
+                val remedies = RemediesModel(id = id, nameCommon = nameCommon, nameScientific = nameScientific, detailsPara = detailsPara, warningsPara = warningsPara)
                 remediesList.add(remedies)
             } while(cursor.moveToNext())
 
