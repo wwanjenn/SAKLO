@@ -48,10 +48,10 @@
 
     <style name="GeneralTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
-        <item name="android:windowBackground">@color/almost_wh</item>
+        <item name="android:windowBackground">@color/almost_bl</item>
         <item name="colorPrimary">@color/dark_blu</item>
         <item name="colorPrimaryVariant">@color/light_blu</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
         <item name="colorSecondary">@color/dark_gr</item>
         <item name="colorSecondaryVariant">@color/black</item>
         <item name="colorOnSecondary">@color/almost_bl</item>
