@@ -35,7 +35,6 @@ class DrugsAdapter(
 
     override fun onBindViewHolder(holder: DrugsViewHolder, position: Int) {
 //        Glide.with(context).load(healthFacilityDataList[position].faciImage).into(holder.recyclerImage)
-        holder.id.text = drugsList[position].id.toString()
         holder.nameScientific.text = drugsList[position].nameScientific
         holder.nameBrand.text = drugsList[position].nameBrand
         holder.category.text = drugsList[position].category
@@ -44,8 +43,7 @@ class DrugsAdapter(
 
     class DrugsViewHolder(var view: View): RecyclerView.ViewHolder(view){
         var category = view.findViewById<TextView>(R.id.recyclerCategory)
-        var id = view.findViewById<TextView>(R.id.recyclerId)
-        var nameScientific = view.findViewById<TextView>(R.id.recyclerNameScientific)
+        var nameScientific = view.findViewById<TextView>(R.id.recyclerNameGeneric)
         var nameBrand = view.findViewById<TextView>(R.id.recyclerNameBrand)
     }
 

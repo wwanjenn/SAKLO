@@ -64,7 +64,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewDrugs"
             android:layout_width="match_parent"
-            android:layout_height="445dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?attr/actionBarSize"
             android:layout_gravity="center"
             tools:ignore="SpeakableTextPresentCheck">
         </androidx.recyclerview.widget.RecyclerView>

@@ -64,10 +64,10 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewReme"
             android:layout_width="match_parent"
-            android:layout_height="445dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            tools:ignore="SpeakableTextPresentCheck">
-        </androidx.recyclerview.widget.RecyclerView>
+            android:layout_marginBottom="?attr/actionBarSize"
+            tools:ignore="SpeakableTextPresentCheck"></androidx.recyclerview.widget.RecyclerView>
 
     </LinearLayout>
 
