@@ -24,12 +24,21 @@
         android:layout_centerHorizontal="true"  />
 
     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:fontFamily="@font/inter_font"
+        android:layout_below="@id/textView2"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Details/Summary:"
         android:textStyle="bold"
-        android:layout_below="@id/textView2"
+        android:layout_below="@id/textView3"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -48,11 +57,11 @@
         android:textStyle="bold"
         android:layout_below="@id/textView6"
         android:layout_centerHorizontal="true" />
+
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Warning"
         android:layout_below="@id/textView7"
-        android:layout_centerHorizontal="true" />
+        android:text="Warning" />
 </RelativeLayout>

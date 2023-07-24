@@ -86,6 +86,8 @@ class DrugsSQLiteHelper(val context: Context) : SQLiteOpenHelper(context, DATABA
         var nameBrand: String
         var nameScientific: String
         var category: String
+        var descPara: String
+        var warnPara: String
 
         if(cursor.moveToFirst()){
             do {
@@ -93,8 +95,10 @@ class DrugsSQLiteHelper(val context: Context) : SQLiteOpenHelper(context, DATABA
                 nameBrand = cursor.getString(cursor.getColumnIndexOrThrow("nameBrand"))
                 nameScientific = cursor.getString(cursor.getColumnIndexOrThrow("nameScientific"))
                 category = cursor.getString(cursor.getColumnIndexOrThrow("category"))
+                descPara = cursor.getString(cursor.getColumnIndexOrThrow("descPara"))
+                warnPara = cursor.getString(cursor.getColumnIndexOrThrow("warnPara"))
 
-                val drugs = DrugsModel(id = id, nameBrand = nameBrand, nameScientific = nameScientific, category = category)
+                val drugs = DrugsModel(id = id, nameBrand = nameBrand, nameScientific = nameScientific, category = category, descPara = descPara, warnPara = warnPara)
                 drugsList.add(drugs)
             } while(cursor.moveToNext())
 

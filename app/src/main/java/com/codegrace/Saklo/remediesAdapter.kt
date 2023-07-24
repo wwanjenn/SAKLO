@@ -42,7 +42,7 @@ class remediesAdapter(
     }
 
     inner class remediesViewHolder(var view: View): RecyclerView.ViewHolder(view), View.OnClickListener {
-        var nameCommon = view.findViewById<TextView>(R.id.recyclerNameCommon)
+        var nameCommon= view.findViewById<TextView>(R.id.recyclerNameCommon)
         var nameScientific = view.findViewById<TextView>(R.id.recyclerNameScientific)
 
         init{
