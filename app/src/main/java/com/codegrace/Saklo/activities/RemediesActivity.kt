@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.widget.SearchView
@@ -30,6 +32,11 @@ class RemediesActivity  : AppCompatActivity(), remediesAdapter.OnItemClickListen
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_remedies)
+
+        val navigation = findViewById<View>(R.id.bottomNav) as BottomNavigationView
+        val menu: Menu = navigation.menu
+        val menuItem: MenuItem = menu.getItem(1)
+        menuItem.isChecked = true
 
         recyclerView = findViewById(R.id.recyclerViewReme)
         searchView = findViewById(R.id.searchView)

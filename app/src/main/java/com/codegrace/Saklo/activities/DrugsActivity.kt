@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.widget.SearchView
@@ -29,6 +31,11 @@ class DrugsActivity : AppCompatActivity(), DrugsAdapter.OnItemClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drugs)
         changeStatusBarTextColor()
+
+        val navigation = findViewById<View>(R.id.bottomNav) as BottomNavigationView
+        val menu: Menu = navigation.menu
+        val menuItem: MenuItem = menu.getItem(2)
+        menuItem.isChecked = true
 
         val btnHome = findViewById<Button>(R.id.btnHome)
         btnHome.setOnClickListener {
