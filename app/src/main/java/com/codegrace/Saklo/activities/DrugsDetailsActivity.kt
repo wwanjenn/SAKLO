@@ -2,7 +2,10 @@ package com.codegrace.Saklo.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsControllerCompat
 import com.codegrace.Saklo.R
 import org.w3c.dom.Text
 
@@ -10,6 +13,8 @@ class DrugsDetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drugs_details)
+
+        changeStatusBarTextColor()
 
         val nameGeneric: String = intent.getStringExtra("nameGeneric").toString()
         val nameBrand: String = intent.getStringExtra("nameBrand").toString()
@@ -30,5 +35,13 @@ class DrugsDetailsActivity : AppCompatActivity() {
         warnParaTV.text = warnPara
 
 
+    }
+    private fun changeStatusBarTextColor() {
+
+        val decorView: View = window.decorView
+        WindowCompat.setDecorFitsSystemWindows(window, true)
+        val windowInsetsController = WindowInsetsControllerCompat(window, decorView)
+        windowInsetsController.isAppearanceLightStatusBars =
+            resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK != android.content.res.Configuration.UI_MODE_NIGHT_YES
     }
 }
