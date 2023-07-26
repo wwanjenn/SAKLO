@@ -1,18 +1,19 @@
 package com.codegrace.Saklo.activities
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.transition.Slide
-import android.transition.Transition
-import android.transition.TransitionManager
-import android.util.Log
-import android.view.Gravity
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.widget.SearchView
 import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.recyclerview.widget.GridLayoutManager
@@ -21,6 +22,7 @@ import com.codegrace.Saklo.FacilityAdapter
 import com.codegrace.Saklo.HealthFacilityData
 import com.codegrace.Saklo.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.button.MaterialButton
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
@@ -153,6 +155,7 @@ class AppointmentActivity : AppCompatActivity() {
             }
             adapter.notifyItemChanged(position)
         }
+
     }
 
     private fun searchList(text: String) {

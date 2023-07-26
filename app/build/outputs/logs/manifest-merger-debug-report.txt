@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-55:12
+ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-60:12
 MERGED from [androidx.databinding:viewbinding:8.0.1] C:\Users\jolyn\.gradle\caches\transforms-3\51587b11da0b5e7be148d184f41b45ad\transformed\jetified-viewbinding-8.0.1\AndroidManifest.xml:2:1-7:12
 MERGED from [com.ncorti:slidetoact:0.10.0] C:\Users\jolyn\.gradle\caches\transforms-3\7caeffa8618c25d8e53a25b40b4ddfe9\transformed\jetified-slidetoact-0.10.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.navigation:navigation-common:2.7.0-beta01] C:\Users\jolyn\.gradle\caches\transforms-3\012c3ce77c09b4e2ca1b47b06da14935\transformed\navigation-common-2.7.0-beta01\AndroidManifest.xml:17:1-22:12
@@ -125,27 +125,37 @@ MERGED from [androidx.sqlite:sqlite:2.3.1] C:\Users\jolyn\.gradle\caches\transfo
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\6af9c2eda4d9a62261d1ddc8ba465a60\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\jolyn\.gradle\caches\transforms-3\6a1d67b5e80cb070367bc84c273525be\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\jolyn\.gradle\caches\transforms-3\002d1ca81d98a138e63bc9d8e5b790f3\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-60:12
 	package
 		INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-55:12
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-60:12
 		INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-55:12
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-60:12
 		INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-55:12
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:1-60:12
 		INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.telephony
+ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:5:5-7:36
+	android:required
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:7:9-33
+	android:name
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:6:9-50
+uses-permission#android.permission.CALL_PHONE
+ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:8:5-69
+	android:name
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:8:22-66
 application
-ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:5:5-53:19
+ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:10:5-58:19
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\jolyn\.gradle\caches\transforms-3\5750922ae49939763c0af8c193d075b1\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\jolyn\.gradle\caches\transforms-3\5750922ae49939763c0af8c193d075b1\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\jolyn\.gradle\caches\transforms-3\39a7182b1601b0b8745ec9022529c623\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -225,91 +235,91 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\jo
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.10.1] C:\Users\jolyn\.gradle\caches\transforms-3\7a0801cc8bd69e8e45f64a1e1bbf7914\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:15:9-41
 	android:fullBackupContent
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:13:9-54
 	android:roundIcon
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:16:9-43
 	tools:targetApi
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:14:9-29
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:19:9-29
 	android:icon
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:9:9-38
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:14:9-38
 	android:allowBackup
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:18:9-43
 	android:dataExtractionRules
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:7:9-65
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:12:9-65
 activity#com.codegrace.Saklo.activities.SplashActivity
-ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:15:9-23:20
+ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:20:9-28:20
 	android:exported
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:17:13-36
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:22:13-36
 	android:theme
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:18:13-47
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:23:13-47
 	android:name
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:16:13-54
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:21:13-54
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:19:13-22:29
+ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:24:13-27:29
 action#android.intent.action.MAIN
-ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:26:27-74
 activity#com.codegrace.Saklo.activities.RegisterLoginActivity
-ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:24:9-32:20
+ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:29:9-37:20
 	android:exported
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:26:13-36
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:31:13-36
 	android:theme
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:27:13-47
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:32:13-47
 	android:name
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:25:13-61
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:30:13-61
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT
-ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:28:13-31:29
+ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:33:13-36:29
 action#android.intent.action.VIEW
-ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:29:17-69
+ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:34:17-69
 	android:name
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:29:25-66
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:34:25-66
 category#android.intent.category.DEFAULT
-ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:30:17-76
+ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:35:17-76
 	android:name
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:30:27-73
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:35:27-73
 activity#com.codegrace.Saklo.activities.MainActivity
-ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:33:9-37:20
-	android:exported
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:35:13-36
-	android:theme
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:36:13-48
-	android:name
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:34:13-52
-activity#com.codegrace.Saklo.activities.AppointmentActivity
 ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:38:9-42:20
 	android:exported
 		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:40:13-36
 	android:theme
 		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:41:13-48
 	android:name
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:39:13-59
-activity#com.codegrace.Saklo.activities.RemediesActivity
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:39:13-52
+activity#com.codegrace.Saklo.activities.AppointmentActivity
 ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:43:9-47:20
 	android:exported
 		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:45:13-36
 	android:theme
 		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:46:13-48
 	android:name
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:44:13-56
-activity#com.codegrace.Saklo.activities.DrugsActivity
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:44:13-59
+activity#com.codegrace.Saklo.activities.RemediesActivity
 ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:48:9-52:20
 	android:exported
 		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:50:13-36
 	android:theme
 		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:51:13-48
 	android:name
-		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:49:13-53
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:49:13-56
+activity#com.codegrace.Saklo.activities.DrugsActivity
+ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:53:9-57:20
+	android:exported
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:55:13-36
+	android:theme
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:56:13-48
+	android:name
+		ADDED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml:54:13-53
 uses-sdk
 INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\jolyn\College Files\Second Semester Y2\Mobile Dev\Sprint 3\app\src\main\AndroidManifest.xml

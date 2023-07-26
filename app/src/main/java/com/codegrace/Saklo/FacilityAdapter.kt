@@ -1,11 +1,14 @@
 package com.codegrace.Saklo
 
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
@@ -86,7 +89,6 @@ class FacilityAdapter(
     }
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-//        val recyclerImage: ImageView = itemView.findViewById(R.id.recyclerImage)
         val recyclerName: TextView = itemView.findViewById(R.id.recyclerName)
         val recyclerType: TextView = itemView.findViewById(R.id.recyclerType)
         val recyclerLocation: TextView = itemView.findViewById(R.id.recyclerLocation)
@@ -109,6 +111,54 @@ class FacilityAdapter(
                 val position = adapterPosition
                 if (position != RecyclerView.NO_POSITION) {
                     onItemClickListener?.invoke(position)
+                }
+            }
+
+            // Add click listener for btn_contacthf
+            btnContact.setOnClickListener {
+                val position = adapterPosition
+                if (position != RecyclerView.NO_POSITION) {
+                    val facility = healthFacilityDataList[position]
+
+                    // Get the landline number from the Facility object
+                    val landlineNumber = facility.landlineNumber
+
+                    // Check if the landline number is not empty or "N/A" or "None"
+                    if (landlineNumber != null) {
+                        if (landlineNumber.isNotBlank() && landlineNumber != "N/A" && landlineNumber != "None") {
+                            // Create an implicit intent to open the dialer with the number pre-filled
+                            val dialIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$landlineNumber"))
+                            itemView.context.startActivity(dialIntent)
+                        } else {
+                            // Landline number is empty, show a toast or handle accordingly
+                            Toast.makeText(itemView.context, "Landline number is not available.", Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
+            }
+
+            // Add click listener for btn_emailhf
+            btnEmail.setOnClickListener {
+                val position = adapterPosition
+                if (position != RecyclerView.NO_POSITION) {
+                    val facility = healthFacilityDataList[position]
+
+                    // Get the email address from the Facility object
+                    val emailAddress = facility.emailAddress
+
+                    // Check if the email address is not empty or "N/A" or "None"
+                    if (emailAddress != null) {
+                        if (emailAddress.isNotBlank() && emailAddress != "N/A" && emailAddress != "None") {
+                            // Create an implicit intent to send an email
+                            val emailIntent = Intent(Intent.ACTION_SENDTO).apply {
+                                data = Uri.parse("mailto:$emailAddress")
+                            }
+                            itemView.context.startActivity(emailIntent)
+                        } else {
+                            // Email address is empty, show a toast or handle accordingly
+                            Toast.makeText(itemView.context, "Email address is not available.", Toast.LENGTH_SHORT).show()
+                        }
+                    }
                 }
             }
         }
