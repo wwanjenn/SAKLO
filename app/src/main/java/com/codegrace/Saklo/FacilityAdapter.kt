@@ -34,6 +34,12 @@ class FacilityAdapter(
         }
     }
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+
+        if (healthFacilityDataList.isEmpty() || position < 0 || position >= healthFacilityDataList.size) {
+            return
+        }
+
+
         val isExpanded = position == expandedPosition
         val specificAddText = "${healthFacilityDataList[position].streetName}, ${healthFacilityDataList[position].barangayName}"
 
@@ -75,7 +81,7 @@ class FacilityAdapter(
 
 
     override fun getItemCount(): Int {
-        return healthFacilityDataList.size + if (expandedPosition != -1) 1 else 0
+        return healthFacilityDataList.size + if (expandedPosition != -1) 0 else 0
     }
 
     fun searchDataList(searchList: ArrayList<HealthFacilityData>) {

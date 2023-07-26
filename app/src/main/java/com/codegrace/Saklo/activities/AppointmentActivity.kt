@@ -39,6 +39,7 @@ class AppointmentActivity : AppCompatActivity() {
     private lateinit var dataList: MutableList<HealthFacilityData>
     private lateinit var adapter: FacilityAdapter
     private lateinit var searchView:SearchView
+    private lateinit var textNoItemFound:TextView
 
     private var expandedPosition = -1
 
@@ -46,7 +47,7 @@ class AppointmentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_appointment)
 
-
+        textNoItemFound = findViewById(R.id.textNoItemFound)
         recyclerView = findViewById(R.id.recyclerViewHF)
         searchView = findViewById(R.id.searchView)
         searchView.clearFocus()
@@ -91,6 +92,8 @@ class AppointmentActivity : AppCompatActivity() {
 
             override fun onQueryTextChange(newText: String): Boolean {
                 searchList(newText)
+                textNoItemFound.visibility = if (adapter.itemCount == 0) View.VISIBLE else View.GONE
+                recyclerView.visibility = if (adapter.itemCount == 0) View.GONE else View.VISIBLE
                 return true
             }
         })
