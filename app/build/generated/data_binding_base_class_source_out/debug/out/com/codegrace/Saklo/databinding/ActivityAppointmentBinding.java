@@ -4,6 +4,7 @@ package com.codegrace.Saklo.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
@@ -32,15 +33,19 @@ public final class ActivityAppointmentBinding implements ViewBinding {
   public final SearchView searchView;
 
   @NonNull
+  public final TextView textNoItemFound;
+
+  @NonNull
   public final Toolbar toolbar;
 
   private ActivityAppointmentBinding(@NonNull ConstraintLayout rootView,
       @NonNull AppCompatButton btnHome, @NonNull RecyclerView recyclerViewHF,
-      @NonNull SearchView searchView, @NonNull Toolbar toolbar) {
+      @NonNull SearchView searchView, @NonNull TextView textNoItemFound, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.btnHome = btnHome;
     this.recyclerViewHF = recyclerViewHF;
     this.searchView = searchView;
+    this.textNoItemFound = textNoItemFound;
     this.toolbar = toolbar;
   }
 
@@ -89,6 +94,12 @@ public final class ActivityAppointmentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textNoItemFound;
+      TextView textNoItemFound = ViewBindings.findChildViewById(rootView, id);
+      if (textNoItemFound == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
@@ -96,7 +107,7 @@ public final class ActivityAppointmentBinding implements ViewBinding {
       }
 
       return new ActivityAppointmentBinding((ConstraintLayout) rootView, btnHome, recyclerViewHF,
-          searchView, toolbar);
+          searchView, textNoItemFound, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

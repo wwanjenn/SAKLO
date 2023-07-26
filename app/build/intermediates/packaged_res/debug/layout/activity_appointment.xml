@@ -68,6 +68,16 @@
             android:scrollbars="vertical"
             android:layout_marginBottom="55dp"/>
 
+        <TextView
+            android:id="@+id/textNoItemFound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="No facility found"
+            android:textSize="16sp"
+            android:textColor="#C9000000"
+            android:visibility="gone"/>
 
     </LinearLayout>
 
