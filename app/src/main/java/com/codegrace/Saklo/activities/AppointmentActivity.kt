@@ -1,6 +1,9 @@
 package com.codegrace.Saklo.activities
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,8 +11,11 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.widget.SearchView
 import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.recyclerview.widget.GridLayoutManager
@@ -18,6 +24,7 @@ import com.codegrace.Saklo.FacilityAdapter
 import com.codegrace.Saklo.HealthFacilityData
 import com.codegrace.Saklo.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.button.MaterialButton
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
@@ -34,11 +41,15 @@ class AppointmentActivity : AppCompatActivity() {
     private lateinit var dataList: MutableList<HealthFacilityData>
     private lateinit var adapter: FacilityAdapter
     private lateinit var searchView:SearchView
+    private lateinit var textNoItemFound:TextView
+
+    private var expandedPosition = -1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_appointment)
 
+        textNoItemFound = findViewById(R.id.textNoItemFound)
         val navigation = findViewById<View>(R.id.bottomNav) as BottomNavigationView
         val menu: Menu = navigation.menu
         val menuItem: MenuItem = menu.getItem(3)
@@ -53,6 +64,14 @@ class AppointmentActivity : AppCompatActivity() {
 
         dataList = ArrayList()
         adapter = FacilityAdapter(this, dataList)
+
+        databaseReference = FirebaseDatabase.getInstance("https://saklo-a4e3a-default-rtdb.asia-southeast1.firebasedatabase.app").getReference("Health Facilities")
+
+        adapter.setOnItemClickListener { position ->
+            expandedPosition = if (expandedPosition == position) -1 else position
+            adapter.notifyDataSetChanged()
+        }
+
         recyclerView.adapter = adapter
 
         databaseReference = FirebaseDatabase.getInstance("https://saklo-a4e3a-default-rtdb.asia-southeast1.firebasedatabase.app").getReference("SakloApp")
@@ -82,6 +101,8 @@ class AppointmentActivity : AppCompatActivity() {
 
             override fun onQueryTextChange(newText: String): Boolean {
                 searchList(newText)
+                textNoItemFound.visibility = if (adapter.itemCount == 0) View.VISIBLE else View.GONE
+                recyclerView.visibility = if (adapter.itemCount == 0) View.GONE else View.VISIBLE
                 return true
             }
         })
@@ -132,12 +153,27 @@ class AppointmentActivity : AppCompatActivity() {
 
             bottomNav.setBackgroundResource(themeColor)
         }
+
+
+        adapter.setOnItemClickListener { position ->
+            if (expandedPosition == position) {
+                expandedPosition = -1
+            } else {
+                val oldExpandedPosition = expandedPosition
+                expandedPosition = position
+                if (oldExpandedPosition != -1) {
+                    adapter.notifyItemChanged(oldExpandedPosition)
+                }
+            }
+            adapter.notifyItemChanged(position)
+        }
+
     }
 
     private fun searchList(text: String) {
         val searchList = ArrayList<HealthFacilityData>()
         for (dataClass in dataList) {
-            if (dataClass.faciName?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
+            if (dataClass.facilityName?.lowercase(Locale.ROOT)?.contains(text.lowercase(Locale.ROOT)) == true) {
                 searchList.add(dataClass)
             }
         }
@@ -150,4 +186,5 @@ class AppointmentActivity : AppCompatActivity() {
         windowInsetsController.isAppearanceLightStatusBars =
             resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK != android.content.res.Configuration.UI_MODE_NIGHT_YES
     }
+
 }

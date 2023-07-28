@@ -1,10 +1,22 @@
 package com.codegrace.Saklo
 
 data class HealthFacilityData(
-    var faciName: String? = null,
-    var faciType: String? = null,
-    var faciClass: String? = null,
-    var faciAddress: String? = null,
-    var faciImage: String? = null,
+//    Upper Card
+    var facilityName: String? = null,
+    var healthFacilityType: String? = null,
+    var ownershipMajorClassification: String? = null,
+    var cityMunicipalityName: String? = null,
+    var provinceName: String? = null,
+//    Lower Card
+    var bedCapacity: String? = null,
+    var officialWebsite: String? = null,
+    var serviceCapabilities: String? = null,
+    var healthFacilityCode: String? = null,
+    var landlineNumber: String? = null,
+    var emailAddress: String? = null,
+    var streetName: String? = null,
+    var barangayName: String? = null,
+
+
     var key: String? = null
 )
