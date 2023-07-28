@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper
 import java.io.File
 import java.io.FileOutputStream
 
-class RemediesSQLiteHelper(val context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
+class DrugsSQLiteHelper(val context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
 
     private val preferences: SharedPreferences = context.getSharedPreferences(
         "${context.packageName}.database_versions",
@@ -67,9 +67,9 @@ class RemediesSQLiteHelper(val context: Context) : SQLiteOpenHelper(context, DAT
     }
 
 
-    fun getRemedies(): ArrayList<RemediesModel> {
-        val remediesList: ArrayList<RemediesModel> = ArrayList()
-        val selectQuery = "SELECT * FROM remedies"
+    fun getDrugs(): ArrayList<DrugsModel> {
+        val drugsList: ArrayList<DrugsModel> = ArrayList()
+        val selectQuery = "SELECT * FROM drugs"
         val db = this.readableDatabase
 
         val cursor: Cursor?
@@ -83,31 +83,33 @@ class RemediesSQLiteHelper(val context: Context) : SQLiteOpenHelper(context, DAT
         }
 
         var id: Int
-        var nameCommon: String
+        var nameBrand: String
         var nameScientific: String
-        var detailsPara: String
-        var warningsPara: String
+        var category: String
+        var descPara: String
+        var warnPara: String
 
         if(cursor.moveToFirst()){
             do {
                 id = cursor.getInt(cursor.getColumnIndexOrThrow("id"))
-                nameCommon = cursor.getString(cursor.getColumnIndexOrThrow("nameCommon"))
+                nameBrand = cursor.getString(cursor.getColumnIndexOrThrow("nameBrand"))
                 nameScientific = cursor.getString(cursor.getColumnIndexOrThrow("nameScientific"))
-                detailsPara  = cursor.getString(cursor.getColumnIndexOrThrow("detailsPara"))
-                warningsPara = cursor.getString(cursor.getColumnIndexOrThrow("warningsPara"))
+                category = cursor.getString(cursor.getColumnIndexOrThrow("category"))
+                descPara = cursor.getString(cursor.getColumnIndexOrThrow("descPara"))
+                warnPara = cursor.getString(cursor.getColumnIndexOrThrow("warnPara"))
 
-                val remedies = RemediesModel(id = id, nameCommon = nameCommon, nameScientific = nameScientific, detailsPara = detailsPara, warningsPara = warningsPara)
-                remediesList.add(remedies)
+                val drugs = DrugsModel(id = id, nameBrand = nameBrand, nameScientific = nameScientific, category = category, descPara = descPara, warnPara = warnPara)
+                drugsList.add(drugs)
             } while(cursor.moveToNext())
 
         }
-        return remediesList
+        return drugsList
 
     }
 
     companion object {
         const val ASSETS_PATH = "database"
-        const val DATABASE_NAME = "remedies2"
+        const val DATABASE_NAME = "drugs"
         const val DATABASE_VERSION = 1
     }
 

@@ -1,5 +1,6 @@
 package com.codegrace.Saklo
 
+import org.w3c.dom.Text
 import java.util.Random
 
 data class RemediesModel(
@@ -9,4 +10,5 @@ data class RemediesModel(
     var detailsPara: String? = null,
     var warningsPara: String? = null,
 ){
+
 }

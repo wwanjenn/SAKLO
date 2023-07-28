@@ -7,6 +7,8 @@ import android.net.Uri
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -48,6 +50,11 @@ class AppointmentActivity : AppCompatActivity() {
         setContentView(R.layout.activity_appointment)
 
         textNoItemFound = findViewById(R.id.textNoItemFound)
+        val navigation = findViewById<View>(R.id.bottomNav) as BottomNavigationView
+        val menu: Menu = navigation.menu
+        val menuItem: MenuItem = menu.getItem(3)
+        menuItem.isChecked = true
+
         recyclerView = findViewById(R.id.recyclerViewHF)
         searchView = findViewById(R.id.searchView)
         searchView.clearFocus()
@@ -66,6 +73,8 @@ class AppointmentActivity : AppCompatActivity() {
         }
 
         recyclerView.adapter = adapter
+
+        databaseReference = FirebaseDatabase.getInstance("https://saklo-a4e3a-default-rtdb.asia-southeast1.firebasedatabase.app").getReference("SakloApp")
 
         eventListener = object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
