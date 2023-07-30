@@ -1,0 +1,16 @@
+1. On start-up you are required to Log In or Create an Account.
+	1.A. Create an Account by Clicking the Appropriate Buttons and Filling the Blanks.
+	1.B. Log In with an Existing account.(sample@gmail.com : 12345abc)
+2. Choose what would you like to see.
+	2.A. Herbal Remedies
+		- Choose an Entry to View Details about the Herbs.
+		- You can search a specific herb using the search bar.
+	2.B. Medical Drugs
+		- Choose an Entry to View Details about the Drugs.
+		- You can filter and search a specific Drug using the search bar.
+	2.C. Appointment
+		- Search/Filter health facilities by entering prompts inside the search bar.
+		- Click lists to expand and display additional information about the facility.
+		- Contact facilities by given email or phone/landline. Expanded display includes clickable buttons based on available data. 
+		- Redirect to device's default emailing or calling app on button click
+		- When searching, if none or no matching facilities are found, the app will display a message indicating no facilities were found.
