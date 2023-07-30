@@ -117,27 +117,6 @@
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="15dp"
             android:gravity="center">
-
-            <CheckBox
-                android:id="@+id/cb_rememberMe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:text="Remember me"
-                android:textColor="#656565"
-                android:textSize="17sp"
-                android:buttonTint="@color/dark_blu"/>
-
-            <TextView
-                android:id="@+id/tv_forgotPass"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:text="Forgot password?"
-                android:textColor="@color/lgt_prm_green"
-                android:textSize="17sp" />
-
         </RelativeLayout>
 
         <com.ncorti.slidetoact.SlideToActView
