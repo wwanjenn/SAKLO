@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recyclerCard"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="15dp"
+    android:elevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/upper_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/recyclerImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/rectangle_light_blu"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_local_hospital_24"
+                android:tint="@color/dark_blu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@+id/recyclerImage"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/recyclerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:gravity="start|center"
+                    android:text="Facility Name"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_phone_rec"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:foregroundGravity="center"
+                        android:src="@drawable/baseline_medical_services_24" />
+
+                    <TextView
+                        android:id="@+id/recyclerType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@id/iv_phone_rec"
+                        android:gravity="start|top"
+                        android:text="Facility Type"
+                        android:textSize="12.5sp" />
+
+                    <TextView
+                        android:id="@+id/recyclerClassif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/recyclerType"
+                        android:gravity="start|top"
+                        android:text="Classification"
+                        android:textColor="@color/dark_blu"
+                        android:textSize="12.5sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_locate_rec"
+                        android:layout_width="20dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:foregroundGravity="center"
+                        android:src="@drawable/baseline_location_on_24" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/iv_locate_rec">
+
+                        <TextView
+                            android:id="@+id/recyclerLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="start|top"
+                            android:text="Loc 1"
+                            android:textSize="12.5sp" />
+
+                        <TextView
+                            android:id="@+id/recyclerLocation2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/recyclerLocation"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="start|top"
+                            android:text="Loc 2"
+                            android:textSize="12.5sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lower_card"
+            app:layout_constraintTop_toBottomOf="@+id/upper_card"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/faciinfo_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:background="#39BDBDBD"
+                android:padding="5dp"
+                android:text="Facility Information"
+                android:textAlignment="center"
+                android:textColor="#474747"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_below="@id/faciinfo_tv"
+                android:id="@+id/add_specifics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp">
+
+                <ImageView
+                    android:foregroundGravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/iv_addspec"
+                    android:src="@drawable/baseline_share_location_24"/>
+
+                <TextView
+                    android:id="@+id/tv_addspec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/iv_addspec"
+                    android:text="Specific Address:"
+                    android:textSize="12.5sp"/>
+
+                <TextView
+                    android:id="@+id/desc_addspec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top"
+                    android:layout_toEndOf="@id/tv_addspec"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/dark_blu"
+                    android:text="Bldg No., Street name etc."
+                    android:textSize="12.5sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bedcap_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/add_specifics">
+
+                <ImageView
+                    android:foregroundGravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/iv_bed"
+                    android:src="@drawable/baseline_bed_24"/>
+
+                <TextView
+                    android:id="@+id/tv_bedcap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/iv_bed"
+                    android:text="Bed Capacity:"
+                    android:textSize="12.5sp"/>
+
+                <TextView
+                    android:id="@+id/desc_bedcap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top"
+                    android:layout_toEndOf="@id/tv_bedcap"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/dark_blu"
+                    android:text="0"
+                    android:textSize="12.5sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/website_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/bedcap_desc">
+
+                <ImageView
+                    android:foregroundGravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/iv_offweb"
+                    android:src="@drawable/baseline_web_24"/>
+
+                <TextView
+                    android:id="@+id/tv_offweb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/iv_offweb"
+                    android:text="Official Website:"
+                    android:textSize="12.5sp"/>
+
+                <TextView
+                    android:id="@+id/desc_offweb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top"
+                    android:layout_toEndOf="@id/tv_offweb"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/dark_blu"
+                    android:text="theirwebsite.com"
+                    android:textSize="12.5sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/servicecap_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/website_desc">
+
+                <ImageView
+                    android:foregroundGravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/iv_servcap"
+                    android:src="@drawable/baseline_theater_comedy_24"/>
+
+                <TextView
+                    android:id="@+id/tv_servcap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/iv_servcap"
+                    android:text="Service Capability:"
+                    android:textSize="12.5sp"/>
+
+                <TextView
+                    android:id="@+id/desc_servcap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top"
+                    android:layout_toEndOf="@id/tv_servcap"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/dark_blu"
+                    android:text="None"
+                    android:textSize="12.5sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/codesh_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/servicecap_desc">
+
+                <ImageView
+                    android:foregroundGravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/iv_codesh"
+                    android:src="@drawable/baseline_numbers_24"/>
+
+                <TextView
+                    android:id="@+id/tv_codesh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/iv_codesh"
+                    android:text="Health Facility Code:"
+                    android:textSize="12.5sp"/>
+
+                <TextView
+                    android:id="@+id/desc_codesh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top"
+                    android:layout_toEndOf="@id/tv_codesh"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/dark_blu"
+                    android:text="001"
+                    android:textSize="12.5sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/landline_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/codesh_desc">
+
+                <ImageView
+                    android:foregroundGravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/iv_landl"
+                    android:src="@drawable/baseline_phone_24"/>
+
+                <TextView
+                    android:id="@+id/tv_landl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/iv_landl"
+                    android:text="Landline No.:"
+                    android:textSize="12.5sp"/>
+
+                <TextView
+                    android:id="@+id/desc_landl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top"
+                    android:layout_toEndOf="@id/tv_landl"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/dark_blu"
+                    android:text="0992632482"
+                    android:textSize="12.5sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/email_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/landline_desc">
+
+                <ImageView
+                    android:foregroundGravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/iv_email"
+                    android:src="@drawable/baseline_contact_mail_24"/>
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/iv_email"
+                    android:text="Contact Email:"
+                    android:textSize="12.5sp"/>
+
+                <TextView
+                    android:id="@+id/desc_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top"
+                    android:layout_toEndOf="@id/tv_email"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/dark_blu"
+                    android:text="theiremail@sample.com"
+                    android:textSize="12.5sp"/>
+
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="13dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email_desc">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_contacthf"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="Contact Facility"
+                    android:elevation="5dp"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:cornerRadius="25dp"
+                    app:icon="@drawable/baseline_phone_white24"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="25dp"
+                    app:iconTint="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.40"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_emailhf"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:contentDescription="Email Facility"
+                    android:elevation="5dp"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:cornerRadius="25dp"
+                    app:icon="@drawable/baseline_email_white24"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="25dp"
+                    app:iconTint="@color/white"
+                    app:layout_constraintStart_toEndOf="@id/btn_contacthf"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -74,7 +74,7 @@ class AppointmentActivity : AppCompatActivity() {
 
         recyclerView.adapter = adapter
 
-        databaseReference = FirebaseDatabase.getInstance("https://saklo-a4e3a-default-rtdb.asia-southeast1.firebasedatabase.app").getReference("SakloApp")
+        databaseReference = FirebaseDatabase.getInstance("https://saklo-a4e3a-default-rtdb.asia-southeast1.firebasedatabase.app").getReference("Health Facilities")
 
         eventListener = object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {

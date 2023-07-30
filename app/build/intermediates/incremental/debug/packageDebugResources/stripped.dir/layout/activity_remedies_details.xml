@@ -1,0 +1,106 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorSecondaryVariant"
+        android:textColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnHome"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/saklogo_cropped2" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="?attr/colorOnSecondary"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMMON NAME"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blu"
+                android:fontFamily="@font/inter_font"
+                android:layout_centerHorizontal="true"  />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCIENTIFIC NAME"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:fontFamily="@font/inter_font"
+                android:layout_below="@id/textView1"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details/Summary:"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_below="@id/textView2"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Summary"
+                android:layout_marginTop="5dp"
+                android:justificationMode="inter_word"
+                android:layout_below="@id/textView3"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Warnings:"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/textView4"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Warnings"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/textView5"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
